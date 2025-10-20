@@ -30,9 +30,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Aarakocra Skirmisher|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -159,17 +156,11 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				},
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Aboleth|XMM"
 			],
 			"size": [
 				"L"
@@ -363,9 +354,6 @@
 				{
 					"source": "CM"
 				}
-			],
-			"reprintedAs": [
-				"Abominable Yeti|XMM"
 			],
 			"size": [
 				"H"
@@ -562,14 +550,8 @@
 					"source": "PaBTSO"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Priest Acolyte|XMM"
 			],
 			"size": [
 				"M"
@@ -713,9 +695,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Adult Black Dragon|XMM"
 			],
 			"size": [
 				"H"
@@ -1003,9 +982,6 @@
 					"source": "SatO"
 				}
 			],
-			"reprintedAs": [
-				"Dracolich|XMM"
-			],
 			"size": [
 				"H"
 			],
@@ -1234,9 +1210,6 @@
 				{
 					"source": "JttRC"
 				}
-			],
-			"reprintedAs": [
-				"Adult Blue Dragon|XMM"
 			],
 			"size": [
 				"H"
@@ -1519,9 +1492,6 @@
 				{
 					"source": "GoS"
 				}
-			],
-			"reprintedAs": [
-				"Adult Brass Dragon|XMM"
 			],
 			"size": [
 				"H"
@@ -1852,9 +1822,6 @@
 					"source": "DSotDQ"
 				}
 			],
-			"reprintedAs": [
-				"Adult Bronze Dragon|XMM"
-			],
 			"size": [
 				"H"
 			],
@@ -2180,9 +2147,6 @@
 					"source": "ToFW"
 				}
 			],
-			"reprintedAs": [
-				"Adult Copper Dragon|XMM"
-			],
 			"size": [
 				"H"
 			],
@@ -2486,10 +2450,10 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "WDH"
 				}
-			],
-			"reprintedAs": [
-				"Adult Gold Dragon|XMM"
 			],
 			"size": [
 				"H"
@@ -2817,9 +2781,6 @@
 					"source": "CM"
 				}
 			],
-			"reprintedAs": [
-				"Adult Green Dragon|XMM"
-			],
 			"size": [
 				"H"
 			],
@@ -3129,10 +3090,10 @@
 				},
 				{
 					"source": "CoA"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Adult Red Dragon|XMM"
 			],
 			"size": [
 				"H"
@@ -3418,9 +3379,6 @@
 				{
 					"source": "GoS"
 				}
-			],
-			"reprintedAs": [
-				"Adult Silver Dragon|XMM"
 			],
 			"size": [
 				"H"
@@ -3746,9 +3704,6 @@
 				{
 					"source": "EGW"
 				}
-			],
-			"reprintedAs": [
-				"Adult White Dragon|XMM"
 			],
 			"size": [
 				"H"
@@ -4094,17 +4049,11 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Air Elemental|XMM"
 			],
 			"size": [
 				"L"
@@ -4251,9 +4200,6 @@
 					"source": "KftGV"
 				}
 			],
-			"reprintedAs": [
-				"Allosaurus|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -4344,9 +4290,6 @@
 			"source": "MM",
 			"page": 87,
 			"srd": true,
-			"reprintedAs": [
-				"Ancient Black Dragon|XMM"
-			],
 			"size": [
 				"G"
 			],
@@ -4629,10 +4572,10 @@
 				},
 				{
 					"source": "TCE"
+				},
+				{
+					"source": "SKT"
 				}
-			],
-			"reprintedAs": [
-				"Ancient Blue Dragon|XMM"
 			],
 			"size": [
 				"G"
@@ -4918,9 +4861,6 @@
 				{
 					"source": "JttRC"
 				}
-			],
-			"reprintedAs": [
-				"Ancient Brass Dragon|XMM"
 			],
 			"size": [
 				"G"
@@ -5236,13 +5176,7 @@
 			"otherSources": [
 				{
 					"source": "GoS"
-				},
-				{
-					"source": "DoDk"
 				}
-			],
-			"reprintedAs": [
-				"Ancient Bronze Dragon|XMM"
 			],
 			"size": [
 				"G"
@@ -5560,9 +5494,6 @@
 					"source": "BGDIA"
 				}
 			],
-			"reprintedAs": [
-				"Ancient Copper Dragon|XMM"
-			],
 			"size": [
 				"G"
 			],
@@ -5868,13 +5799,7 @@
 			"otherSources": [
 				{
 					"source": "SatO"
-				},
-				{
-					"source": "DoDk"
 				}
-			],
-			"reprintedAs": [
-				"Ancient Gold Dragon|XMM"
 			],
 			"size": [
 				"G"
@@ -6199,9 +6124,6 @@
 					"source": "DIP"
 				}
 			],
-			"reprintedAs": [
-				"Ancient Green Dragon|XMM"
-			],
 			"size": [
 				"G"
 			],
@@ -6503,9 +6425,6 @@
 					"source": "VEoR"
 				}
 			],
-			"reprintedAs": [
-				"Ancient Red Dragon|XMM"
-			],
 			"size": [
 				"G"
 			],
@@ -6787,9 +6706,6 @@
 				{
 					"source": "SatO"
 				}
-			],
-			"reprintedAs": [
-				"Ancient Silver Dragon|XMM"
 			],
 			"size": [
 				"G"
@@ -7104,9 +7020,6 @@
 					"source": "IDRotF"
 				}
 			],
-			"reprintedAs": [
-				"Ancient White Dragon|XMM"
-			],
 			"size": [
 				"G"
 			],
@@ -7401,9 +7314,6 @@
 				{
 					"source": "SatO"
 				}
-			],
-			"reprintedAs": [
-				"Sphinx of Valor|XMM"
 			],
 			"size": [
 				"L"
@@ -7734,17 +7644,11 @@
 					"source": "SatO"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Animated Armor|XMM"
 			],
 			"size": [
 				"M"
@@ -7879,9 +7783,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Ankheg|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -7978,10 +7879,10 @@
 				},
 				{
 					"source": "CRCotN"
+				},
+				{
+					"source": "SKT"
 				}
-			],
-			"reprintedAs": [
-				"Ankylosaurus|XMM"
 			],
 			"size": [
 				"H"
@@ -8067,9 +7968,6 @@
 				{
 					"source": "CM"
 				}
-			],
-			"reprintedAs": [
-				"Ape|XMM"
 			],
 			"size": [
 				"M"
@@ -8178,9 +8076,6 @@
 				{
 					"source": "SatO"
 				}
-			],
-			"reprintedAs": [
-				"Arcanaloth|XMM"
 			],
 			"size": [
 				"M"
@@ -8526,12 +8421,6 @@
 					"source": "BMT"
 				},
 				{
-					"source": "GHLoE"
-				},
-				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
@@ -8539,10 +8428,10 @@
 				},
 				{
 					"source": "CoA"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Archmage|XMM"
 			],
 			"size": [
 				"M"
@@ -8859,20 +8748,11 @@
 					"source": "ToFW"
 				},
 				{
-					"source": "GHLoE"
-				},
-				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Assassin|XMM"
 			],
 			"size": [
 				"M"
@@ -9036,14 +8916,8 @@
 					"source": "PSI"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Awakened Shrub|XMM"
 			],
 			"size": [
 				"S"
@@ -9158,9 +9032,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Awakened Tree|XMM"
-			],
 			"size": [
 				"H"
 			],
@@ -9260,9 +9131,6 @@
 					"source": "IDRotF"
 				}
 			],
-			"reprintedAs": [
-				"Axe Beak|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -9329,14 +9197,8 @@
 					"source": "KftGV"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Azer Sentinel|XMM"
 			],
 			"size": [
 				"M"
@@ -9463,9 +9325,6 @@
 					"source": "KftGV"
 				}
 			],
-			"reprintedAs": [
-				"Baboon|XMM"
-			],
 			"size": [
 				"S"
 			],
@@ -9539,10 +9398,10 @@
 				},
 				{
 					"source": "QftIS"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Badger|XMM"
 			],
 			"size": [
 				"T"
@@ -9636,14 +9495,11 @@
 					"source": "ToFW"
 				},
 				{
-					"source": "DoDk"
+					"source": "CoA"
 				},
 				{
-					"source": "CoA"
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Balor|XMM"
 			],
 			"size": [
 				"H"
@@ -9907,17 +9763,11 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				},
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Bandit|XMM"
 			],
 			"size": [
 				"M"
@@ -10095,14 +9945,8 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Bandit Captain|XMM"
 			],
 			"size": [
 				"M"
@@ -10269,9 +10113,6 @@
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Banshee|XMM"
 			],
 			"size": [
 				"M"
@@ -10445,17 +10286,11 @@
 					"source": "TCE"
 				},
 				{
-					"source": "GHLoE"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Barbed Devil|XMM"
 			],
 			"size": [
 				"M"
@@ -10665,9 +10500,6 @@
 					"source": "CoA"
 				}
 			],
-			"reprintedAs": [
-				"Barlgura|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -10870,10 +10702,10 @@
 				},
 				{
 					"source": "QftIS"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Basilisk|XMM"
 			],
 			"size": [
 				"M"
@@ -10978,13 +10810,7 @@
 				},
 				{
 					"source": "PSX"
-				},
-				{
-					"source": "DoDk"
 				}
-			],
-			"reprintedAs": [
-				"Bat|XMM"
 			],
 			"size": [
 				"T"
@@ -11085,9 +10911,6 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
@@ -11096,9 +10919,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Bearded Devil|XMM"
 			],
 			"size": [
 				"M"
@@ -11297,10 +11117,10 @@
 				},
 				{
 					"source": "QftIS"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Behir|XMM"
 			],
 			"size": [
 				"H"
@@ -11474,10 +11294,10 @@
 				},
 				{
 					"source": "CoA"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Beholder|XMM"
 			],
 			"size": [
 				"L"
@@ -11788,9 +11608,6 @@
 					"source": "VEoR"
 				}
 			],
-			"reprintedAs": [
-				"Beholder Zombie|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -11998,13 +11815,7 @@
 				},
 				{
 					"source": "BMT"
-				},
-				{
-					"source": "DoDk"
 				}
-			],
-			"reprintedAs": [
-				"Berserker|XMM"
 			],
 			"size": [
 				"M"
@@ -12134,9 +11945,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Black Bear|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -12236,9 +12044,6 @@
 				{
 					"source": "VEoR"
 				}
-			],
-			"reprintedAs": [
-				"Black Dragon Wyrmling|XMM"
 			],
 			"size": [
 				"M"
@@ -12473,17 +12278,11 @@
 					"source": "ToFW"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				},
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Black Pudding|XMM"
 			],
 			"size": [
 				"L"
@@ -12624,9 +12423,6 @@
 					"source": "VEoR"
 				}
 			],
-			"reprintedAs": [
-				"Blink Dog|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -12734,9 +12530,6 @@
 					"source": "CM"
 				}
 			],
-			"reprintedAs": [
-				"Blood Hawk|XMM"
-			],
 			"size": [
 				"S"
 			],
@@ -12828,9 +12621,6 @@
 				{
 					"source": "DoSI"
 				}
-			],
-			"reprintedAs": [
-				"Blue Dragon Wyrmling|XMM"
 			],
 			"size": [
 				"M"
@@ -13039,9 +12829,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Blue Slaad|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -13206,9 +12993,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Boar|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -13321,14 +13105,11 @@
 					"source": "SatO"
 				},
 				{
-					"source": "DoDk"
+					"source": "CoA"
 				},
 				{
-					"source": "CoA"
+					"source": "HotDQ"
 				}
-			],
-			"reprintedAs": [
-				"Bone Devil|XMM"
 			],
 			"size": [
 				"L"
@@ -13526,9 +13307,6 @@
 					"source": "WDMM"
 				}
 			],
-			"reprintedAs": [
-				"Bone Naga|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -13670,10 +13448,10 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "ToA"
 				}
-			],
-			"reprintedAs": [
-				"Bone Naga|XMM"
 			],
 			"size": [
 				"L"
@@ -13813,8 +13591,10 @@
 			"source": "MM",
 			"page": 106,
 			"srd": true,
-			"reprintedAs": [
-				"Brass Dragon Wyrmling|XMM"
+			"otherSources": [
+				{
+					"source": "OoW"
+				}
 			],
 			"size": [
 				"M"
@@ -14037,9 +13817,6 @@
 				{
 					"source": "DoSI"
 				}
-			],
-			"reprintedAs": [
-				"Bronze Dragon Wyrmling|XMM"
 			],
 			"size": [
 				"M"
@@ -14295,9 +14072,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Brown Bear|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -14443,14 +14217,8 @@
 					"source": "PaBTSO"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Bugbear Warrior|XMM"
 			],
 			"size": [
 				"M"
@@ -14574,6 +14342,9 @@
 				},
 				{
 					"source": "CRCotN"
+				},
+				{
+					"source": "NRH-AT"
 				}
 			],
 			"size": [
@@ -14732,9 +14503,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Bulette|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -14843,9 +14611,6 @@
 				{
 					"source": "WBtW"
 				}
-			],
-			"reprintedAs": [
-				"Bullywug Warrior|XMM"
 			],
 			"size": [
 				"M"
@@ -15000,9 +14765,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Cambion|XMM"
 			],
 			"size": [
 				"M"
@@ -15315,9 +15077,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Camel|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -15397,10 +15156,10 @@
 				},
 				{
 					"source": "QftIS"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Carrion Crawler|XMM"
 			],
 			"size": [
 				"L"
@@ -15549,13 +15308,7 @@
 				},
 				{
 					"source": "JttRC"
-				},
-				{
-					"source": "DoDk"
 				}
-			],
-			"reprintedAs": [
-				"Cat|XMM"
 			],
 			"size": [
 				"T"
@@ -15635,10 +15388,10 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "SKT"
 				}
-			],
-			"reprintedAs": [
-				"Polar Bear|XMM"
 			],
 			"size": [
 				"L"
@@ -15762,9 +15515,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Centaur Trooper|XMM"
 			],
 			"size": [
 				"L"
@@ -15892,10 +15642,10 @@
 				},
 				{
 					"source": "CoA"
+				},
+				{
+					"source": "WDH"
 				}
-			],
-			"reprintedAs": [
-				"Chain Devil|XMM"
 			],
 			"size": [
 				"M"
@@ -16067,10 +15817,10 @@
 				},
 				{
 					"source": "CoA"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Chasme|XMM"
 			],
 			"size": [
 				"L"
@@ -16241,14 +15991,8 @@
 					"source": "BGDIA"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Chimera|XMM"
 			],
 			"size": [
 				"L"
@@ -16386,17 +16130,11 @@
 					"source": "PaBTSO"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				},
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Chuul|XMM"
 			],
 			"size": [
 				"L"
@@ -16555,9 +16293,6 @@
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Clay Golem|XMM"
 			],
 			"size": [
 				"L"
@@ -16729,9 +16464,6 @@
 					"source": "PaBTSO"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
@@ -16740,9 +16472,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Cloaker|XMM"
 			],
 			"size": [
 				"L"
@@ -16907,9 +16636,6 @@
 				{
 					"source": "SatO"
 				}
-			],
-			"reprintedAs": [
-				"Cloud Giant|XMM"
 			],
 			"size": [
 				"H"
@@ -17121,10 +16847,10 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "OoW"
 				}
-			],
-			"reprintedAs": [
-				"Cockatrice|XMM"
 			],
 			"size": [
 				"S"
@@ -17303,12 +17029,6 @@
 					"source": "HFStCM"
 				},
 				{
-					"source": "GHLoE"
-				},
-				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
@@ -17317,9 +17037,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Commoner|XMM"
 			],
 			"size": [
 				"M"
@@ -17415,9 +17132,6 @@
 					"source": "WDMM"
 				}
 			],
-			"reprintedAs": [
-				"Constrictor Snake|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -17495,9 +17209,6 @@
 			"source": "MM",
 			"page": 111,
 			"srd": true,
-			"reprintedAs": [
-				"Copper Dragon Wyrmling|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -17734,9 +17445,6 @@
 					"source": "CoA"
 				}
 			],
-			"reprintedAs": [
-				"Couatl|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -17935,9 +17643,6 @@
 					"source": "VEoR"
 				}
 			],
-			"reprintedAs": [
-				"Crab|XMM"
-			],
 			"size": [
 				"T"
 			],
@@ -18051,9 +17756,6 @@
 				{
 					"source": "BMT"
 				}
-			],
-			"reprintedAs": [
-				"Crawling Claw|XMM"
 			],
 			"size": [
 				"T"
@@ -18177,9 +17879,6 @@
 				{
 					"source": "PSA"
 				}
-			],
-			"reprintedAs": [
-				"Crocodile|XMM"
 			],
 			"size": [
 				"L"
@@ -18342,9 +18041,6 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
@@ -18352,10 +18048,10 @@
 				},
 				{
 					"source": "CoA"
+				},
+				{
+					"source": "HotDQ"
 				}
-			],
-			"reprintedAs": [
-				"Cultist Fanatic|XMM"
 			],
 			"size": [
 				"M"
@@ -18596,20 +18292,11 @@
 					"source": "BMT"
 				},
 				{
-					"source": "GHLoE"
-				},
-				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Cultist|XMM"
 			],
 			"size": [
 				"M"
@@ -18746,9 +18433,6 @@
 					"source": "VEoR"
 				}
 			],
-			"reprintedAs": [
-				"Cyclops Sentry|XMM"
-			],
 			"size": [
 				"H"
 			],
@@ -18880,9 +18564,6 @@
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Dao|XMM"
 			],
 			"size": [
 				"L"
@@ -19146,9 +18827,6 @@
 					"source": "KftGV"
 				}
 			],
-			"reprintedAs": [
-				"Darkmantle|XMM"
-			],
 			"size": [
 				"S"
 			],
@@ -19262,10 +18940,10 @@
 				},
 				{
 					"source": "AATM"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Death Dog|XMM"
 			],
 			"size": [
 				"M"
@@ -19395,10 +19073,10 @@
 				},
 				{
 					"source": "CoA"
+				},
+				{
+					"source": "WDMM"
 				}
-			],
-			"reprintedAs": [
-				"Death Knight|XMM"
 			],
 			"size": [
 				"M"
@@ -19637,10 +19315,10 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Death Slaad|XMM"
 			],
 			"size": [
 				"M"
@@ -19871,10 +19549,10 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Death Tyrant|XMM"
 			],
 			"size": [
 				"L"
@@ -20286,9 +19964,6 @@
 					"source": "DIP"
 				}
 			],
-			"reprintedAs": [
-				"Deer|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -20364,9 +20039,6 @@
 				{
 					"source": "ToFW"
 				}
-			],
-			"reprintedAs": [
-				"Demilich|XMM"
 			],
 			"size": [
 				"T"
@@ -20638,9 +20310,6 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
@@ -20649,9 +20318,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Deva|XMM"
 			],
 			"size": [
 				"M"
@@ -20848,9 +20514,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Dire Wolf|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -20970,9 +20633,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Displacer Beast|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -21089,17 +20749,11 @@
 					"source": "SatO"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				},
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Djinni|XMM"
 			],
 			"size": [
 				"L"
@@ -21403,17 +21057,11 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				},
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Doppelganger|XMM"
 			],
 			"size": [
 				"M"
@@ -21555,14 +21203,8 @@
 					"source": "PaBTSO"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Draft Horse|XMM"
 			],
 			"size": [
 				"L"
@@ -21642,9 +21284,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Dragon Turtle|XMM"
 			],
 			"size": [
 				"G"
@@ -21812,10 +21451,10 @@
 				},
 				{
 					"source": "CoA"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Dretch|XMM"
 			],
 			"size": [
 				"S"
@@ -21946,10 +21585,10 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Drider|XMM"
 			],
 			"size": [
 				"L"
@@ -22226,10 +21865,10 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Priest Acolyte|XMM"
 			],
 			"size": [
 				"M"
@@ -22458,10 +22097,10 @@
 				},
 				{
 					"source": "PaBTSO"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Gladiator|XMM"
 			],
 			"size": [
 				"M"
@@ -22729,9 +22368,6 @@
 					"source": "CoA"
 				}
 			],
-			"reprintedAs": [
-				"Bandit Deceiver|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -22948,10 +22584,10 @@
 				},
 				{
 					"source": "GoS"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Fiend Cultist|XMM"
 			],
 			"size": [
 				"M"
@@ -23275,9 +22911,6 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
@@ -23286,9 +22919,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Druid|XMM"
 			],
 			"size": [
 				"M"
@@ -23476,20 +23106,11 @@
 					"source": "BMT"
 				},
 				{
-					"source": "GHLoE"
-				},
-				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Dryad|XMM"
 			],
 			"size": [
 				"M"
@@ -23676,9 +23297,6 @@
 					"source": "CoA"
 				}
 			],
-			"reprintedAs": [
-				"Spy|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -23819,10 +23437,10 @@
 				},
 				{
 					"source": "QftIS"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Modron Duodrone|XMM"
 			],
 			"size": [
 				"M"
@@ -23970,14 +23588,8 @@
 					"source": "SatO"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Dust Mephit|XMM"
 			],
 			"size": [
 				"S"
@@ -24135,9 +23747,6 @@
 					"source": "ToFW"
 				}
 			],
-			"reprintedAs": [
-				"Eagle|XMM"
-			],
 			"size": [
 				"S"
 			],
@@ -24240,17 +23849,11 @@
 					"source": "PaBTSO"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Earth Elemental|XMM"
 			],
 			"size": [
 				"L"
@@ -24410,17 +24013,11 @@
 					"source": "SatO"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				},
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Efreeti|XMM"
 			],
 			"size": [
 				"L"
@@ -24660,9 +24257,6 @@
 					"source": "ToFW"
 				}
 			],
-			"reprintedAs": [
-				"Elephant|XMM"
-			],
 			"size": [
 				"H"
 			],
@@ -24762,9 +24356,6 @@
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Elk|XMM"
 			],
 			"size": [
 				"L"
@@ -24871,9 +24462,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Empyrean|XMM"
 			],
 			"size": [
 				"H"
@@ -25106,17 +24694,11 @@
 					"source": "SatO"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Erinyes|XMM"
 			],
 			"size": [
 				"M"
@@ -25368,9 +24950,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Ettercap|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -25541,9 +25120,6 @@
 					"source": "VEoR"
 				}
 			],
-			"reprintedAs": [
-				"Ettin|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -25658,9 +25234,6 @@
 			"name": "Faerie Dragon (Blue)",
 			"source": "MM",
 			"page": 133,
-			"reprintedAs": [
-				"Faerie Dragon Adult|XMM"
-			],
 			"size": [
 				"T"
 			],
@@ -25832,9 +25405,6 @@
 					"source": "ToA"
 				}
 			],
-			"reprintedAs": [
-				"Faerie Dragon Adult|XMM"
-			],
 			"size": [
 				"T"
 			],
@@ -26000,9 +25570,6 @@
 			"name": "Faerie Dragon (Indigo)",
 			"source": "MM",
 			"page": 133,
-			"reprintedAs": [
-				"Faerie Dragon Adult|XMM"
-			],
 			"size": [
 				"T"
 			],
@@ -26170,8 +25737,10 @@
 			"name": "Faerie Dragon (Orange)",
 			"source": "MM",
 			"page": 133,
-			"reprintedAs": [
-				"Faerie Dragon Youth|XMM"
+			"otherSources": [
+				{
+					"source": "CM"
+				}
 			],
 			"size": [
 				"T"
@@ -26333,9 +25902,6 @@
 				{
 					"source": "WBtW"
 				}
-			],
-			"reprintedAs": [
-				"Faerie Dragon Youth|XMM"
 			],
 			"size": [
 				"T"
@@ -26502,9 +26068,6 @@
 				{
 					"source": "BMT"
 				}
-			],
-			"reprintedAs": [
-				"Faerie Dragon Adult|XMM"
 			],
 			"size": [
 				"T"
@@ -26674,9 +26237,6 @@
 			"name": "Faerie Dragon (Yellow)",
 			"source": "MM",
 			"page": 133,
-			"reprintedAs": [
-				"Faerie Dragon Youth|XMM"
-			],
 			"size": [
 				"T"
 			],
@@ -26875,13 +26435,7 @@
 				},
 				{
 					"source": "BMT"
-				},
-				{
-					"source": "DoDk"
 				}
-			],
-			"reprintedAs": [
-				"Fire Elemental|XMM"
 			],
 			"size": [
 				"L"
@@ -27054,9 +26608,6 @@
 					"source": "CoA"
 				}
 			],
-			"reprintedAs": [
-				"Fire Giant|XMM"
-			],
 			"size": [
 				"H"
 			],
@@ -27212,9 +26763,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Salamander Fire Snake|XMM"
 			],
 			"size": [
 				"M"
@@ -27399,9 +26947,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Flameskull|XMM"
 			],
 			"size": [
 				"T"
@@ -27632,9 +27177,6 @@
 					"source": "CoA"
 				}
 			],
-			"reprintedAs": [
-				"Flesh Golem|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -27785,10 +27327,10 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Flumph|XMM"
 			],
 			"size": [
 				"S"
@@ -27922,10 +27464,10 @@
 				},
 				{
 					"source": "KftGV"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Flying Snake|XMM"
 			],
 			"size": [
 				"T"
@@ -28056,14 +27598,8 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				}
-			],
-			"reprintedAs": [
-				"Animated Flying Sword|XMM"
 			],
 			"size": [
 				"S"
@@ -28200,10 +27736,10 @@
 				},
 				{
 					"source": "CoA"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Fomorian|XMM"
 			],
 			"size": [
 				"H"
@@ -28337,9 +27873,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Frog|XMM"
-			],
 			"size": [
 				"T"
 			],
@@ -28436,9 +27969,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Frost Giant|XMM"
 			],
 			"size": [
 				"H"
@@ -28588,9 +28118,6 @@
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Galeb Duhr|XMM"
 			],
 			"size": [
 				"M"
@@ -28764,14 +28291,8 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Gargoyle|XMM"
 			],
 			"size": [
 				"M"
@@ -28905,10 +28426,10 @@
 				},
 				{
 					"source": "QftIS"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Gas Spore Fungus|XMM"
 			],
 			"size": [
 				"L"
@@ -29035,14 +28556,11 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
+					"source": "QftIS"
 				},
 				{
-					"source": "QftIS"
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Gelatinous Cube|XMM"
 			],
 			"size": [
 				"L"
@@ -29185,9 +28703,6 @@
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Ghast|XMM"
 			],
 			"size": [
 				"M"
@@ -29394,17 +28909,11 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Ghost|XMM"
 			],
 			"size": [
 				"M"
@@ -29636,17 +29145,11 @@
 					"source": "BMT"
 				},
 				{
-					"source": "GHLoE"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Ghoul|XMM"
 			],
 			"size": [
 				"M"
@@ -29751,11 +29254,8 @@
 					"source": "GoS"
 				},
 				{
-					"source": "GHLoE"
+					"source": "ToA"
 				}
-			],
-			"reprintedAs": [
-				"Giant Ape|XMM"
 			],
 			"size": [
 				"H"
@@ -29846,9 +29346,6 @@
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Giant Badger|XMM"
 			],
 			"size": [
 				"M"
@@ -29959,9 +29456,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Giant Bat|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -30060,9 +29554,6 @@
 				{
 					"source": "BMT"
 				}
-			],
-			"reprintedAs": [
-				"Giant Boar|XMM"
 			],
 			"size": [
 				"L"
@@ -30177,9 +29668,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Giant Centipede|XMM"
-			],
 			"size": [
 				"S"
 			],
@@ -30280,9 +29768,6 @@
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Giant Constrictor Snake|XMM"
 			],
 			"size": [
 				"H"
@@ -30399,9 +29884,6 @@
 					"source": "VEoR"
 				}
 			],
-			"reprintedAs": [
-				"Giant Crab|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -30503,16 +29985,7 @@
 				},
 				{
 					"source": "ToFW"
-				},
-				{
-					"source": "GHLoE"
-				},
-				{
-					"source": "DoDk"
 				}
-			],
-			"reprintedAs": [
-				"Giant Crocodile|XMM"
 			],
 			"size": [
 				"H"
@@ -30630,9 +30103,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Giant Eagle|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -30738,9 +30208,6 @@
 				{
 					"source": "SKT"
 				}
-			],
-			"reprintedAs": [
-				"Giant Elk|XMM"
 			],
 			"size": [
 				"H"
@@ -30858,10 +30325,10 @@
 				},
 				{
 					"source": "QftIS"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Giant Fire Beetle|XMM"
 			],
 			"size": [
 				"S"
@@ -30970,9 +30437,6 @@
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Giant Frog|XMM"
 			],
 			"size": [
 				"M"
@@ -31093,9 +30557,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Giant Goat|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -31190,9 +30651,6 @@
 				{
 					"source": "BGDIA"
 				}
-			],
-			"reprintedAs": [
-				"Giant Hyena|XMM"
 			],
 			"size": [
 				"L"
@@ -31299,9 +30757,6 @@
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Giant Lizard|XMM"
 			],
 			"size": [
 				"L"
@@ -31457,9 +30912,6 @@
 					"source": "PaBTSO"
 				}
 			],
-			"reprintedAs": [
-				"Giant Octopus|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -31582,9 +31034,6 @@
 				{
 					"source": "BMT"
 				}
-			],
-			"reprintedAs": [
-				"Giant Owl|XMM"
 			],
 			"size": [
 				"L"
@@ -31713,9 +31162,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Giant Venomous Snake|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -31825,17 +31271,8 @@
 					"source": "WBtW"
 				},
 				{
-					"source": "GHLoE"
-				},
-				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Giant Rat|XMM"
 			],
 			"size": [
 				"S"
@@ -31983,9 +31420,6 @@
 					"source": "CoA"
 				}
 			],
-			"reprintedAs": [
-				"Giant Scorpion|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -32081,9 +31515,6 @@
 				{
 					"source": "JttRC"
 				}
-			],
-			"reprintedAs": [
-				"Giant Seahorse|XMM"
 			],
 			"size": [
 				"L"
@@ -32207,9 +31638,6 @@
 				{
 					"source": "VEoR"
 				}
-			],
-			"reprintedAs": [
-				"Giant Shark|XMM"
 			],
 			"size": [
 				"H"
@@ -32377,9 +31805,6 @@
 					"source": "CoA"
 				}
 			],
-			"reprintedAs": [
-				"Giant Spider|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -32521,9 +31946,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Giant Toad|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -32646,9 +32068,6 @@
 					"source": "CoA"
 				}
 			],
-			"reprintedAs": [
-				"Giant Vulture|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -32768,9 +32187,6 @@
 					"source": "PSA"
 				}
 			],
-			"reprintedAs": [
-				"Giant Wasp|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -32846,9 +32262,6 @@
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Giant Weasel|XMM"
 			],
 			"size": [
 				"M"
@@ -32948,10 +32361,10 @@
 				},
 				{
 					"source": "PSX"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Giant Wolf Spider|XMM"
 			],
 			"size": [
 				"M"
@@ -33092,17 +32505,14 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				},
 				{
 					"source": "CoA"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Gibbering Mouther|XMM"
 			],
 			"size": [
 				"M"
@@ -33235,9 +32645,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Githyanki Knight|XMM"
 			],
 			"size": [
 				"M"
@@ -33381,9 +32788,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Githyanki Warrior|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -33499,9 +32903,6 @@
 				{
 					"source": "SatO"
 				}
-			],
-			"reprintedAs": [
-				"Githzerai Monk|XMM"
 			],
 			"size": [
 				"M"
@@ -33629,9 +33030,6 @@
 				{
 					"source": "ToFW"
 				}
-			],
-			"reprintedAs": [
-				"Githzerai Zerth|XMM"
 			],
 			"size": [
 				"M"
@@ -33788,17 +33186,11 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Glabrezu|XMM"
 			],
 			"size": [
 				"L"
@@ -34030,17 +33422,11 @@
 					"source": "ToFW"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				},
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Gladiator|XMM"
 			],
 			"size": [
 				"M"
@@ -34208,13 +33594,7 @@
 				},
 				{
 					"source": "BMT"
-				},
-				{
-					"source": "DoDk"
 				}
-			],
-			"reprintedAs": [
-				"Gnoll Warrior|XMM"
 			],
 			"size": [
 				"M"
@@ -34343,10 +33723,10 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Gnoll Fang of Yeenoghu|XMM"
 			],
 			"size": [
 				"M"
@@ -34482,9 +33862,6 @@
 				{
 					"source": "BMT"
 				}
-			],
-			"reprintedAs": [
-				"Gnoll Pack Lord|XMM"
 			],
 			"size": [
 				"M"
@@ -34650,9 +34027,6 @@
 					"source": "PaBTSO"
 				}
 			],
-			"reprintedAs": [
-				"Goat|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -34796,13 +34170,7 @@
 				},
 				{
 					"source": "BMT"
-				},
-				{
-					"source": "GHLoE"
 				}
-			],
-			"reprintedAs": [
-				"Goblin Warrior|XMM"
 			],
 			"size": [
 				"S"
@@ -34948,10 +34316,10 @@
 				},
 				{
 					"source": "PaBTSO"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Goblin Boss|XMM"
 			],
 			"size": [
 				"S"
@@ -35086,9 +34454,6 @@
 				{
 					"source": "BMT"
 				}
-			],
-			"reprintedAs": [
-				"Gold Dragon Wyrmling|XMM"
 			],
 			"size": [
 				"M"
@@ -35339,14 +34704,8 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Gorgon|XMM"
 			],
 			"size": [
 				"L"
@@ -35468,9 +34827,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Goristro|XMM"
 			],
 			"size": [
 				"H"
@@ -35659,10 +35015,6 @@
 					"source": "PaBTSO"
 				}
 			],
-			"reprintedAs": [
-				"Gray Ooze|XMM",
-				"Psychic Gray Ooze|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -35742,7 +35094,7 @@
 					"type": "variant",
 					"name": "Psychic Gray Ooze",
 					"entries": [
-						"A gray ooze that lives a long time can evolve to become more intelligent and develop limited psionic ability. Such occurrences are more common in gray oozes that live near psionic creatures such as {@creature mind flayer||mind flayers}, suggesting that the ooze can sense and mimic psionic ability.",
+						"A gray ooze that lives a long time can evolve to become more intelligent and develop limited psionic ability. Such occurrences are more common in gray oozes that live near psioncic creatures such as {@creature mind flayer||mind flayers}, suggesting that the ooze can sense and mimic psionic ability.",
 						"A psionic gray ooze has an intelligence score of 6 (-2), as well as the following additional action.",
 						{
 							"type": "entries",
@@ -35831,9 +35183,6 @@
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Gray Slaad|XMM"
 			],
 			"size": [
 				"M"
@@ -36053,9 +35402,6 @@
 				{
 					"source": "WBtW"
 				}
-			],
-			"reprintedAs": [
-				"Green Dragon Wyrmling|XMM"
 			],
 			"size": [
 				"M"
@@ -36285,10 +35631,10 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Green Hag|XMM"
 			],
 			"size": [
 				"M"
@@ -36607,10 +35953,10 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Green Slaad|XMM"
 			],
 			"size": [
 				"L"
@@ -36852,9 +36198,6 @@
 					"source": "CoA"
 				}
 			],
-			"reprintedAs": [
-				"Grell|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -36999,9 +36342,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Grick|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -37126,10 +36466,10 @@
 				},
 				{
 					"source": "PaBTSO"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Grick Ancient|XMM"
 			],
 			"size": [
 				"L"
@@ -37279,14 +36619,8 @@
 					"source": "JttRC"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Griffon|XMM"
 			],
 			"size": [
 				"L"
@@ -37392,17 +36726,14 @@
 					"source": "PaBTSO"
 				},
 				{
-					"source": "GHLoE"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "CoA"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Grimlock|XMM"
 			],
 			"size": [
 				"M"
@@ -37586,14 +36917,8 @@
 					"source": "ToFW"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Guard|XMM"
 			],
 			"size": [
 				"M"
@@ -37701,9 +37026,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Guardian Naga|XMM"
 			],
 			"size": [
 				"L"
@@ -37911,10 +37233,10 @@
 				},
 				{
 					"source": "QftIS"
+				},
+				{
+					"source": "LLK"
 				}
-			],
-			"reprintedAs": [
-				"Sphinx of Lore|XMM"
 			],
 			"size": [
 				"L"
@@ -38157,9 +37479,6 @@
 					"source": "DSotDQ"
 				}
 			],
-			"reprintedAs": [
-				"Ogrillon Ogre|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -38269,10 +37588,10 @@
 				},
 				{
 					"source": "IMR"
+				},
+				{
+					"source": "HotDQ"
 				}
-			],
-			"reprintedAs": [
-				"Half-Dragon|XMM"
 			],
 			"size": [
 				"M"
@@ -38434,14 +37753,8 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Harpy|XMM"
 			],
 			"size": [
 				"M"
@@ -38568,9 +37881,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Hawk|XMM"
-			],
 			"size": [
 				"T"
 			],
@@ -38695,14 +38005,8 @@
 					"source": "HFStCM"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Hell Hound|XMM"
 			],
 			"size": [
 				"M"
@@ -38862,9 +38166,6 @@
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Helmed Horror|XMM"
 			],
 			"size": [
 				"M"
@@ -39031,9 +38332,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Hezrou|XMM"
 			],
 			"size": [
 				"L"
@@ -39221,9 +38519,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Hill Giant|XMM"
-			],
 			"size": [
 				"H"
 			],
@@ -39358,9 +38653,6 @@
 				{
 					"source": "EGW"
 				}
-			],
-			"reprintedAs": [
-				"Hippogriff|XMM"
 			],
 			"size": [
 				"L"
@@ -39498,9 +38790,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Hobgoblin Warrior|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -39626,9 +38915,6 @@
 				{
 					"source": "DSotDQ"
 				}
-			],
-			"reprintedAs": [
-				"Hobgoblin Captain|XMM"
 			],
 			"size": [
 				"M"
@@ -39769,9 +39055,6 @@
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Hobgoblin Warlord|XMM"
 			],
 			"size": [
 				"M"
@@ -39946,13 +39229,7 @@
 				},
 				{
 					"source": "BMT"
-				},
-				{
-					"source": "DoDk"
 				}
-			],
-			"reprintedAs": [
-				"Homunculus|XMM"
 			],
 			"size": [
 				"T"
@@ -40071,9 +39348,6 @@
 					"source": "CoA"
 				}
 			],
-			"reprintedAs": [
-				"Hook Horror|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -40190,17 +39464,11 @@
 					"source": "SatO"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Horned Devil|XMM"
 			],
 			"size": [
 				"L"
@@ -40394,9 +39662,6 @@
 					"source": "SatO"
 				}
 			],
-			"reprintedAs": [
-				"Hunter Shark|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -40528,13 +39793,7 @@
 				},
 				{
 					"source": "SatO"
-				},
-				{
-					"source": "DoDk"
 				}
-			],
-			"reprintedAs": [
-				"Hydra|XMM"
 			],
 			"size": [
 				"H"
@@ -40659,9 +39918,6 @@
 					"source": "BMT"
 				}
 			],
-			"reprintedAs": [
-				"Hyena|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -40748,10 +40004,10 @@
 				},
 				{
 					"source": "CoA"
+				},
+				{
+					"source": "WDMM"
 				}
-			],
-			"reprintedAs": [
-				"Ice Devil|XMM"
 			],
 			"size": [
 				"L"
@@ -40975,9 +40231,6 @@
 					"source": "KftGV"
 				}
 			],
-			"reprintedAs": [
-				"Ice Mephit|XMM"
-			],
 			"size": [
 				"S"
 			],
@@ -41172,9 +40425,6 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
@@ -41183,9 +40433,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Imp|XMM"
 			],
 			"size": [
 				"T"
@@ -41378,14 +40625,11 @@
 					"source": "ToFW"
 				},
 				{
-					"source": "GHLoE"
+					"source": "CoA"
 				},
 				{
-					"source": "CoA"
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Incubus|XMM"
 			],
 			"size": [
 				"M"
@@ -41556,10 +40800,10 @@
 				},
 				{
 					"source": "CoA"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Intellect Devourer|XMM"
 			],
 			"size": [
 				"T"
@@ -41737,17 +40981,11 @@
 					"source": "PaBTSO"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Invisible Stalker|XMM"
 			],
 			"size": [
 				"M"
@@ -41906,17 +41144,11 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Iron Golem|XMM"
 			],
 			"size": [
 				"L"
@@ -42074,10 +41306,10 @@
 			"otherSources": [
 				{
 					"source": "GoS"
+				},
+				{
+					"source": "ToA"
 				}
-			],
-			"reprintedAs": [
-				"Jackal|XMM"
 			],
 			"size": [
 				"S"
@@ -42172,9 +41404,6 @@
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Jackalwere|XMM"
 			],
 			"size": [
 				"M"
@@ -42334,9 +41563,6 @@
 					"source": "ToFW"
 				}
 			],
-			"reprintedAs": [
-				"Kenku|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -42459,9 +41685,6 @@
 				{
 					"source": "IDRotF"
 				}
-			],
-			"reprintedAs": [
-				"Killer Whale|XMM"
 			],
 			"size": [
 				"H"
@@ -42629,17 +41852,11 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				},
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Knight|XMM"
 			],
 			"size": [
 				"M"
@@ -42798,14 +42015,8 @@
 					"source": "DoSI"
 				},
 				{
-					"source": "GHLoE"
-				},
-				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Kobold Warrior|XMM"
 			],
 			"size": [
 				"S"
@@ -42949,10 +42160,10 @@
 				},
 				{
 					"source": "CoA"
+				},
+				{
+					"source": "SKT"
 				}
-			],
-			"reprintedAs": [
-				"Kraken|XMM"
 			],
 			"size": [
 				"G"
@@ -43190,9 +42401,6 @@
 					"source": "SatO"
 				}
 			],
-			"reprintedAs": [
-				"Kuo-toa|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -43350,9 +42558,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Kuo-toa Archpriest|XMM"
 			],
 			"size": [
 				"M"
@@ -43565,9 +42770,6 @@
 					"source": "CoA"
 				}
 			],
-			"reprintedAs": [
-				"Kuo-toa Monitor|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -43717,9 +42919,6 @@
 				{
 					"source": "GoS"
 				}
-			],
-			"reprintedAs": [
-				"Kuo-toa Whip|XMM"
 			],
 			"size": [
 				"M"
@@ -43905,9 +43104,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Lamia|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -44066,9 +43262,6 @@
 					"source": "CoA"
 				}
 			],
-			"reprintedAs": [
-				"Lemure|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -44199,10 +43392,10 @@
 				},
 				{
 					"source": "CoA"
+				},
+				{
+					"source": "PotA"
 				}
-			],
-			"reprintedAs": [
-				"Lich|XMM"
 			],
 			"size": [
 				"M"
@@ -44504,9 +43697,6 @@
 					"source": "KftGV"
 				}
 			],
-			"reprintedAs": [
-				"Lion|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -44623,9 +43813,6 @@
 					"source": "KftGV"
 				}
 			],
-			"reprintedAs": [
-				"Lizard|XMM"
-			],
 			"size": [
 				"T"
 			],
@@ -44693,9 +43880,6 @@
 				{
 					"source": "TCE"
 				}
-			],
-			"reprintedAs": [
-				"Lizardfolk Sovereign|XMM"
 			],
 			"size": [
 				"M"
@@ -44835,9 +44019,6 @@
 			"name": "Lizard Queen",
 			"source": "MM",
 			"page": 205,
-			"reprintedAs": [
-				"Lizardfolk Sovereign|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -45019,9 +44200,6 @@
 					"source": "ToFW"
 				}
 			],
-			"reprintedAs": [
-				"Scout|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -45161,9 +44339,6 @@
 				{
 					"source": "EGW"
 				}
-			],
-			"reprintedAs": [
-				"Lizardfolk Geomancer|XMM"
 			],
 			"size": [
 				"M"
@@ -45435,12 +44610,6 @@
 					"source": "BMT"
 				},
 				{
-					"source": "GHLoE"
-				},
-				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
@@ -45449,9 +44618,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Mage|XMM"
 			],
 			"size": [
 				"M"
@@ -45657,13 +44823,7 @@
 				},
 				{
 					"source": "SjA"
-				},
-				{
-					"source": "DoDk"
 				}
-			],
-			"reprintedAs": [
-				"Magma Mephit|XMM"
 			],
 			"size": [
 				"S"
@@ -45839,9 +44999,6 @@
 					"source": "SatO"
 				}
 			],
-			"reprintedAs": [
-				"Magmin|XMM"
-			],
 			"size": [
 				"S"
 			],
@@ -45965,9 +45122,6 @@
 					"source": "CoA"
 				}
 			],
-			"reprintedAs": [
-				"Mammoth|XMM"
-			],
 			"size": [
 				"H"
 			],
@@ -46075,10 +45229,10 @@
 				},
 				{
 					"source": "CoA"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Manes|XMM"
 			],
 			"size": [
 				"S"
@@ -46212,13 +45366,7 @@
 				},
 				{
 					"source": "BMT"
-				},
-				{
-					"source": "DoDk"
 				}
-			],
-			"reprintedAs": [
-				"Manticore|XMM"
 			],
 			"size": [
 				"L"
@@ -46368,9 +45516,6 @@
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Marid|XMM"
 			],
 			"size": [
 				"L"
@@ -46645,17 +45790,11 @@
 					"source": "TCE"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Marilith|XMM"
 			],
 			"size": [
 				"L"
@@ -46879,9 +46018,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Mastiff|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -46986,11 +46122,8 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Medusa|XMM"
 			],
 			"size": [
 				"M"
@@ -47130,10 +46263,10 @@
 				},
 				{
 					"source": "JttRC"
+				},
+				{
+					"source": "SKT"
 				}
-			],
-			"reprintedAs": [
-				"Merfolk Skirmisher|XMM"
 			],
 			"size": [
 				"M"
@@ -47254,14 +46387,8 @@
 					"source": "DSotDQ"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Merrow|XMM"
 			],
 			"size": [
 				"L"
@@ -47395,9 +46522,6 @@
 				{
 					"source": "ToFW"
 				}
-			],
-			"reprintedAs": [
-				"Mezzoloth|XMM"
 			],
 			"size": [
 				"M"
@@ -47648,17 +46772,14 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "QftIS"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Mimic|XMM"
 			],
 			"size": [
 				"M"
@@ -47832,10 +46953,10 @@
 				},
 				{
 					"source": "CoA"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Mind Flayer|XMM"
 			],
 			"size": [
 				"M"
@@ -48002,10 +47123,10 @@
 				},
 				{
 					"source": "SatO"
+				},
+				{
+					"source": "LLK"
 				}
-			],
-			"reprintedAs": [
-				"Mind Flayer Arcanist|XMM"
 			],
 			"size": [
 				"M"
@@ -48268,9 +47389,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Minotaur of Baphomet|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -48424,10 +47542,10 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Minotaur Skeleton|XMM"
 			],
 			"size": [
 				"L"
@@ -48561,10 +47679,10 @@
 				},
 				{
 					"source": "ToFW"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Modron Monodrone|XMM"
 			],
 			"size": [
 				"M"
@@ -48709,9 +47827,6 @@
 					"source": "JttRC"
 				}
 			],
-			"reprintedAs": [
-				"Mud Mephit|XMM"
-			],
 			"size": [
 				"S"
 			],
@@ -48852,13 +47967,7 @@
 				},
 				{
 					"source": "KftGV"
-				},
-				{
-					"source": "DoDk"
 				}
-			],
-			"reprintedAs": [
-				"Mule|XMM"
 			],
 			"size": [
 				"M"
@@ -48977,14 +48086,8 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Mummy|XMM"
 			],
 			"size": [
 				"M"
@@ -49134,9 +48237,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Mummy Lord|XMM"
 			],
 			"size": [
 				"M"
@@ -49428,10 +48528,10 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Myconid Adult|XMM"
 			],
 			"size": [
 				"M"
@@ -49592,10 +48692,10 @@
 				},
 				{
 					"source": "QftIS"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Myconid Sovereign|XMM"
 			],
 			"size": [
 				"L"
@@ -49769,10 +48869,10 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Myconid Sprout|XMM"
 			],
 			"size": [
 				"S"
@@ -49878,9 +48978,6 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
@@ -49888,10 +48985,10 @@
 				},
 				{
 					"source": "CoA"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Nalfeshnee|XMM"
 			],
 			"size": [
 				"L"
@@ -50078,9 +49175,6 @@
 					"source": "DIP"
 				}
 			],
-			"reprintedAs": [
-				"Needle Blight|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -50219,14 +49313,8 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Night Hag|XMM"
 			],
 			"size": [
 				"M"
@@ -50585,9 +49673,6 @@
 					"source": "VEoR"
 				}
 			],
-			"reprintedAs": [
-				"Nightmare|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -50767,20 +49852,11 @@
 					"source": "BMT"
 				},
 				{
-					"source": "GHLoE"
-				},
-				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Noble|XMM"
 			],
 			"size": [
 				"M"
@@ -50925,9 +50001,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Nothic|XMM"
 			],
 			"size": [
 				"M"
@@ -51074,9 +50147,6 @@
 				{
 					"source": "ToFW"
 				}
-			],
-			"reprintedAs": [
-				"Nycaloth|XMM"
 			],
 			"size": [
 				"L"
@@ -51320,14 +50390,8 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Ochre Jelly|XMM"
 			],
 			"size": [
 				"L"
@@ -51450,9 +50514,6 @@
 				{
 					"source": "WBtW"
 				}
-			],
-			"reprintedAs": [
-				"Octopus|XMM"
 			],
 			"size": [
 				"S"
@@ -51627,14 +50688,8 @@
 					"source": "SatO"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Ogre|XMM"
 			],
 			"size": [
 				"L"
@@ -51762,14 +50817,8 @@
 					"source": "PaBTSO"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				}
-			],
-			"reprintedAs": [
-				"Ogre Zombie|XMM"
 			],
 			"size": [
 				"L"
@@ -51902,9 +50951,6 @@
 				{
 					"source": "ToFW"
 				}
-			],
-			"reprintedAs": [
-				"Oni|XMM"
 			],
 			"size": [
 				"L"
@@ -52119,9 +51165,6 @@
 					"source": "PaBTSO"
 				}
 			],
-			"reprintedAs": [
-				"Tough|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -52257,9 +51300,6 @@
 				{
 					"source": "IDRotF"
 				}
-			],
-			"reprintedAs": [
-				"Cultist Fanatic|XMM"
 			],
 			"size": [
 				"M"
@@ -52439,9 +51479,6 @@
 					"source": "CRCotN"
 				}
 			],
-			"reprintedAs": [
-				"Tough Boss|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -52603,9 +51640,6 @@
 					"source": "EGW"
 				}
 			],
-			"reprintedAs": [
-				"Berserker|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -52759,13 +51793,7 @@
 				},
 				{
 					"source": "ToFW"
-				},
-				{
-					"source": "DoDk"
 				}
-			],
-			"reprintedAs": [
-				"Otyugh|XMM"
 			],
 			"size": [
 				"L"
@@ -52900,13 +51928,7 @@
 				},
 				{
 					"source": "ToFW"
-				},
-				{
-					"source": "DoDk"
 				}
-			],
-			"reprintedAs": [
-				"Owl|XMM"
 			],
 			"size": [
 				"T"
@@ -53055,9 +52077,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Owlbear|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -53172,9 +52191,6 @@
 					"source": "WDH"
 				}
 			],
-			"reprintedAs": [
-				"Panther|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -53287,9 +52303,6 @@
 					"source": "BMT"
 				}
 			],
-			"reprintedAs": [
-				"Pegasus|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -53388,9 +52401,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Modron Pentadrone|XMM"
 			],
 			"size": [
 				"L"
@@ -53549,9 +52559,6 @@
 					"source": "JttRC"
 				}
 			],
-			"reprintedAs": [
-				"Peryton|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -53703,14 +52710,8 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Phase Spider|XMM"
 			],
 			"size": [
 				"L"
@@ -53838,9 +52839,6 @@
 					"source": "ToFW"
 				}
 			],
-			"reprintedAs": [
-				"Piercer|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -53956,9 +52954,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Pit Fiend|XMM"
 			],
 			"size": [
 				"L"
@@ -54209,9 +53204,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Pixie|XMM"
-			],
 			"size": [
 				"T"
 			],
@@ -54349,14 +53341,11 @@
 					"source": "SatO"
 				},
 				{
-					"source": "DoDk"
+					"source": "CoA"
 				},
 				{
-					"source": "CoA"
+					"source": "WDMM"
 				}
-			],
-			"reprintedAs": [
-				"Planetar|XMM"
 			],
 			"size": [
 				"L"
@@ -54561,9 +53550,6 @@
 					"source": "DSotDQ"
 				}
 			],
-			"reprintedAs": [
-				"Plesiosaurus|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -54660,9 +53646,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Venomous Snake|XMM"
-			],
 			"size": [
 				"T"
 			],
@@ -54756,9 +53739,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Polar Bear|XMM"
 			],
 			"size": [
 				"L"
@@ -54871,9 +53851,6 @@
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Poltergeist|XMM"
 			],
 			"size": [
 				"M"
@@ -55028,9 +54005,6 @@
 					"source": "SatO"
 				}
 			],
-			"reprintedAs": [
-				"Pony|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -55168,9 +54142,6 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
@@ -55179,9 +54150,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Priest|XMM"
 			],
 			"size": [
 				"M"
@@ -55348,13 +54316,7 @@
 				},
 				{
 					"source": "IDRotF"
-				},
-				{
-					"source": "DoDk"
 				}
-			],
-			"reprintedAs": [
-				"Pseudodragon|XMM"
 			],
 			"size": [
 				"T"
@@ -55515,9 +54477,6 @@
 					"source": "ToFW"
 				}
 			],
-			"reprintedAs": [
-				"Pteranodon|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -55621,17 +54580,14 @@
 					"source": "ToFW"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "CoA"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Purple Worm|XMM"
 			],
 			"size": [
 				"G"
@@ -55767,9 +54723,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Modron Quadrone|XMM"
 			],
 			"size": [
 				"M"
@@ -55917,10 +54870,10 @@
 				},
 				{
 					"source": "PaBTSO"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Quaggoth|XMM"
 			],
 			"size": [
 				"M"
@@ -56032,10 +54985,10 @@
 				},
 				{
 					"source": "IDRotF"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Myconid Spore Servant|XMM"
 			],
 			"size": [
 				"M"
@@ -56128,9 +55081,6 @@
 				{
 					"source": "IDRotF"
 				}
-			],
-			"reprintedAs": [
-				"Quaggoth Thonot|XMM"
 			],
 			"size": [
 				"M"
@@ -56307,14 +55257,11 @@
 					"source": "PaBTSO"
 				},
 				{
-					"source": "DoDk"
+					"source": "VEoR"
 				},
 				{
-					"source": "VEoR"
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Quasit|XMM"
 			],
 			"size": [
 				"T"
@@ -56498,9 +55445,6 @@
 					"source": "ToFW"
 				}
 			],
-			"reprintedAs": [
-				"Piranha|XMM"
-			],
 			"size": [
 				"T"
 			],
@@ -56601,10 +55545,10 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "WDH"
 				}
-			],
-			"reprintedAs": [
-				"Rakshasa|XMM"
 			],
 			"size": [
 				"M"
@@ -56788,14 +55732,11 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
+					"source": "QftIS"
 				},
 				{
-					"source": "QftIS"
+					"source": "SKT"
 				}
-			],
-			"reprintedAs": [
-				"Rat|XMM"
 			],
 			"size": [
 				"T"
@@ -56891,9 +55832,6 @@
 					"source": "VEoR"
 				}
 			],
-			"reprintedAs": [
-				"Raven|XMM"
-			],
 			"size": [
 				"T"
 			],
@@ -56981,10 +55919,10 @@
 				},
 				{
 					"source": "DSotDQ"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Red Dragon Wyrmling|XMM"
 			],
 			"size": [
 				"M"
@@ -57194,9 +56132,6 @@
 					"source": "BMT"
 				}
 			],
-			"reprintedAs": [
-				"Red Slaad|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -57353,9 +56288,6 @@
 					"source": "JttRC"
 				}
 			],
-			"reprintedAs": [
-				"Reef Shark|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -57476,9 +56408,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Remorhaz|XMM"
 			],
 			"size": [
 				"H"
@@ -57618,9 +56547,6 @@
 				{
 					"source": "BMT"
 				}
-			],
-			"reprintedAs": [
-				"Revenant|XMM"
 			],
 			"size": [
 				"M"
@@ -57798,10 +56724,10 @@
 				},
 				{
 					"source": "QftIS"
+				},
+				{
+					"source": "PotA"
 				}
-			],
-			"reprintedAs": [
-				"Rhinoceros|XMM"
 			],
 			"size": [
 				"L"
@@ -57911,17 +56837,8 @@
 					"source": "KftGV"
 				},
 				{
-					"source": "GHLoE"
-				},
-				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Riding Horse|XMM"
 			],
 			"size": [
 				"L"
@@ -58015,9 +56932,6 @@
 				{
 					"source": "VEoR"
 				}
-			],
-			"reprintedAs": [
-				"Roc|XMM"
 			],
 			"size": [
 				"G"
@@ -58157,14 +57071,8 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Roper|XMM"
 			],
 			"size": [
 				"L"
@@ -58332,14 +57240,8 @@
 					"source": "KftGV"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Animated Rug of Smothering|XMM"
 			],
 			"size": [
 				"L"
@@ -58470,9 +57372,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Rust Monster|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -58591,9 +57490,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Saber-Toothed Tiger|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -58705,9 +57601,6 @@
 				{
 					"source": "SatO"
 				}
-			],
-			"reprintedAs": [
-				"Sahuagin Warrior|XMM"
 			],
 			"size": [
 				"M"
@@ -58855,9 +57748,6 @@
 				{
 					"source": "SatO"
 				}
-			],
-			"reprintedAs": [
-				"Sahuagin Baron|XMM"
 			],
 			"size": [
 				"L"
@@ -59008,9 +57898,6 @@
 				{
 					"source": "BGDIA"
 				}
-			],
-			"reprintedAs": [
-				"Sahuagin Priest|XMM"
 			],
 			"size": [
 				"M"
@@ -59217,9 +58104,6 @@
 					"source": "CoA"
 				}
 			],
-			"reprintedAs": [
-				"Salamander|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -59381,9 +58265,6 @@
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Satyr|XMM"
 			],
 			"size": [
 				"M"
@@ -59555,9 +58436,6 @@
 					"source": "KftGV"
 				}
 			],
-			"reprintedAs": [
-				"Scarecrow|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -59691,10 +58569,10 @@
 				},
 				{
 					"source": "PSX"
+				},
+				{
+					"source": "TTP"
 				}
-			],
-			"reprintedAs": [
-				"Scorpion|XMM"
 			],
 			"size": [
 				"T"
@@ -59835,20 +58713,11 @@
 					"source": "SatO"
 				},
 				{
-					"source": "GHLoE"
-				},
-				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				},
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Scout|XMM"
 			],
 			"size": [
 				"M"
@@ -60004,14 +58873,8 @@
 					"source": "SatO"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Sea Hag|XMM"
 			],
 			"size": [
 				"M"
@@ -60286,9 +59149,6 @@
 			"page": 337,
 			"srd": true,
 			"basicRules": true,
-			"reprintedAs": [
-				"Seahorse|XMM"
-			],
 			"size": [
 				"T"
 			],
@@ -60393,20 +59253,11 @@
 					"source": "BMT"
 				},
 				{
-					"source": "GHLoE"
-				},
-				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Shadow|XMM"
 			],
 			"size": [
 				"M"
@@ -60582,9 +59433,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Shadow Demon|XMM"
 			],
 			"size": [
 				"M"
@@ -60770,20 +59618,11 @@
 					"source": "HFStCM"
 				},
 				{
-					"source": "GHLoE"
-				},
-				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Shambling Mound|XMM"
 			],
 			"size": [
 				"L"
@@ -60946,17 +59785,11 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Shield Guardian|XMM"
 			],
 			"size": [
 				"L"
@@ -61101,10 +59934,10 @@
 				},
 				{
 					"source": "CoA"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Shrieker Fungus|XMM"
 			],
 			"size": [
 				"M"
@@ -61187,9 +60020,6 @@
 				{
 					"source": "IDRotF"
 				}
-			],
-			"reprintedAs": [
-				"Silver Dragon Wyrmling|XMM"
 			],
 			"size": [
 				"M"
@@ -61480,17 +60310,11 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Skeleton|XMM"
 			],
 			"size": [
 				"M"
@@ -61609,10 +60433,10 @@
 				},
 				{
 					"source": "SatO"
+				},
+				{
+					"source": "WDMM"
 				}
-			],
-			"reprintedAs": [
-				"Slaad Tadpole|XMM"
 			],
 			"size": [
 				"T"
@@ -61722,9 +60546,6 @@
 				{
 					"source": "ToFW"
 				}
-			],
-			"reprintedAs": [
-				"Smoke Mephit|XMM"
 			],
 			"size": [
 				"S"
@@ -61889,9 +60710,6 @@
 				{
 					"source": "BMT"
 				}
-			],
-			"reprintedAs": [
-				"Solar|XMM"
 			],
 			"size": [
 				"L"
@@ -62156,9 +60974,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Spectator|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -62405,9 +61220,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Specter|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -62551,9 +61363,6 @@
 					"source": "KftGV"
 				}
 			],
-			"reprintedAs": [
-				"Spider|XMM"
-			],
 			"size": [
 				"T"
 			],
@@ -62663,9 +61472,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Spined Devil|XMM"
 			],
 			"size": [
 				"S"
@@ -62843,10 +61649,10 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Spirit Naga|XMM"
 			],
 			"size": [
 				"L"
@@ -63058,9 +61864,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Sprite|XMM"
-			],
 			"size": [
 				"T"
 			],
@@ -63246,17 +62049,11 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				},
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Spy|XMM"
 			],
 			"size": [
 				"M"
@@ -63390,13 +62187,7 @@
 				},
 				{
 					"source": "ToFW"
-				},
-				{
-					"source": "DoDk"
 				}
-			],
-			"reprintedAs": [
-				"Steam Mephit|XMM"
 			],
 			"size": [
 				"S"
@@ -63590,9 +62381,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Stirge|XMM"
-			],
 			"size": [
 				"T"
 			],
@@ -63686,14 +62474,8 @@
 					"source": "MOT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Stone Giant|XMM"
 			],
 			"size": [
 				"H"
@@ -63917,9 +62699,6 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
@@ -63928,9 +62707,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Stone Golem|XMM"
 			],
 			"size": [
 				"L"
@@ -64084,9 +62860,6 @@
 				{
 					"source": "SatO"
 				}
-			],
-			"reprintedAs": [
-				"Storm Giant|XMM"
 			],
 			"size": [
 				"H"
@@ -64312,14 +63085,11 @@
 					"source": "BMT"
 				},
 				{
-					"source": "GHLoE"
+					"source": "CoA"
 				},
 				{
-					"source": "CoA"
+					"source": "HotDQ"
 				}
-			],
-			"reprintedAs": [
-				"Succubus|XMM"
 			],
 			"size": [
 				"M"
@@ -64509,9 +63279,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Swarm of Bats|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -64618,9 +63385,6 @@
 			"source": "MM",
 			"page": 338,
 			"srd": true,
-			"reprintedAs": [
-				"Swarm of Insects|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -64726,9 +63490,6 @@
 				{
 					"source": "WDMM"
 				}
-			],
-			"reprintedAs": [
-				"Swarm of Insects|XMM"
 			],
 			"size": [
 				"M"
@@ -64856,10 +63617,10 @@
 				},
 				{
 					"source": "PSA"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Swarm of Insects|XMM"
 			],
 			"size": [
 				"M"
@@ -64995,9 +63756,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Swarm of Venomous Snakes|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -65132,14 +63890,8 @@
 					"source": "PSA"
 				},
 				{
-					"source": "GHLoE"
-				},
-				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Swarm of Piranhas|XMM"
 			],
 			"size": [
 				"M"
@@ -65272,13 +64024,7 @@
 				},
 				{
 					"source": "CM"
-				},
-				{
-					"source": "DoDk"
 				}
-			],
-			"reprintedAs": [
-				"Swarm of Rats|XMM"
 			],
 			"size": [
 				"M"
@@ -65404,9 +64150,6 @@
 					"source": "CM"
 				}
 			],
-			"reprintedAs": [
-				"Swarm of Ravens|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -65523,9 +64266,6 @@
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Swarm of Insects|XMM"
 			],
 			"size": [
 				"M"
@@ -65661,9 +64401,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Swarm of Insects|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -65776,13 +64513,7 @@
 				},
 				{
 					"source": "BMT"
-				},
-				{
-					"source": "DoDk"
 				}
-			],
-			"reprintedAs": [
-				"Tarrasque|XMM"
 			],
 			"size": [
 				"G"
@@ -65997,9 +64728,6 @@
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Thri-kreen Marauder|XMM"
 			],
 			"size": [
 				"M"
@@ -66297,17 +65025,8 @@
 					"source": "BMT"
 				},
 				{
-					"source": "GHLoE"
-				},
-				{
-					"source": "DoDk"
-				},
-				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Tough|XMM"
 			],
 			"size": [
 				"M"
@@ -66439,9 +65158,6 @@
 				{
 					"source": "MOT"
 				}
-			],
-			"reprintedAs": [
-				"Tiger|XMM"
 			],
 			"size": [
 				"L"
@@ -66597,17 +65313,11 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Treant|XMM"
 			],
 			"size": [
 				"H"
@@ -66758,9 +65468,6 @@
 					"source": "IDRotF"
 				}
 			],
-			"reprintedAs": [
-				"Warrior Infantry|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -66871,9 +65578,6 @@
 					"source": "CoA"
 				}
 			],
-			"reprintedAs": [
-				"Triceratops|XMM"
-			],
 			"size": [
 				"H"
 			],
@@ -66972,10 +65676,10 @@
 				},
 				{
 					"source": "CoA"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Modron Tridrone|XMM"
 			],
 			"size": [
 				"M"
@@ -67139,9 +65843,6 @@
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Troglodyte|XMM"
 			],
 			"size": [
 				"M"
@@ -67321,14 +66022,8 @@
 					"source": "SatO"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Troll|XMM"
 			],
 			"size": [
 				"L"
@@ -67629,9 +66324,6 @@
 					"source": "DIP"
 				}
 			],
-			"reprintedAs": [
-				"Twig Blight|XMM"
-			],
 			"size": [
 				"S"
 			],
@@ -67748,14 +66440,8 @@
 					"source": "SatO"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Tyrannosaurus Rex|XMM"
 			],
 			"size": [
 				"H"
@@ -67853,9 +66539,6 @@
 				{
 					"source": "JttRC"
 				}
-			],
-			"reprintedAs": [
-				"Ultroloth|XMM"
 			],
 			"size": [
 				"M"
@@ -68119,9 +66802,6 @@
 					"source": "CoA"
 				}
 			],
-			"reprintedAs": [
-				"Umber Hulk|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -68266,9 +66946,6 @@
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Unicorn|XMM"
 			],
 			"size": [
 				"L"
@@ -68520,9 +67197,6 @@
 				{
 					"source": "VEoR"
 				}
-			],
-			"reprintedAs": [
-				"Vampire|XMM"
 			],
 			"size": [
 				"M"
@@ -68796,17 +67470,11 @@
 					"source": "AATM"
 				},
 				{
-					"source": "GHLoE"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Vampire Spawn|XMM"
 			],
 			"size": [
 				"M"
@@ -68974,9 +67642,6 @@
 				{
 					"source": "RoT"
 				}
-			],
-			"reprintedAs": [
-				"Vampire|XMM"
 			],
 			"size": [
 				"M"
@@ -69284,9 +67949,6 @@
 			"name": "Vampire Warrior",
 			"source": "MM",
 			"page": 298,
-			"reprintedAs": [
-				"Vampire|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -69624,9 +68286,6 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
@@ -69635,9 +68294,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Warrior Veteran|XMM"
 			],
 			"size": [
 				"M"
@@ -69770,9 +68426,6 @@
 					"source": "BMT"
 				}
 			],
-			"reprintedAs": [
-				"Vine Blight|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -69899,9 +68552,6 @@
 					"source": "DoSI"
 				}
 			],
-			"reprintedAs": [
-				"Violet Fungus|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -70027,14 +68677,8 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				}
-			],
-			"reprintedAs": [
-				"Vrock|XMM"
 			],
 			"size": [
 				"L"
@@ -70223,9 +68867,6 @@
 					"source": "BMT"
 				}
 			],
-			"reprintedAs": [
-				"Vulture|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -70333,11 +68974,8 @@
 					"source": "DSotDQ"
 				},
 				{
-					"source": "DoDk"
+					"source": "HotDQ"
 				}
-			],
-			"reprintedAs": [
-				"Warhorse|XMM"
 			],
 			"size": [
 				"L"
@@ -70566,9 +69204,6 @@
 					"source": "BMT"
 				}
 			],
-			"reprintedAs": [
-				"Warhorse Skeleton|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -70687,17 +69322,11 @@
 					"source": "PaBTSO"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Water Elemental|XMM"
 			],
 			"size": [
 				"L"
@@ -70876,9 +69505,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Water Weird|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -71007,9 +69633,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Weasel|XMM"
-			],
 			"size": [
 				"T"
 			],
@@ -71089,9 +69712,6 @@
 				{
 					"source": "KftGV"
 				}
-			],
-			"reprintedAs": [
-				"Werebear|XMM"
 			],
 			"size": [
 				"M"
@@ -71278,10 +69898,10 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "PotA"
 				}
-			],
-			"reprintedAs": [
-				"Wereboar|XMM"
 			],
 			"size": [
 				"M"
@@ -71481,10 +70101,10 @@
 				},
 				{
 					"source": "QftIS"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Wererat|XMM"
 			],
 			"size": [
 				"M"
@@ -71652,9 +70272,6 @@
 				{
 					"source": "ToFW"
 				}
-			],
-			"reprintedAs": [
-				"Weretiger|XMM"
 			],
 			"size": [
 				"M"
@@ -71872,9 +70489,6 @@
 					"source": "VEoR"
 				}
 			],
-			"reprintedAs": [
-				"Werewolf|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -72045,9 +70659,6 @@
 				{
 					"source": "IDRotF"
 				}
-			],
-			"reprintedAs": [
-				"White Dragon Wyrmling|XMM"
 			],
 			"size": [
 				"M"
@@ -72298,17 +70909,14 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "QftIS"
+				},
+				{
+					"source": "HotDQ"
 				}
-			],
-			"reprintedAs": [
-				"Wight|XMM"
 			],
 			"size": [
 				"M"
@@ -72514,17 +71122,11 @@
 					"source": "BMT"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Will-o'-Wisp|XMM"
 			],
 			"size": [
 				"T"
@@ -72688,9 +71290,6 @@
 					"source": "DoSI"
 				}
 			],
-			"reprintedAs": [
-				"Winged Kobold|XMM"
-			],
 			"size": [
 				"S"
 			],
@@ -72821,13 +71420,7 @@
 				},
 				{
 					"source": "KftGV"
-				},
-				{
-					"source": "GHLoE"
 				}
-			],
-			"reprintedAs": [
-				"Winter Wolf|XMM"
 			],
 			"size": [
 				"L"
@@ -72998,17 +71591,11 @@
 					"source": "BMT"
 				},
 				{
-					"source": "GHLoE"
-				},
-				{
 					"source": "QftIS"
 				},
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Wolf|XMM"
 			],
 			"size": [
 				"M"
@@ -73121,13 +71708,7 @@
 				},
 				{
 					"source": "BMT"
-				},
-				{
-					"source": "DoDk"
 				}
-			],
-			"reprintedAs": [
-				"Worg|XMM"
 			],
 			"size": [
 				"L"
@@ -73300,20 +71881,11 @@
 					"source": "BMT"
 				},
 				{
-					"source": "GHLoE"
-				},
-				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Wraith|XMM"
 			],
 			"size": [
 				"M"
@@ -73486,9 +72058,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Wyvern|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -73606,9 +72175,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Xorn|XMM"
 			],
 			"size": [
 				"M"
@@ -73758,9 +72324,6 @@
 					"source": "ToFW"
 				}
 			],
-			"reprintedAs": [
-				"Yeti|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -73902,10 +72465,10 @@
 				},
 				{
 					"source": "VEoR"
+				},
+				{
+					"source": "OotA"
 				}
-			],
-			"reprintedAs": [
-				"Yochlol|XMM"
 			],
 			"size": [
 				"M"
@@ -74143,9 +72706,6 @@
 				{
 					"source": "LK"
 				}
-			],
-			"reprintedAs": [
-				"Young Black Dragon|XMM"
 			],
 			"size": [
 				"L"
@@ -74386,9 +72946,6 @@
 					"source": "QftIS"
 				}
 			],
-			"reprintedAs": [
-				"Young Blue Dragon|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -74603,9 +73160,6 @@
 				{
 					"source": "SKT"
 				}
-			],
-			"reprintedAs": [
-				"Young Brass Dragon|XMM"
 			],
 			"size": [
 				"L"
@@ -74857,14 +73411,8 @@
 					"source": "CM"
 				},
 				{
-					"source": "DoDk"
-				},
-				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Young Bronze Dragon|XMM"
 			],
 			"size": [
 				"L"
@@ -75114,9 +73662,6 @@
 					"source": "SatO"
 				}
 			],
-			"reprintedAs": [
-				"Young Copper Dragon|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -75346,9 +73891,6 @@
 			"source": "MM",
 			"page": 115,
 			"srd": true,
-			"reprintedAs": [
-				"Young Gold Dragon|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -75627,10 +74169,10 @@
 				},
 				{
 					"source": "BMT"
+				},
+				{
+					"source": "LMoP"
 				}
-			],
-			"reprintedAs": [
-				"Young Green Dragon|XMM"
 			],
 			"size": [
 				"L"
@@ -75896,9 +74438,6 @@
 					"source": "CoA"
 				}
 			],
-			"reprintedAs": [
-				"Young Red Dragon|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -76116,9 +74655,6 @@
 				{
 					"source": "CoA"
 				}
-			],
-			"reprintedAs": [
-				"Shadow Dragon|XMM"
 			],
 			"size": [
 				"L"
@@ -76363,9 +74899,6 @@
 					"source": "IDRotF"
 				}
 			],
-			"reprintedAs": [
-				"Young Remorhaz|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -76458,9 +74991,6 @@
 				{
 					"source": "DSotDQ"
 				}
-			],
-			"reprintedAs": [
-				"Young Silver Dragon|XMM"
 			],
 			"size": [
 				"L"
@@ -76717,9 +75247,6 @@
 					"source": "BMT"
 				}
 			],
-			"reprintedAs": [
-				"Young White Dragon|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -76954,9 +75481,6 @@
 					"source": "CM"
 				}
 			],
-			"reprintedAs": [
-				"Yuan-ti Abomination|XMM"
-			],
 			"size": [
 				"L"
 			],
@@ -77159,9 +75683,6 @@
 				{
 					"source": "CM"
 				}
-			],
-			"reprintedAs": [
-				"Yuan-ti Malison (Type 1)|XMM"
 			],
 			"size": [
 				"M"
@@ -77366,9 +75887,6 @@
 					"source": "ToA"
 				}
 			],
-			"reprintedAs": [
-				"Yuan-ti Malison (Type 2)|XMM"
-			],
 			"size": [
 				"M"
 			],
@@ -77554,9 +76072,6 @@
 				{
 					"source": "CM"
 				}
-			],
-			"reprintedAs": [
-				"Yuan-ti Malison (Type 3)|XMM"
 			],
 			"size": [
 				"M"
@@ -77783,9 +76298,6 @@
 				{
 					"source": "PSI"
 				}
-			],
-			"reprintedAs": [
-				"Yuan-ti Infiltrator|XMM"
 			],
 			"size": [
 				"M"
@@ -78032,20 +76544,11 @@
 					"source": "BMT"
 				},
 				{
-					"source": "GHLoE"
-				},
-				{
-					"source": "DoDk"
-				},
-				{
 					"source": "VEoR"
 				},
 				{
 					"source": "QftIS"
 				}
-			],
-			"reprintedAs": [
-				"Zombie|XMM"
 			],
 			"size": [
 				"M"

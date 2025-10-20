@@ -11,7 +11,7 @@
 				{
 					"type": "list",
 					"items": [
-						"On the world of Exandria, the Soltryce Academy in Rexxentrum (a large city on the continent of Wildemount) or the Cobalt Reserve in Westruun (a small city on the continent of Tal'dorei)",
+						"On the world of Exandria, the Soltryce Academy in Rexxentrum (a large city on the continent of Wildemount) or the Cobalt Reserve in Westruun (a small city on the continent of Tal'Dorei)",
 						"On the world of Eberron, the Library of Korranberg in the nation of Zilargo, the University of Wynarn's library in the nation of Aundair, or Morgrave University's library in the city of Sharn",
 						"On the world of Oerth, the Great Library in the Free City of Greyhawk"
 					]
@@ -133,7 +133,7 @@
 												[
 													"{@adventure Book of Cylinders|CM|8}",
 													"6",
-													"Engraved cylinders contained within a book tell a gripping and portentous tale when rolled across wet clay."
+													"Engraved cylinders contained within a book tell a gripping and portentious tale when rolled across wet clay."
 												],
 												[
 													"{@adventure Sarah of Yellowcrest Manor|CM|9}",
@@ -1107,7 +1107,7 @@
 													]
 												},
 												{
-													"area": "073",
+													"area": "051",
 													"points": [
 														[
 															2280,
@@ -2325,7 +2325,7 @@
 									"id": "08f",
 									"entries": [
 										"With broad shoulders and a permanent scowl on her face, Valor is an intimidating, 24-year-old tiefling {@creature knight}. Originally from Cormyr, a country to the east, she served as a Purple Dragon Knight in the Cormyrean army. Since leaving that life behind, she has taken up bounty hunting, which she greatly prefers. Valor is in Candlekeep to research a particularly elusive target. Her entrance gift wasn't cheap, and she's annoyed that it turned out to be a monstrous fake. She is helping the Avowed with various chores to make amends.",
-										"Valor is re-shingling the roof of the Hearth during the day, or pacing in the Court of Air at night. Agitated and restless, she's wary of people who want to speak with her. A successful {@dc 15} Charisma ({@skill Persuasion}) check, or polite and persistent questioning, convinces her to talk to the characters, if only to get them to leave her presence sooner.",
+										"Valor is reshingling the roof of the Hearth during the day, or pacing in the Court of Air at night. Agitated and restless, she's wary of people who want to speak with her. A successful {@dc 15} Charisma ({@skill Persuasion}) check, or polite and persistent questioning, convinces her to talk to the characters, if only to get them to leave her presence sooner.",
 										"Valor can share the following information:",
 										{
 											"type": "list",
@@ -5681,9 +5681,9 @@
 											"grid": {
 												"type": "square",
 												"size": 58,
-												"offsetX": 2,
-												"offsetY": -2,
-												"distance": 10
+												"offsetX": 4,
+												"offsetY": -4,
+												"scale": 2
 											},
 											"title": "Map 5.1: Vermeillon",
 											"width": 3000,
@@ -5937,9 +5937,9 @@
 											"grid": {
 												"type": "square",
 												"size": 58,
-												"offsetX": 2,
-												"offsetY": -2,
-												"distance": 10
+												"offsetX": 4,
+												"offsetY": -4,
+												"scale": 2
 											},
 											"title": "Player Version",
 											"width": 3000,
@@ -18049,7 +18049,7 @@
 											"type": "insetReadaloud",
 											"id": "34c",
 											"entries": [
-												"This chamber contains an iron safe roughly five feet on a side and a low metal console with a slanted top. The safe's thick door stands open on its iron hinges. The console, which is securely bolted to the floor, has a countdown timer and a blinking red button built into it. Suspended above the console are four wireframe windows, each displaying a projected image."
+												"This chamber contains an iron safe roughly five feet on a side and a low metal console with a slanted top. The safe's thick door stands open on its iron hinges. The console, which is securely bolted to the floor, has a countdown timer and a blinking red button built into it. Suspended above the console are four wire-frame windows, each displaying a projected image."
 											]
 										},
 										"Unless the characters have already encountered him (see {@area area B1|319|x}), Stonky is here. The intrepid gnome {@creature master sage|CM} (see \"{@area Sages and Master Sages|019|x}\" for his stat block) is currently crawling underneath the console, looking for his {@item ring of telekinesis}. (The ring is in {@area area U5|33d|x}, but it hasn't yet occurred to Stonky to search there.)",
@@ -18072,7 +18072,7 @@
 											"id": "34e",
 											"entries": [
 												"The blinking red button indicates that the Barn Door is on a countdown to launch. If the timer on the console reaches zero, the tower blasts off. Pushing the button has no effect while the countdown is in progress. If the characters delay the launch by using the lever in area B4, the countdown timer pauses. If the launch is aborted, the timer resets and the red button stops blinking.",
-												"The wireframe windows mounted above the console are magic projection screens that act as security cameras, showing the interior of the tower (areas {@area B1|319|x}, {@area B2|320|x}, {@area B3|322|x}, and {@area B4|327|x}, respectively). Stonky has been too busy searching for his ring to pay any attention to them. Casting a {@spell dispel magic} spell on the console causes these projected images to vanish, as does destroying the console.",
+												"The wire-frame windows mounted above the console are magic projection screens that act as security cameras, showing the interior of the tower (areas {@area B1|319|x}, {@area B2|320|x}, {@area B3|322|x}, and {@area B4|327|x}, respectively). Stonky has been too busy searching for his ring to pay any attention to them. Casting a {@spell dispel magic} spell on the console causes these projected images to vanish, as does destroying the console.",
 												"The console is a Large object with AC 19, 27 hit points, and immunity to poison and psychic damage. Destroying the console doesn't stop a launch in progress."
 											]
 										},
@@ -19938,9 +19938,9 @@
 											"grid": {
 												"type": "square",
 												"size": 57,
-												"offsetX": 3,
-												"offsetY": 18,
-												"distance": 10
+												"offsetX": 6,
+												"offsetY": 36,
+												"scale": 2
 											},
 											"title": "Map 12.2: Cloud Giants' Keep",
 											"width": 2214,
@@ -20415,9 +20415,9 @@
 											"grid": {
 												"type": "square",
 												"size": 57,
-												"offsetX": 3,
-												"offsetY": 18,
-												"distance": 10
+												"offsetX": 6,
+												"offsetY": 36,
+												"scale": 2
 											},
 											"title": "Player Version",
 											"width": 2214,
@@ -20581,7 +20581,7 @@
 											"page": 144,
 											"id": "394",
 											"entries": [
-												"The wardrobes contain clothes fit for a female cloud giant of noble status. In one of the wardrobes, the characters can find a pair of {@item boots of the winterlands}. They are giant-sized but shrink to fit whoever attunes to them."
+												"The wardrobes contain clothes fit for a female cloud giant of noble status. In one of the wardrobes, the characters can find a pair of {@item Boots of the Winterlands}. They are giant-sized but shrink to fit whoever attunes to them."
 											]
 										}
 									]
@@ -23713,10 +23713,9 @@
 											"grid": {
 												"type": "square",
 												"size": 78,
-												"offsetX": -21,
-												"offsetY": 3,
-												"scale": 2,
-												"distance": 10
+												"offsetX": -42,
+												"offsetY": 6,
+												"scale": 4
 											},
 											"title": "Map 15.1: Tomb of Valin Sarnaster",
 											"width": 2094,
@@ -24205,10 +24204,9 @@
 											"grid": {
 												"type": "square",
 												"size": 78,
-												"offsetX": -21,
-												"offsetY": 3,
-												"scale": 2,
-												"distance": 10
+												"offsetX": -42,
+												"offsetY": 6,
+												"scale": 4
 											},
 											"title": "Player Version",
 											"width": 2094,
@@ -25234,7 +25232,7 @@
 									"page": 188,
 									"id": "49d",
 									"entries": [
-										"The driving force behind the Rillyn family's revival, Yvandre (a human {@creature veteran}) is an iron-willed and accomplished swordfighter as well as a rising political figure in Baldur's Gate. Her manner is brusque but professional. She is happy to deal with anyone who appears likely to further her family's goals, but she can be ruthless toward those who cross her. A former member of the Flaming Fist, she has many friends in that mercenary company who would be only too happy to make trouble for the characters on her behalf.",
+										"The driving force behind the Rillyn family's revival, Yvandre (a human {@creature veteran}) is an iron-willed and accomplished sword-fighter as well as a rising political figure in Baldur's Gate. Her manner is brusque but professional. She is happy to deal with anyone who appears likely to further her family's goals, but she can be ruthless toward those who cross her. A former member of the Flaming Fist, she has many friends in that mercenary company who would be only too happy to make trouble for the characters on her behalf.",
 										"If Yvandre is attacked, {@dice 1d4} {@creature Guard||guards} arrive at the end of each of her turns until twenty have appeared.",
 										{
 											"type": "entries",
@@ -27844,7 +27842,7 @@
 							"id": "509",
 							"entries": [
 								"As the characters explore the necropolis, describe the scene to keep them on edge\u2014the desolation, the scent of scorched sand, and the hiss of the sandstorm that increases in volume as they draw near. With the exception of the mastaba (see {@area area V1|50e|x}), the necropolis consists of a series of ruined stone walls jutting out of the sand and patches of paved streets revealed by the howling winds. The swirling sandstorm at its center can be seen and heard from anywhere in the necropolis.",
-								"The necropolis also contains buried treasures. A character who searches for an hour and succeeds on a {@dc 20} Intelligence ({@skill Investigation}) check finds some hidden treasure determined by rolling on the {@book Treasure Hoard: Challenge 5\u201310 table|DMG|7|Treasure Hoard: Challenge 5\u201410} in the {@book Dungeon Master's Guide|DMG}. Up to four such hoards can be found before the city is picked clean.",
+								"The necropolis also contains buried treasures. A character who searches for an hour and succeeds on a {@dc 20} Intelligence ({@skill Investigation}) check finds some hidden treasure determined by rolling on the {@table Treasure Hoard: Challenge 5\u201410|DMG} table in the {@book Dungeon Master's Guide|DMG}. Up to four such hoards can be found before the city is picked clean.",
 								"To keep the characters on their toes, you can use one of the following encounters.",
 								{
 									"type": "entries",
@@ -28844,9 +28842,9 @@
 											"grid": {
 												"type": "square",
 												"size": 55,
-												"offsetX": 2,
-												"offsetY": 26,
-												"distance": 10
+												"offsetX": 4,
+												"offsetY": 52,
+												"scale": 2
 											},
 											"title": "Map 18.1: Lykortha Expanse",
 											"width": 3000,
@@ -30641,9 +30639,9 @@
 											"grid": {
 												"type": "square",
 												"size": 55,
-												"offsetX": 2,
-												"offsetY": 26,
-												"distance": 10
+												"offsetX": 4,
+												"offsetY": 52,
+												"scale": 2
 											},
 											"title": "Player Version",
 											"width": 3000,
@@ -31475,6 +31473,13 @@
 							"height": 653
 						}
 					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@note Disclaimer: This book has been compiled by the Avowed of Candlekeep, in accordance with the wishes of the late Alaundo the Seer, whose prophecies foreshadow all events of consequence in the Forgotten Realms. Alaundo warned that anyone who unravels all the mysteries of this tome will be hunted down by the Time Dragons of Chronepsis, tossed into the gaping maw of Dendar the Night Serpent, and cast into the Vortex of Ineffable Damnation. Ha ha. What a sense of humor, that Alaundo!}"
+					],
+					"id": "582"
 				}
 			],
 			"id": "4e2"

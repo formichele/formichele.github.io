@@ -1,7 +1,5 @@
 // region Based on `Charactermancer_AdditionalSpellsUtil`
 
-import {UtilsAdditionalSpells} from "../utils/utils-additionalspells.js";
-
 class _SpellSourceUtil {
 	static _getCleanUid (uid) {
 		return DataUtil.proxy.getUid(
@@ -251,20 +249,11 @@ class _AdditionalSpellSource extends _SpellSource {
 
 						const uidToSummary = {};
 
-						const additionalSpellsMigrated = await UtilsAdditionalSpells.pGetMigratedAdditionalSpells(ent.additionalSpells);
-
 						this._pInit_doProcessAdditionalSpells({
 							uidToSummary,
 							additionalSpells: ent.additionalSpells,
 							cntAdditionalSpellBlocks: ent.additionalSpells.length,
 						});
-						if (!CollectionUtil.deepEquals(ent.additionalSpells, additionalSpellsMigrated)) {
-							this._pInit_doProcessAdditionalSpells({
-								uidToSummary,
-								additionalSpells: additionalSpellsMigrated,
-								cntAdditionalSpellBlocks: additionalSpellsMigrated.length,
-							});
-						}
 
 						Object.entries(uidToSummary)
 							.forEach(([uid, additionalSpellsSummary]) => {
@@ -315,10 +304,6 @@ class _AdditionalSpellSourceClassesSubclasses extends _AdditionalSpellSource {
 
 	_isSkipEntity (ent) {
 		if (ent.className === VeCt.STR_GENERIC || ent.classSource === VeCt.STR_GENERIC) return true;
-		// Avoid spam from "fake reprints" of 2014 subclasses.
-		// Note that this breaks e.g. Plutonium spell sources for e.g. "2024 Bard with 2014 Lore subclass", but this is an
-		//   acceptable loss.
-		if (ent._isCopy && ent.edition === "classic" && ent.reprintedAs) return true;
 		const hash = UrlUtil.URL_TO_HASH_BUILDER["subclass"](ent);
 		return this.constructor._HASHES_SKIPPED.has(hash);
 	}

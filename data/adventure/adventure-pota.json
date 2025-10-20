@@ -3515,7 +3515,7 @@
 									"id": "0cd",
 									"entries": [
 										"This stout castle stands on the banks of the Dessarin River. It consists of a stone keep and gatehouse linked by a curtain wall to a river tower and dock.",
-										"Rivergard is home to a mercenary band led by \"Lord of the Castle\" Jolliver Grimjaw (see chapter 7). The band is repairing the old castle, and re-roofing is their current major task. They claim their intention is to make Rivergard Keep their base for protecting river-borne trade from monsters and bandits. In truth, Grimjaw and his followers are themselves the bandits, and Rivergard Keep is secretly the stronghold of the Cult of the Crushing Wave."
+										"Rivergard is home to a mercenary band led by \"Lord of the Castle\" Jolliver Grimjaw (see chapter 7). The band is repairing the old castle, and reroofing is their current major task. They claim their intention is to make Rivergard Keep their base for protecting river-borne trade from monsters and bandits. In truth, Grimjaw and his followers are themselves the bandits, and Rivergard Keep is secretly the stronghold of the Cult of the Crushing Wave."
 									]
 								}
 							]
@@ -4327,7 +4327,7 @@
 										"This small stronghold stands on a hilltop in the southern region of the Sumber Hills. It consists of a stone hall surrounded by a fifteen-foot wall with a sturdy wooden gate. Stables, a tower, barracks, and storage buildings are enclosed within the protective wall. A banner flying an emblem of a crossed torch and sword flutters overhead."
 									]
 								},
-								"Summit Hall is home to about a dozen Knights of Samular, an order of long-suffering Tyr worshipers who have been re-energized by their god's return. They host another dozen young aspirants-in-training, and about fifteen servants and artisans to help maintain the place.",
+								"Summit Hall is home to about a dozen Knights of Samular, an order of long-suffering Tyr worshipers who have been reenergized by their god's return. They host another dozen young aspirants-in-training, and about fifteen servants and artisans to help maintain the place.",
 								"The most senior knight is a human woman of sixty years named Ushien Stormbanner, an ally of the Order of the Gauntlet. Ushien is happy to meet with any adventurers that turn up on her doorstep. She tells the characters that the delegates from Mirabar never showed up at Summit Hall, and that her warriors searched the area and didn't find them (both true).",
 								{
 									"type": "entries",
@@ -4539,10 +4539,9 @@
 											"grid": {
 												"type": "square",
 												"size": 92,
-												"offsetX": 7,
-												"offsetY": 35,
-												"scale": 2,
-												"distance": 10
+												"offsetX": 14,
+												"offsetY": 70,
+												"scale": 4
 											},
 											"mapRegions": [
 												{
@@ -5573,10 +5572,9 @@
 											"grid": {
 												"type": "square",
 												"size": 92,
-												"offsetX": 7,
-												"offsetY": 35,
-												"scale": 2,
-												"distance": 10
+												"offsetX": 14,
+												"offsetY": 70,
+												"scale": 4
 											}
 										}
 									]
@@ -6928,10 +6926,9 @@
 											"grid": {
 												"type": "square",
 												"size": 92,
-												"offsetX": 18,
-												"offsetY": 21,
-												"scale": 2,
-												"distance": 10
+												"offsetX": 36,
+												"offsetY": 42,
+												"scale": 4
 											},
 											"mapRegions": [
 												{
@@ -8059,9 +8056,9 @@
 											"grid": {
 												"type": "square",
 												"size": 106,
-												"offsetX": 23,
-												"offsetY": 24,
-												"distance": 10
+												"offsetX": 46,
+												"offsetY": 48,
+												"scale": 2
 											}
 										}
 									]
@@ -8911,9 +8908,9 @@
 															"grid": {
 																"type": "square",
 																"size": 55,
-																"offsetX": -21,
-																"offsetY": 1,
-																"distance": 10
+																"offsetX": -42,
+																"offsetY": 2,
+																"scale": 2
 															},
 															"mapRegions": [
 																{
@@ -11449,9 +11446,9 @@
 															"grid": {
 																"type": "square",
 																"size": 105,
-																"offsetX": 82,
-																"offsetY": 10,
-																"distance": 10
+																"offsetX": 164,
+																"offsetY": 20,
+																"scale": 2
 															}
 														}
 													]
@@ -12359,10 +12356,9 @@
 											"grid": {
 												"type": "square",
 												"size": 80,
-												"offsetX": -42,
-												"offsetY": 32,
-												"scale": 2,
-												"distance": 10
+												"offsetX": -84,
+												"offsetY": 64,
+												"scale": 4
 											},
 											"mapRegions": [
 												{
@@ -12780,9 +12776,9 @@
 											"grid": {
 												"type": "square",
 												"size": 77,
-												"offsetX": 31,
-												"offsetY": 28,
-												"distance": 10
+												"offsetX": 62,
+												"offsetY": 56,
+												"scale": 2
 											}
 										}
 									]
@@ -13653,8 +13649,8 @@
 															"grid": {
 																"type": "square",
 																"size": 55,
-																"offsetX": 24,
-																"distance": 10
+																"offsetX": 48,
+																"scale": 2
 															},
 															"mapRegions": [
 																{
@@ -15015,9 +15011,9 @@
 															"grid": {
 																"type": "square",
 																"size": 89,
-																"offsetX": 38,
-																"offsetY": -2,
-																"distance": 10
+																"offsetX": 76,
+																"offsetY": -4,
+																"scale": 2
 															}
 														}
 													]
@@ -15886,7 +15882,7 @@
 															"grid": {
 																"type": "square",
 																"size": 55,
-																"distance": 10
+																"scale": 2
 															},
 															"mapRegions": [
 																{
@@ -18168,9 +18164,9 @@
 															"grid": {
 																"type": "square",
 																"size": 89,
-																"offsetX": -2,
-																"offsetY": -4,
-																"distance": 10
+																"offsetX": -4,
+																"offsetY": -8,
+																"scale": 2
 															}
 														}
 													]
@@ -19143,10 +19139,9 @@
 															"grid": {
 																"type": "square",
 																"size": 57,
-																"offsetX": -2,
-																"offsetY": -2,
-																"scale": 1.03,
-																"distance": 10
+																"offsetX": -4,
+																"offsetY": -4,
+																"scale": 2.06
 															},
 															"mapRegions": [
 																{
@@ -21222,9 +21217,9 @@
 															"grid": {
 																"type": "square",
 																"size": 89,
-																"offsetX": -1,
-																"offsetY": -1,
-																"distance": 10
+																"offsetX": -2,
+																"offsetY": -2,
+																"scale": 2
 															}
 														}
 													]
@@ -22123,8 +22118,8 @@
 															"grid": {
 																"type": "square",
 																"size": 55,
-																"offsetX": -14,
-																"distance": 10
+																"offsetX": -28,
+																"scale": 2
 															},
 															"mapRegions": [
 																{
@@ -23353,9 +23348,9 @@
 															"grid": {
 																"type": "square",
 																"size": 89,
-																"offsetX": -24,
-																"offsetY": -2,
-																"distance": 10
+																"offsetX": -48,
+																"offsetY": -4,
+																"scale": 2
 															}
 														}
 													]
@@ -23493,7 +23488,7 @@
 											"page": 104,
 											"id": "3e1",
 											"entries": [
-												"A secret door is hidden behind the southeasternmost statue. It can be found with a successful {@dc 15} Wisdom ({@skill Perception}) check."
+												"A secret door is hidden behind the south-easternmost statue. It can be found with a successful {@dc 15} Wisdom ({@skill Perception}) check."
 											]
 										}
 									]
@@ -24704,9 +24699,9 @@
 															"grid": {
 																"type": "square",
 																"size": 55,
-																"offsetX": -5,
-																"offsetY": -10,
-																"distance": 10
+																"offsetX": -10,
+																"offsetY": -20,
+																"scale": 2
 															},
 															"mapRegions": [
 																{
@@ -29209,9 +29204,9 @@
 															"grid": {
 																"type": "square",
 																"size": 89,
-																"offsetX": -8,
-																"offsetY": -19,
-																"distance": 10
+																"offsetX": -16,
+																"offsetY": -38,
+																"scale": 2
 															}
 														}
 													]
@@ -29996,10 +29991,9 @@
 															"grid": {
 																"type": "square",
 																"size": 65,
-																"offsetX": -33,
-																"offsetY": -14,
-																"scale": 2,
-																"distance": 10
+																"offsetX": -66,
+																"offsetY": -28,
+																"scale": 4
 															},
 															"mapRegions": [
 																{
@@ -33269,9 +33263,9 @@
 															"grid": {
 																"type": "square",
 																"size": 62,
-																"offsetX": -19,
-																"offsetY": -7,
-																"distance": 10
+																"offsetX": -38,
+																"offsetY": -14,
+																"scale": 2
 															}
 														}
 													]
@@ -34000,10 +33994,9 @@
 													"grid": {
 														"type": "square",
 														"size": 92,
-														"offsetX": 59,
-														"offsetY": -8,
-														"scale": 2,
-														"distance": 10
+														"offsetX": 118,
+														"offsetY": -16,
+														"scale": 4
 													},
 													"mapRegions": [
 														{
@@ -39182,9 +39175,9 @@
 													"grid": {
 														"type": "square",
 														"size": 88,
-														"offsetX": -25,
-														"offsetY": 5,
-														"distance": 10
+														"offsetX": -50,
+														"offsetY": 10,
+														"scale": 2
 													}
 												}
 											]
@@ -40057,10 +40050,9 @@
 															"grid": {
 																"type": "square",
 																"size": 94,
-																"offsetX": 14,
-																"offsetY": 40,
-																"scale": 2,
-																"distance": 10
+																"offsetX": 28,
+																"offsetY": 80,
+																"scale": 4
 															},
 															"mapRegions": [
 																{
@@ -43465,9 +43457,9 @@
 															"grid": {
 																"type": "square",
 																"size": 90,
-																"offsetX": 18,
-																"offsetY": 42,
-																"distance": 10
+																"offsetX": 36,
+																"offsetY": 84,
+																"scale": 2
 															}
 														}
 													]
@@ -44049,10 +44041,9 @@
 									"imageType": "map",
 									"grid": {
 										"type": "square",
-										"offsetX": -24,
-										"offsetY": -22,
-										"scale": 2,
-										"distance": 10
+										"offsetX": -48,
+										"offsetY": -44,
+										"scale": 4
 									},
 									"id": "fe8",
 									"mapRegions": [
@@ -45385,9 +45376,9 @@
 									"grid": {
 										"type": "square",
 										"size": 96,
-										"offsetX": -25,
-										"offsetY": -19,
-										"distance": 10
+										"offsetX": -50,
+										"offsetY": -38,
+										"scale": 2
 									},
 									"width": 1871,
 									"height": 4749
@@ -46560,10 +46551,9 @@
 									"grid": {
 										"type": "square",
 										"size": 57,
-										"offsetX": 10,
-										"offsetY": 39,
-										"scale": 2,
-										"distance": 10
+										"offsetX": 20,
+										"offsetY": 78,
+										"scale": 4
 									},
 									"mapRegions": [
 										{
@@ -47519,9 +47509,9 @@
 									"grid": {
 										"type": "square",
 										"size": 57,
-										"offsetX": 9,
-										"offsetY": 37,
-										"distance": 10
+										"offsetX": 18,
+										"offsetY": 74,
+										"scale": 2
 									}
 								}
 							]
@@ -47776,10 +47766,9 @@
 											"grid": {
 												"type": "square",
 												"size": 66,
-												"offsetX": -7,
-												"offsetY": 22,
-												"scale": 2,
-												"distance": 10
+												"offsetX": -14,
+												"offsetY": 44,
+												"scale": 4
 											},
 											"mapRegions": [
 												{
@@ -48254,9 +48243,9 @@
 											"grid": {
 												"type": "square",
 												"size": 70,
-												"offsetX": -12,
-												"offsetY": 21,
-												"distance": 10
+												"offsetX": -24,
+												"offsetY": 42,
+												"scale": 2
 											}
 										}
 									]
@@ -48390,7 +48379,7 @@
 									"entries": [
 										{
 											"type": "entries",
-											"name": "Roleplaying Braelen",
+											"name": "Rolelplaying Braelen",
 											"page": 156,
 											"id": "636",
 											"entries": [
@@ -49086,9 +49075,9 @@
 											"grid": {
 												"type": "square",
 												"size": 55,
-												"offsetX": 17,
-												"offsetY": -8,
-												"distance": 10
+												"offsetX": 34,
+												"offsetY": -16,
+												"scale": 2
 											}
 										},
 										{
@@ -49108,9 +49097,9 @@
 											"grid": {
 												"type": "square",
 												"size": 82,
-												"offsetX": 19,
-												"offsetY": 61,
-												"distance": 10
+												"offsetX": 38,
+												"offsetY": 122,
+												"scale": 2
 											}
 										}
 									]
@@ -49241,7 +49230,7 @@
 						"This side trek begins when the characters learn from worried Zhentarim shopkeepers of Bargewright Inn that they've been having supply problems recently. This side trek happens only if the characters sign on to the Zhentarim caravan.",
 						"Customarily, a barge from Yartar arrives on a regular schedule to deliver the wares that the Bargewrighters order to sell, including buckles, swivel-rings, nails, sheaths, finished leatherwork, and food and drinkables. However, last month the barges came late, orders were short changed, and the prices for what little did arrive went up steeply.",
 						"The Zhentarim believes intrigue in Yartar is to blame: someone wants to harm the Black Network's profits. Zhentarim agents first suspected the Harpers, but trusted spies recently reported back that an unknown organization seems to be at work in Yartar.",
-						"None of the reports that reach the Bargewright Inn contain any hint of the truth, but the troublemakers are members of the Kraken Society, trying to destabilize Yartar so they can replace the current waterbaron with their own stooge. Then the new waterbaron can swiftly fix the troubles and thereby win local support. The Black Network is an incidental casualty in this scheme.",
+						"None of the reports that reach the Bargewright Inn contain any hint of the truth, but the troublemakers are members of the Kraken Society, trying to destabilize Yartar so they can replace the current Waterbaron with their own stooge. Then the new Waterbaron can swiftly fix the troubles and thereby win local support. The Black Network is an incidental casualty in this scheme.",
 						"Regardless of why the \"troubles\" are occurring, the Zhentarim wants the situation fixed fast. The Black Network intends to mount two expeditions to Triboar, one by river on a barge and one by overland caravan. Both missions take coin to purchase new supplies, recruit new suppliers, and fund their spies in Triboar to identify who's behind the supply problems in Yartar.",
 						"The characters become involved in the overland caravan, because the Zhentarim think they're perfect for the job. Any fast caravan guarded by a sizable contingent of armed Zhentarim mercenaries indicates a rich target to anyone in this part of the North. For the same reason, the Zhents dare not hire the retired bodyguards, adventurers, and mercenaries who live in and around Beliard, for fear rumors might spread all over the Dessarin Valley about a pay caravan.",
 						{
@@ -49454,8 +49443,8 @@
 									"grid": {
 										"type": "square",
 										"size": 51,
-										"offsetY": -12,
-										"distance": 10
+										"offsetY": -24,
+										"scale": 2
 									},
 									"id": "190"
 								},
@@ -49724,10 +49713,9 @@
 											"grid": {
 												"type": "square",
 												"size": 86,
-												"offsetX": 37,
-												"offsetY": 3,
-												"scale": 2,
-												"distance": 10
+												"offsetX": 74,
+												"offsetY": 6,
+												"scale": 4
 											},
 											"mapRegions": [
 												{
@@ -50100,9 +50088,9 @@
 											"grid": {
 												"type": "square",
 												"size": 65,
-												"offsetX": 13,
-												"offsetY": -8,
-												"distance": 10
+												"offsetX": 26,
+												"offsetY": -16,
+												"scale": 2
 											}
 										}
 									]
@@ -52944,6 +52932,13 @@
 					"title": "On the Cover: Aerisi Kalinoth, the air prophet, unleashes the Cult of the Howling Hatred on the Dessarin Valley. A defiant Harper wizard named Zelraun Roaringhorn stands against her in this tempestuous scene illustrated by Raymond Swanland.",
 					"width": 1500,
 					"height": 972
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@note Disclaimer: Wizards of the Coast urges adventurers to remember that not all rock creatures are earth elementals. A talking rock that controls boulders is a galeb duhr. A talking rock wearing jewelry is a dao. A silent rock that's resistant to non-adamantine weapons is a stone golem. A rock with wings is a gargoyle. A rock without a K is a giant bird. A rock that sits there and does nothing could be just a rock or a balor disguised by an illusion. In all cases, proceed with caution.}"
+					],
+					"id": "71a"
 				}
 			],
 			"id": "137"

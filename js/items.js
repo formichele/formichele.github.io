@@ -194,9 +194,11 @@ class ItemsPage extends ListPage {
 			dataProps: ["item"],
 
 			bookViewOptions: {
+				nameSingular: "item",
 				namePlural: "items",
 				pageTitle: "Items Book View",
 				propMarkdown: "item",
+				isSublistItemsCountable: true,
 			},
 
 			tableViewOptions: {
@@ -228,7 +230,7 @@ class ItemsPage extends ListPage {
 	get _bindOtherButtonsOptions () {
 		return {
 			other: [
-				this._bindOtherButtonsOptions_openAsSinglePage({slugPage: "items", fnGetHash: () => Hist.getHashParts()[0]}),
+				this._bindOtherButtonsOptions_openAsSinglePage({slugPage: "items"}),
 			].filter(Boolean),
 		};
 	}
@@ -266,7 +268,6 @@ class ItemsPage extends ListPage {
 							e_({
 								tag: "span",
 								clazz: `ve-col-1 ve-text-center ${Parser.sourceJsonToSourceClassname(item.source)} pl-1 pr-0`,
-								style: Parser.sourceJsonToStylePart(item.source),
 								title: `${Parser.sourceJsonToFull(item.source)}${Renderer.utils.getSourceSubText(item)}`,
 								text: source,
 							}),
@@ -318,7 +319,6 @@ class ItemsPage extends ListPage {
 							e_({
 								tag: "span",
 								clazz: `ve-col-1 ve-text-center ${Parser.sourceJsonToSourceClassname(item.source)} pr-0`,
-								style: Parser.sourceJsonToStylePart(item.source),
 								title: `${Parser.sourceJsonToFull(item.source)}${Renderer.utils.getSourceSubText(item)}`,
 								text: source,
 							}),
@@ -387,8 +387,8 @@ class ItemsPage extends ListPage {
 			},
 		});
 
-		SortUtil.initBtnSortHandlers($("#filtertools-mundane"), this._mundaneList);
-		SortUtil.initBtnSortHandlers($("#filtertools-magic"), this._magicList);
+		SortUtil.initBtnSortHandlers(es("#filtertools-mundane"), this._mundaneList);
+		SortUtil.initBtnSortHandlers(es("#filtertools-magic"), this._magicList);
 
 		this._mundaneList.nextList = this._magicList;
 		this._magicList.prevList = this._mundaneList;

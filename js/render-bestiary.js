@@ -1,5 +1,5 @@
 import {VetoolsConfig} from "./utils-config/utils-config-config.js";
-import {SITE_STYLE__CLASSIC, SITE_STYLE__ONE} from "./consts.js";
+import {SITE_STYLE__CLASSIC} from "./consts.js";
 
 /** @abstract */
 class _RenderBestiaryImplBase {
@@ -8,16 +8,16 @@ class _RenderBestiaryImplBase {
 	/**
 	 * @param {object} mon
 	 * @param [opts]
-	 * @param {jQuery} [opts.$btnScaleCr]
-	 * @param {jQuery} [opts.$btnResetScaleCr]
+	 * @param {HTMLElementExtended} [opts.btnScaleCr]
+	 * @param {HTMLElementExtended} [opts.btnResetScaleCr]
 	 * @param {HTMLElementExtended} [opts.selSummonSpellLevel]
 	 * @param {HTMLElementExtended} [opts.selSummonClassLevel]
 	 * @param {boolean} [opts.isSkipExcludesRender]
 	 * @param {boolean} [opts.isSkipTokenRender]
 	 *
-	 * @return {jQuery}
+	 * @return {HTMLElementExtended}
 	 */
-	$getRenderedCreature (mon, opts) {
+	getRenderedCreature (mon, opts) {
 		opts ||= {};
 
 		Renderer.monster.initParsed(mon);
@@ -26,7 +26,7 @@ class _RenderBestiaryImplBase {
 		return Renderer.monster.getRenderWithPlugins({
 			renderer,
 			mon,
-			fn: () => this._$getRenderedCreature({mon, opts, renderer}),
+			fn: () => this._getRenderedCreature({mon, opts, renderer}),
 		});
 	}
 
@@ -35,17 +35,17 @@ class _RenderBestiaryImplBase {
 	 *
 	 * @param {object} mon
 	 * @param opts
-	 * @param {jQuery} [opts.$btnScaleCr]
-	 * @param {jQuery} [opts.$btnResetScaleCr]
+	 * @param {HTMLElementExtended} [opts.btnScaleCr]
+	 * @param {HTMLElementExtended} [opts.btnResetScaleCr]
 	 * @param {HTMLElementExtended} [opts.selSummonSpellLevel]
 	 * @param {HTMLElementExtended} [opts.selSummonClassLevel]
 	 * @param {boolean} [opts.isSkipExcludesRender]
 	 * @param {boolean} [opts.isSkipTokenRender]
 	 * @param {Renderer} renderer
 	 *
-	 * @return {jQuery}
+	 * @return {HTMLElementExtended}
 	 */
-	_$getRenderedCreature ({mon, opts, renderer}) {
+	_getRenderedCreature ({mon, opts, renderer}) {
 		throw new Error("Unimplemented!");
 	}
 
@@ -226,7 +226,7 @@ class _RenderBestiaryImplBase {
 	}
 
 	_getCommonHtmlParts_tools ({mon, renderer}) {
-		return mon.tool ? `<tr><td colspan="6"><strong>Tools</strong> ${Renderer.monster.getToolsString(renderer, mon, {styleHint: this._style})}</td></tr>` : "";
+		return mon.tool ? `<tr><td colspan="6"><strong>Tools</strong> ${Renderer.monster.getToolsString(renderer, mon)}</td></tr>` : "";
 	}
 
 	_getCommonHtmlParts_vulnerabilities ({mon}) {
@@ -361,15 +361,15 @@ class _RenderBestiaryImplBase {
 
 	/* -------------------------------------------- */
 
-	_$getTdChallenge (mon, opts) {
+	_getTdChallenge (mon, opts) {
 		const ptLabel = `<strong ${this._style === "classic" ? "" : `title="Challenge Rating"`}>${this._style !== "classic" ? "CR" : "Challenge"}</strong>`;
 
-		if (Parser.crToNumber(mon.cr) >= VeCt.CR_UNKNOWN && this._style === "classic") return `<td colspan="3">${ptLabel} <span>\u2014</span></td>`;
+		if (Parser.crToNumber(mon.cr) >= VeCt.CR_UNKNOWN) return `<td colspan="${this._style !== "classic" ? "6" : "3"}">${ptLabel} <span>\u2014</span></td>`;
 
-		return $$`<td colspan="${this._style !== "classic" ? "6" : "3"}">${ptLabel}
+		return ee`<td colspan="${this._style !== "classic" ? "6" : "3"}">${ptLabel}
 			<span>${Renderer.monster.getChallengeRatingPart(mon, {styleHint: this._style})}</span>
-			${opts.$btnScaleCr || ""}
-			${opts.$btnResetScaleCr || ""}
+			${opts.btnScaleCr || ""}
+			${opts.btnResetScaleCr || ""}
 		</td>`;
 	}
 }
@@ -444,7 +444,7 @@ class _RenderBestiaryImplClassic extends _RenderBestiaryImplBase {
 
 	/* -------------------------------------------- */
 
-	_$getRenderedCreature ({mon, opts, renderer}) {
+	_getRenderedCreature ({mon, opts, renderer}) {
 		const isInlinedToken = this._isInlinedToken({mon, opts});
 
 		const {
@@ -521,7 +521,7 @@ class _RenderBestiaryImplClassic extends _RenderBestiaryImplBase {
 			entsTrait,
 		});
 
-		return $$`
+		return ee`
 		${Renderer.utils.getBorderTr()}
 
 		${htmlPtIsExcluded}
@@ -553,205 +553,12 @@ class _RenderBestiaryImplClassic extends _RenderBestiaryImplBase {
 		${htmlPtLanguages}
 
 		<tr class="relative">
-			${this._$getTdChallenge(mon, opts)}
+			${this._getTdChallenge(mon, opts)}
 			${htmlPtPb}
 		</tr>
 
-		<tr>${opts.selSummonSpellLevel ? $$`<td colspan="6"><strong class="mr-2">Spell Level</strong> ${opts.selSummonSpellLevel}</td>` : ""}</tr>
-		<tr>${opts.selSummonClassLevel ? $$`<td colspan="6"><strong class="mr-2">${opts.classLevelScalerClass ? "Class Level" : "Level"}</strong> ${opts.selSummonClassLevel}</td>` : ""}</tr>
-
-		${htmlPtTraits}
-		${htmlPtActions}
-		${htmlPtBonusActions}
-		${htmlPtReactions}
-		${htmlPtLegendaryActions}
-		${htmlPtMythicActions}
-
-		${htmlPtLairActions}
-		${htmlPtRegionalEffects}
-
-		${htmlPtFooterExtended}
-
-		${Renderer.utils.getBorderTr()}`;
-	}
-}
-
-class _RenderBestiaryImplOne extends _RenderBestiaryImplBase {
-	_style = SITE_STYLE__ONE;
-
-	/* -------------------------------------------- */
-
-	_getHtmlParts (
-		{
-			mon,
-			renderer,
-
-			isInlinedToken,
-
-			entsTrait,
-		},
-	) {
-		return {
-			htmlPtArmorClass: this._getHtmlParts_armorClass({mon, renderer, isInlinedToken}),
-
-			htmlPtSavingThrows: this._getHtmlParts_savingThrows({mon, renderer}),
-
-			htmlPtImmunities: this._getHtmlParts_immunities({mon}),
-			htmlPtGear: this._getHtmlParts_gear({mon}),
-
-			htmlPtTraits: this._getHtmlParts_traits({mon, entsTrait}),
-		};
-	}
-
-	/* ----- */
-
-	_getHtmlParts_armorClass ({mon, renderer, isInlinedToken}) {
-		return `<tr><td colspan="6">
-			<div class="split-v-center lst-is-exporting-image__no-wrap ${isInlinedToken ? `stats__wrp-avoid-token` : ""}">
-				<div><strong title="Armor Class">AC</strong> ${mon.ac == null ? "\u2014" : Parser.acToFull(mon.ac, {renderer})}</div>
-				<div><strong>Initiative</strong> ${Renderer.monster.getInitiativePart(mon)}</div>
-			</div>
-		</td></tr>`;
-	}
-
-	/* ----- */
-
-	_getHtmlParts_savingThrows ({mon, renderer}) {
-		if (!mon.save?.special) return "";
-		return `<tr><td colspan="6"><strong>Saving Throws</strong> ${Renderer.monster.getSave(renderer, "special", mon.save.special)}</td></tr>`;
-	}
-
-	/* ----- */
-
-	_getHtmlParts_immunities ({mon}) {
-		const pt = Renderer.monster.getImmunitiesCombinedPart(mon);
-		if (!pt) return "";
-		return `<tr><td colspan="6"><strong>Immunities</strong> ${pt}</td></tr>`;
-	}
-
-	_getHtmlParts_gear ({mon}) {
-		const pt = Renderer.monster.getGearPart(mon);
-		if (!pt) return "";
-		return `<tr><td colspan="6"><strong>Gear</strong> ${pt}</td></tr>`;
-	}
-
-	/* ----- */
-
-	_getHtmlParts_traits ({mon, entsTrait}) {
-		return `${entsTrait?.length ? `${this._getRenderedSectionHeader({mon, title: "Traits", prop: "trait"})}
-		${this._getRenderedSection({prop: "trait", entries: entsTrait})}` : ""}`;
-	}
-
-	/* -------------------------------------------- */
-
-	_$getRenderedCreature ({mon, opts, renderer}) {
-		const isInlinedToken = this._isInlinedToken({mon, opts});
-
-		const {
-			entsTrait,
-			entsAction,
-			entsBonusAction,
-			entsReaction,
-			entsLegendaryAction,
-			entsMythicAction,
-			legGroup,
-		} = Renderer.monster.getSubEntries(mon, {renderer});
-
-		const {
-			htmlPtIsExcluded,
-			htmlPtName,
-			htmlPtSizeTypeAlignment,
-
-			htmlPtHitPoints,
-			htmlPtsResources,
-			htmlPtSpeed,
-
-			htmlPtAbilityScores,
-
-			htmlPtSkills,
-			htmlPtTools,
-			htmlPtVulnerabilities,
-			htmlPtResistances,
-			htmlPtSenses,
-			htmlPtLanguages,
-
-			htmlPtActions,
-			htmlPtBonusActions,
-			htmlPtReactions,
-			htmlPtLegendaryActions,
-			htmlPtMythicActions,
-
-			htmlPtLairActions,
-			htmlPtRegionalEffects,
-
-			htmlPtFooterExtended,
-		} = this._getCommonHtmlParts({
-			mon,
-			renderer,
-
-			isSkipExcludesRender: opts.isSkipExcludesRender,
-
-			isInlinedToken,
-
-			entsAction,
-			entsBonusAction,
-			entsReaction,
-			entsLegendaryAction,
-			entsMythicAction,
-			legGroup,
-		});
-
-		const {
-			htmlPtArmorClass,
-
-			htmlPtSavingThrows,
-
-			htmlPtImmunities,
-			htmlPtGear,
-
-			htmlPtTraits,
-		} = this._getHtmlParts({
-			mon,
-			renderer,
-
-			isInlinedToken,
-
-			entsTrait,
-		});
-
-		return $$`
-		${Renderer.utils.getBorderTr()}
-
-		${htmlPtIsExcluded}
-		${htmlPtName}
-
-		<tr><td colspan="6" class="pt-0"><div class="ve-tbl-divider mt-0 ${isInlinedToken ? `stats__wrp-avoid-token` : ""}"></div></td></tr>
-
-		${htmlPtSizeTypeAlignment}
-
-		${htmlPtArmorClass}
-		${htmlPtHitPoints}
-		${htmlPtsResources.join("")}
-		${htmlPtSpeed}
-
-		${htmlPtAbilityScores}
-
-		${htmlPtSavingThrows}
-		${htmlPtSkills}
-		${htmlPtTools}
-		${htmlPtVulnerabilities}
-		${htmlPtResistances}
-		${htmlPtImmunities}
-		${htmlPtGear}
-		${htmlPtSenses}
-		${htmlPtLanguages}
-
-		<tr class="relative">
-			${this._$getTdChallenge(mon, opts)}
-		</tr>
-
-		<tr>${opts.selSummonSpellLevel ? $$`<td colspan="6"><strong class="mr-2">Spell Level</strong> ${opts.selSummonSpellLevel}</td>` : ""}</tr>
-		<tr>${opts.selSummonClassLevel ? $$`<td colspan="6"><strong class="mr-2">${opts.classLevelScalerClass ? "Class Level" : "Level"}</strong> ${opts.selSummonClassLevel}</td>` : ""}</tr>
+		<tr>${opts.selSummonSpellLevel ? ee`<td colspan="6"><strong class="mr-2">Spell Level</strong> ${opts.selSummonSpellLevel}</td>` : ""}</tr>
+		<tr>${opts.selSummonClassLevel ? ee`<td colspan="6"><strong class="mr-2">${opts.classLevelScalerClass ? "Class Level" : "Level"}</strong> ${opts.selSummonClassLevel}</td>` : ""}</tr>
 
 		${htmlPtTraits}
 		${htmlPtActions}
@@ -771,25 +578,37 @@ class _RenderBestiaryImplOne extends _RenderBestiaryImplBase {
 
 export class RenderBestiary {
 	static _RENDER_CLASSIC = new _RenderBestiaryImplClassic();
-	static _RENDER_ONE = new _RenderBestiaryImplOne();
 
 	/**
 	 * @param {object} mon Creature data.
 	 * @param [opts]
-	 * @param [opts.$btnScaleCr] CR scaler button.
-	 * @param [opts.$btnResetScaleCr] CR scaler reset button.
+	 * @param [opts.btnScaleCr] CR scaler button.
+	 * @param [opts.btnResetScaleCr] CR scaler reset button.
+	 * @param [opts.selSummonSpellLevel] Summon spell level selector.
+	 * @param [opts.selSummonClassLevel] Summon spell level selector.
+	 * @param [opts.isSkipExcludesRender] If the "this entity is blocklisted" display should be skipped.
+	 * @param [opts.isSkipTokenRender]
+	 */
+	static getRenderedCreature (mon, opts) {
+		const styleHint = VetoolsConfig.get("styleSwitcher", "style");
+		switch (styleHint) {
+			case SITE_STYLE__CLASSIC: return this._RENDER_CLASSIC.getRenderedCreature(mon, opts);
+			default: throw new Error(`Unhandled style "${styleHint}"!`);
+		}
+	}
+
+	/**
+	 * @param {object} mon Creature data.
+	 * @param [opts]
+	 * @param [opts.btnScaleCr] CR scaler button.
+	 * @param [opts.btnResetScaleCr] CR scaler reset button.
 	 * @param [opts.selSummonSpellLevel] Summon spell level selector.
 	 * @param [opts.selSummonClassLevel] Summon spell level selector.
 	 * @param [opts.isSkipExcludesRender] If the "this entity is blocklisted" display should be skipped.
 	 * @param [opts.isSkipTokenRender]
 	 */
 	static $getRenderedCreature (mon, opts) {
-		const styleHint = VetoolsConfig.get("styleSwitcher", "style");
-		switch (styleHint) {
-			case SITE_STYLE__CLASSIC: return this._RENDER_CLASSIC.$getRenderedCreature(mon, opts);
-			case SITE_STYLE__ONE: return this._RENDER_ONE.$getRenderedCreature(mon, opts);
-			default: throw new Error(`Unhandled style "${styleHint}"!`);
-		}
+		return $(this.getRenderedCreature(mon, opts));
 	}
 
 	static $getRenderedLegendaryGroup (legGroup) {

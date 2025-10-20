@@ -116,7 +116,7 @@ export class SpellBuilder extends BuilderBase {
 				fromClassList: [
 					{
 						name: "Wizard",
-						source: VetoolsConfig.get("styleSwitcher", "style") === SITE_STYLE__CLASSIC ? Parser.SRC_PHB : Parser.SRC_XPHB,
+						source: Parser.SRC_PHB,
 					},
 				],
 			},
@@ -215,23 +215,7 @@ export class SpellBuilder extends BuilderBase {
 		this.__$getMetaInput(cb).appendTo(detailsTab.$wrpTab);
 		this.__$getDurationInput(cb).appendTo(detailsTab.$wrpTab);
 		BuilderUi.$getStateIptEntries("Text", cb, this._state, {fnPostProcess: BuilderUi.fnPostProcessDice}, "entries").appendTo(detailsTab.$wrpTab);
-		const iptEntriesHigherLevelMeta = BuilderUi.$getStateIptEntries(
-			"&quot;Higher-Level Spell Slot&quot; Text",
-			cb,
-			this._state,
-			{
-				nullable: true,
-				fnGetHeader: state => {
-					if (this._meta.styleHint === "classic") return "At Higher Levels";
-					return state.level === 0 ? "Cantrip Upgrade" : "Using a Higher-Level Spell Slot";
-				},
-				fnPostProcess: BuilderUi.fnPostProcessDice,
-				asMeta: true,
-			},
-			"entriesHigherLevel",
-		);
-		this._addHook("state", "level", () => iptEntriesHigherLevelMeta.onChange());
-		iptEntriesHigherLevelMeta.$row.appendTo(detailsTab.$wrpTab);
+		BuilderUi.$getStateIptEntries("&quot;At Higher Levels&quot; Text", cb, this._state, {nullable: true, withHeader: "At Higher Levels", fnPostProcess: BuilderUi.fnPostProcessDice}, "entriesHigherLevel").appendTo(detailsTab.$wrpTab);
 
 		// SOURCES
 		const [
@@ -397,7 +381,7 @@ export class SpellBuilder extends BuilderBase {
 			.change(() => doUpdateState())
 			.val(os && os.page ? os.page : null);
 
-		const compSelSource = this._getCompSelSource("otherSourceSources", doUpdateState, os ? os.source.escapeQuotes() : this._meta.styleHint === SITE_STYLE__CLASSIC ? Parser.SRC_PHB : Parser.SRC_XPHB);
+		const compSelSource = this._getCompSelSource("otherSourceSources", doUpdateState, os ? os.source.escapeQuotes() : Parser.SRC_PHB);
 
 		const out = {getOtherSource};
 
@@ -623,6 +607,7 @@ export class SpellBuilder extends BuilderBase {
 
 			doUpdateState();
 		});
+		$$``.appendTo($rowInner);
 
 		$$`<div>
 			<div class="ve-flex-v-center mb-2"><div class="mr-2 mkbru__sub-name--33">Verbal</div>${$cbVerbal}</div>
@@ -816,12 +801,8 @@ export class SpellBuilder extends BuilderBase {
 	}
 
 	__$getClassesInputs (cb) {
-		const DEFAULT_CLASS = this._meta.styleHint === SITE_STYLE__CLASSIC
-			? {name: "Wizard", source: Parser.SRC_PHB}
-			: {name: "Wizard", source: Parser.SRC_XPHB};
-		const DEFAULT_SUBCLASS = this._meta.styleHint === SITE_STYLE__CLASSIC
-			? {name: "Evocation", source: Parser.SRC_PHB}
-			: {name: "Evoker", source: Parser.SRC_XPHB};
+		const DEFAULT_CLASS = {name: "Wizard", source: Parser.SRC_PHB};
+		const DEFAULT_SUBCLASS = {name: "Evocation", source: Parser.SRC_PHB};
 
 		const [$rowCls, $rowInnerCls] = BuilderUi.getLabelledRowTuple("Classes", {isMarked: true});
 		const [$rowSc, $rowInnerSc] = BuilderUi.getLabelledRowTuple("Subclasses", {isMarked: true});
@@ -961,7 +942,7 @@ export class SpellBuilder extends BuilderBase {
 	}
 
 	__$getRaces (cb) {
-		const [$row, $rowInner] = BuilderUi.getLabelledRowTuple("Species", {isMarked: true});
+		const [$row, $rowInner] = BuilderUi.getLabelledRowTuple("Races", {isMarked: true});
 
 		const doUpdateState = () => {
 			const races = raceRows.map(row => row.getRace()).filter(Boolean);
@@ -982,7 +963,7 @@ export class SpellBuilder extends BuilderBase {
 		doRefresh();
 
 		const $wrpBtnAdd = $(`<div></div>`).appendTo($rowInner);
-		$(`<button class="ve-btn ve-btn-xs ve-btn-default">Add Species</button>`)
+		$(`<button class="ve-btn ve-btn-xs ve-btn-default">Add Race</button>`)
 			.appendTo($wrpBtnAdd)
 			.click(() => {
 				this.__$getRaces__getRaceRow(doUpdateState, raceRows, null).$wrp.appendTo($wrpRows);
@@ -1016,8 +997,8 @@ export class SpellBuilder extends BuilderBase {
 			.change(() => doUpdateState())
 			.val(race ? race.baseName : null);
 
-		const compSelSource = this._getCompSelSource("raceSources", doUpdateState, race ? race.source : this._meta.styleHint === SITE_STYLE__CLASSIC ? Parser.SRC_PHB : Parser.SRC_XPHB);
-		const compSelSourceBase = this._getCompSelSource("baseRaceSources", doUpdateState, race && race.baseSource ? race.baseSource : this._meta.styleHint === SITE_STYLE__CLASSIC ? Parser.SRC_PHB : Parser.SRC_XPHB);
+		const compSelSource = this._getCompSelSource("raceSources", doUpdateState, race ? race.source : Parser.SRC_PHB);
+		const compSelSourceBase = this._getCompSelSource("baseRaceSources", doUpdateState, race && race.baseSource ? race.baseSource : Parser.SRC_PHB);
 
 		const out = {getRace};
 
@@ -1029,7 +1010,7 @@ export class SpellBuilder extends BuilderBase {
 			<div class="ve-flex-v-center mb-2"><span class="mr-2 mkbru__sub-name--33 help" title="For example, the &quot;Elf&quot; base race has a source of &quot;${Parser.SRC_PHB}&quot;">Base Source</span>${compSelSourceBase.$getWrp()}</div>
 			${$wrpBtnRemove}
 		</div>`;
-		this.constructor.$getBtnRemoveRow(doUpdateState, raceRows, out, $wrp, "Species").appendTo($wrpBtnRemove);
+		this.constructor.$getBtnRemoveRow(doUpdateState, raceRows, out, $wrp, "Race").appendTo($wrpBtnRemove);
 
 		out.$wrp = $wrp;
 		raceRows.push(out);
@@ -1084,7 +1065,7 @@ export class SpellBuilder extends BuilderBase {
 			.change(() => doUpdateState())
 			.val(identObj ? identObj.name : null);
 
-		const compSelSource = this._getCompSelSource(propTracker, doUpdateState, identObj ? identObj.source : this._meta.styleHint === SITE_STYLE__CLASSIC ? Parser.SRC_PHB : Parser.SRC_XPHB);
+		const compSelSource = this._getCompSelSource(propTracker, doUpdateState, identObj ? identObj.source : Parser.SRC_PHB);
 
 		const out = {getIdentObject};
 

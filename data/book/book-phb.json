@@ -366,7 +366,7 @@
 										"entries": [
 											"{@i Measures:} Natural athleticism, bodily power",
 											"{@i Important for:} Barbarian, fighter, paladin",
-											"{@filter Races that have a bonus to Strength|races|Ability Scores (Including Subspecies)=Strength +any}"
+											"{@filter Races that have a bonus to Strength|races|Ability Scores (Including Subrace)=Strength +any}"
 										],
 										"id": "019"
 									}
@@ -394,7 +394,7 @@
 										"entries": [
 											"{@i Measures:} Physical agility, reflexes, balance, poise",
 											"{@i Important for:} Monk, ranger, rogue",
-											"{@filter Races that have a bonus to Dexterity|races|Ability Scores (Including Subspecies)=Dexterity +any}"
+											"{@filter Races that have a bonus to Dexterity|races|Ability Scores (Including Subrace)=Dexterity +any}"
 										],
 										"id": "01a"
 									}
@@ -422,7 +422,7 @@
 										"entries": [
 											"{@i Measures:} Health, stamina, vital force",
 											"{@i Important for:} Everyone",
-											"{@filter Races that have a bonus to Constitution|races|Ability Scores (Including Subspecies)=Constitution +any}"
+											"{@filter Races that have a bonus to Constitution|races|Ability Scores (Including Subrace)=Constitution +any}"
 										],
 										"id": "01b"
 									}
@@ -450,7 +450,7 @@
 										"entries": [
 											"{@i Measures:} Mental acuity, information recall, analytical skill",
 											"{@i Important for:} Wizard",
-											"{@filter Races that have a bonus to Intelligence|races|Ability Scores (Including Subspecies)=Intelligence +any}"
+											"{@filter Races that have a bonus to Intelligence|races|Ability Scores (Including Subrace)=Intelligence +any}"
 										],
 										"id": "01c"
 									}
@@ -478,7 +478,7 @@
 										"entries": [
 											"{@i Measures:} Awareness, intuition, insight",
 											"{@i Important for:} Cleric, druid",
-											"{@filter Races that have a bonus to Wisdom|races|Ability Scores (Including Subspecies)=Wisdom +any}"
+											"{@filter Races that have a bonus to Wisdom|races|Ability Scores (Including Subrace)=Wisdom +any}"
 										],
 										"id": "01d"
 									}
@@ -506,7 +506,7 @@
 										"entries": [
 											"{@i Measures:} Confidence, eloquence, leadership",
 											"{@i Important for:} Bard, sorcerer, warlock",
-											"{@filter Races that have a bonus to Charisma|races|Ability Scores (Including Subspecies)=Charisma +any}"
+											"{@filter Races that have a bonus to Charisma|races|Ability Scores (Including Subrace)=Charisma +any}"
 										],
 										"id": "01e"
 									}
@@ -9446,7 +9446,7 @@
 							"name": "Saving Throws",
 							"page": 205,
 							"entries": [
-								"Many spells specify that a target can make a saving throw to avoid some or all of a spell's effects. The spell specifies the ability that the target uses for the save and what happens on a success or failure.",
+								" Many spells specify that a target can make a saving throw to avoid some or all of a spell's effects. The spell specifies the ability that the target uses for the save and what happens on a success or failure.",
 								"The DC to resist one of your spells equals 8 + your spellcasting ability modifier + your proficiency bonus + any special modifiers."
 							],
 							"id": "03b"
@@ -11370,7 +11370,16 @@
 				{
 					"type": "inlineBlock",
 					"entries": [
-						"For a full list of the conditions, see the {@5etools conditions|conditionsdiseases.html} page. The conditions are:",
+						"For a full list of the conditions, see the ",
+						{
+							"type": "link",
+							"href": {
+								"type": "internal",
+								"path": "conditionsdiseases.html"
+							},
+							"text": "conditions"
+						},
+						" page. The conditions are:",
 						{
 							"type": "list",
 							"items": [
@@ -13309,6 +13318,13 @@
 					"maxWidth": 400,
 					"width": 1329,
 					"height": 930
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@note Disclaimer: Wizards of the Coast is not responsible for the consequences of splitting up the party, sticking appendages in the mouth of a leering green devil face, accepting a dinner invitation from bugbears, storming the feast hall of a hill giant steading, angering a dragon of any variety, or saying yes when the DM asks, \"Are you really sure?\"}"
+					],
+					"id": "21a"
 				}
 			],
 			"id": "219"

@@ -3,10 +3,6 @@
 class PageFilterFeats extends PageFilterBase {
 	// region static
 	static _PREREQ_KEYs_OTHER_IGNORED = new Set(["level"]);
-
-	static _TRAIT_DISPLAY_VALUES = {
-		"Armor Proficiency": "Armor Training",
-	};
 	// endregion
 
 	constructor () {
@@ -49,7 +45,6 @@ class PageFilterFeats extends PageFilterBase {
 				"Tool Proficiency",
 				"Weapon Proficiency",
 			],
-			displayFn: val => this.constructor._TRAIT_DISPLAY_VALUES[val] || val,
 		});
 		this._vulnerableFilter = FilterCommon.getDamageVulnerableFilter();
 		this._resistFilter = FilterCommon.getDamageResistFilter();
@@ -91,7 +86,7 @@ class PageFilterFeats extends PageFilterBase {
 			feat.weaponProficiencies ? "Weapon Proficiency" : null,
 			feat.toolProficiencies ? "Tool Proficiency" : null,
 			feat.languageProficiencies ? "Language Proficiency" : null,
-		].filter(Boolean);
+		].filter(it => it);
 		if (feat.skillToolLanguageProficiencies?.length) {
 			if (feat.skillToolLanguageProficiencies.some(it => (it.choose || []).some(x => x.from || [].includes("anySkill")))) feat._fBenefits.push("Skill Proficiency");
 			if (feat.skillToolLanguageProficiencies.some(it => (it.choose || []).some(x => x.from || [].includes("anyTool")))) feat._fBenefits.push("Tool Proficiency");
@@ -177,9 +172,8 @@ class ModalFilterFeats extends ModalFilterBase {
 
 	_$getColumnHeaders () {
 		const btnMeta = [
-			{sort: "name", text: "Name", width: "3-5"},
-			{sort: "category", text: "Category", width: "1-5"},
-			{sort: "ability", text: "Ability", width: "2"},
+			{sort: "name", text: "Name", width: "4"},
+			{sort: "ability", text: "Ability", width: "3"},
 			{sort: "prerequisite", text: "Prerequisite", width: "3"},
 			{sort: "source", text: "Source", width: "1"},
 		];
@@ -188,7 +182,7 @@ class ModalFilterFeats extends ModalFilterBase {
 
 	async _pLoadAllData () {
 		return [
-			...(await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/feats.json`)).feat,
+			...(await DataLoader.pCacheAndGetAllSite(UrlUtil.PG_FEATS)),
 			...((await PrereleaseUtil.pGetBrewProcessed()).feat || []),
 			...((await BrewUtil2.pGetBrewProcessed()).feat || []),
 		];
@@ -208,11 +202,10 @@ class ModalFilterFeats extends ModalFilterBase {
 				<div class="ui-list__btn-inline px-2 no-select" title="Toggle Preview (SHIFT to Toggle Info Preview)">[+]</div>
 			</div>
 
-			<div class="ve-col-3-5 px-1 ${feat._versionBase_isVersion ? "italic" : ""} ${this._getNameStyle()}">${feat._versionBase_isVersion ? `<span class="px-3"></span>` : ""}${feat.name}</div>
-			<span class="ve-col-1-5 px-1 ve-text-center ${feat.category == null ? "italic" : ""}" ${feat.category ? `title="${Parser.featCategoryToFull(feat.category).qq()}"` : ""}>${feat.category || "\u2014"}</span>
-			<span class="ve-col-2 px-1 ${feat._slAbility === VeCt.STR_NONE ? "italic" : ""}">${feat._slAbility}</span>
+			<div class="ve-col-4 px-1 ${feat._versionBase_isVersion ? "italic" : ""} ${this._getNameStyle()}">${feat._versionBase_isVersion ? `<span class="px-3"></span>` : ""}${feat.name}</div>
+			<span class="ve-col-3 px-1 ${feat._slAbility === VeCt.STR_NONE ? "italic" : ""}">${feat._slAbility}</span>
 			<span class="ve-col-3 px-1 ${feat._slPrereq === VeCt.STR_NONE ? "italic" : ""}">${feat._slPrereq}</span>
-			<div class="ve-col-1 pl-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToSourceClassname(feat.source)}" title="${Parser.sourceJsonToFull(feat.source)}" ${Parser.sourceJsonToStyle(feat.source)}>${source}${Parser.sourceJsonToMarkerHtml(feat.source)}</div>
+			<div class="ve-col-1 pl-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToSourceClassname(feat.source)}" title="${Parser.sourceJsonToFull(feat.source)}">${source}${Parser.sourceJsonToMarkerHtml(feat.source, {isList: true})}</div>
 		</div>`;
 
 		const btnShowHidePreview = eleRow.firstElementChild.children[1].firstElementChild;
@@ -226,7 +219,6 @@ class ModalFilterFeats extends ModalFilterBase {
 				source,
 				sourceJson: feat.source,
 				...ListItem.getCommonValues(feat),
-				category: feat.category || "Other",
 				ability: feat._slAbility,
 				prerequisite: feat._slPrereq,
 			},

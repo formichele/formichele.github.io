@@ -30,34 +30,6 @@
 			}
 		},
 		{
-			"name": "Boon of Fate",
-			"source": "XPHB",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "feats/XPHB/Boon of Fate.webp"
-					},
-					"credit": "Wayne England"
-				}
-			]
-		},
-		{
-			"name": "Boon of Skill",
-			"source": "XPHB",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "feats/XPHB/Boon of Skill.webp"
-					},
-					"credit": "Wayne England"
-				}
-			]
-		},
-		{
 			"name": "Eldritch Adept",
 			"source": "TCE",
 			"images": [
@@ -72,20 +44,6 @@
 			]
 		},
 		{
-			"name": "Fey-Touched",
-			"source": "XPHB",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "feats/XPHB/Fey-Touched.webp"
-					},
-					"credit": "Wayne England"
-				}
-			]
-		},
-		{
 			"name": "Fury of the Frost Giant",
 			"source": "BGG",
 			"images": [
@@ -95,20 +53,6 @@
 						"type": "internal",
 						"path": "feats/BGG/Fury of the Frost Giant.webp"
 					}
-				}
-			]
-		},
-		{
-			"name": "Healer",
-			"source": "XPHB",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "feats/XPHB/Healer.webp"
-					},
-					"credit": "Wayne England"
 				}
 			]
 		},
@@ -156,20 +100,6 @@
 			]
 		},
 		{
-			"name": "Poisoner",
-			"source": "XPHB",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "feats/XPHB/Poisoner.webp"
-					},
-					"credit": "Wayne England"
-				}
-			]
-		},
-		{
 			"name": "Ritual Caster",
 			"source": "PHB",
 			"images": [
@@ -179,20 +109,6 @@
 						"type": "internal",
 						"path": "feats/PHB/Ritual Caster.webp"
 					}
-				}
-			]
-		},
-		{
-			"name": "Ritual Caster",
-			"source": "XPHB",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "feats/XPHB/Ritual Caster.webp"
-					},
-					"credit": "Wayne England"
 				}
 			]
 		},
@@ -223,34 +139,6 @@
 					},
 					"title": "Astride a unicorn, a telepathic bard inspires her wizard companion.",
 					"credit": "Zoltan Boros"
-				}
-			]
-		},
-		{
-			"name": "Two-Weapon Fighting",
-			"source": "XPHB",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "feats/XPHB/Two-Weapon Fighting.webp"
-					},
-					"credit": "Wayne England"
-				}
-			]
-		},
-		{
-			"name": "Weapon Master",
-			"source": "XPHB",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "feats/XPHB/Weapon Master.webp"
-					},
-					"credit": "Wayne England"
 				}
 			]
 		}

@@ -607,7 +607,13 @@
 													"99\u201300",
 													"Tombstone"
 												]
-											]
+											],
+											"data": {
+												"genTables": {
+													"tableInclude": true,
+													"skipSectionPrefix": true
+												}
+											}
 										}
 									]
 								}
@@ -744,10 +750,9 @@
 									"grid": {
 										"type": "square",
 										"size": 77,
-										"offsetX": 4,
-										"offsetY": -24,
-										"scale": 2,
-										"distance": 10
+										"offsetX": 8,
+										"offsetY": -48,
+										"scale": 4
 									},
 									"mapRegions": [
 										{
@@ -2513,10 +2518,9 @@
 									"grid": {
 										"type": "square",
 										"size": 77,
-										"offsetX": 4,
-										"offsetY": -24,
-										"scale": 2,
-										"distance": 10
+										"offsetX": 8,
+										"offsetY": -48,
+										"scale": 4
 									}
 								}
 							]
@@ -7152,9 +7156,9 @@
 							"grid": {
 								"type": "square",
 								"size": 55,
-								"offsetX": -10,
-								"offsetY": 23,
-								"distance": 10
+								"offsetX": -20,
+								"offsetY": 46,
+								"scale": 2
 							},
 							"mapRegions": [
 								{
@@ -13683,7 +13687,7 @@
 									"id": "117",
 									"entries": [
 										"Built on a ridge that overlooks the rest of town, Boar's Rest is the stone mansion of a rich, retired adventurer named Hyuth Kolstaag (NE male Damaran human {@creature mage}). Ever since Kolstaag had the place built and moved in five years ago, his unbridled arrogance and sense of self-importance have won him no friends in Triboar. Moreover, he has been targeted by so many enemies and rivals that other townsfolk consider him a magnet for disaster. He lives surrounded by trophies of his past adventures, and rarely emerges from his estate. He never condescends to protect the town or use his wealth to aid the less fortunate.",
-										"A few weeks ago, a trio of assassins slipped into town one night and tried to slay the mage in his sleep. The rest of Triboar was awakened by peals of thunder and blasts of lightning coming from Kolstaag's estate, and though the assassins survived, they were forced to steal horses from the Cart and Coin ({@area area T8|110|x}) and murder a stablehand to make good their escape. Kolstaag never offered to reimburse the Widdens family for their loss and never admitted any responsibility for the event.",
+										"A few weeks ago, a trio of assassins slipped into town one night and tried to slay the mage in his sleep. The rest of Triboar was awakened by peals of thunder and blasts of lightning coming from Kolstaag's estate, and though the assassins survived, they were forced to steal horses from the Cart and Coin ({@area area T8|110|x}) and murder a stable hand to make good their escape. Kolstaag never offered to reimburse the Widdens family for their loss and never admitted any responsibility for the event.",
 										"Since the latest attack on his person, Kolstaag has enlisted four {@creature Gargoyle||gargoyles} to perch on the corners of his rooftop and serve as living sentries. To alleviate their boredom, the malevolent gargoyles swoop down on townsfolk from time to time and terrify them for the sake of amusement, which has led to some tense meetings between the lord protector and the wizard of Boar's Rest, who doesn't see the harm.",
 										{
 											"type": "entries",
@@ -14843,7 +14847,7 @@
 											"page": 71,
 											"id": "171",
 											"entries": [
-												"If the characters escort the Woodhews back to their torched homestead, the halflings are reunited with the members of their family who avoided capture. One of them rewards the party with a family heirloom (a magic item) hidden in the burnt remains of the family home. Roll on {@table Magic Item Table F} in {@book chapter 7|DMG|-1} of the {@book Dungeon Master's Guide|DMG|7|Random Magic Items} to determine the item."
+												"If the characters escort the Woodhews back to their torched homestead, the halflings are reunited with the members of their family who avoided capture. One of them rewards the party with a family heirloom (a magic item) hidden in the burnt remains of the family home. Roll on {@table Magic Item Table F} in {@book chapter 7|DMG|7} of the {@book Dungeon Master's Guide|DMG|7|Random Magic Items} to determine the item."
 											]
 										}
 									]
@@ -18289,7 +18293,7 @@
 									"id": "17f",
 									"entries": [
 										"The {@creature ancient blue dragon} {@creature Iymrith|SKT} claims Ascore as part of her domain. Though she's not here to watch over it, two of her offspring have made separate lairs for themselves inside a couple of the great stone ships. These {@creature Adult Blue Dragon||adult blue dragons}, Anaxaster and Chezzaran, frequently accost each other in the sky, playfully jousting and breathing lightning as they zoom around. They are flying over Ascore when the characters first lay eyes on the ruined city. After an hour of fun, the dragons return to their lairs to rest. If the characters take no steps to conceal themselves and enter the city while the dragons are in the sky, the dragons spot the party and attack.",
-										"The ships that the dragons have turned into their lairs are hollow, sand-filled hulks surrounded by open desert. Each ship has {@dice 1d6 + 4} {@creature Gargoyle||gargoyles} perched on it, watching the sands for treasure-seekers. If the characters make their way past the gargoyles into a dragon's lair and defeat the dragon within, they find the dragon's hoard hidden under the sand. Roll on the {@book Treasure Hoard: Challenge 11\u201316|DMG|7|Treasure Hoard: Challenge 11\u201416} table in {@book chapter 7|DMG|-1} of the {@book Dungeon Master's Guide|DMG} to determine the contents of each dragon's trove."
+										"The ships that the dragons have turned into their lairs are hollow, sand-filled hulks surrounded by open desert. Each ship has {@dice 1d6 + 4} {@creature Gargoyle||gargoyles} perched on it, watching the sands for treasure-seekers. If the characters make their way past the gargoyles into a dragon's lair and defeat the dragon within, they find the dragon's hoard hidden under the sand. Roll on the {@table Treasure Hoard: Challenge 11\u201416|DMG} table in {@book chapter 7|DMG|7} of the {@book Dungeon Master's Guide|DMG} to determine the contents of each dragon's trove."
 									]
 								}
 							]
@@ -18501,7 +18505,7 @@
 									"page": 78,
 									"id": "18d",
 									"entries": [
-										"As fire giants scour the Evermoors for fragments of the Vonindod, trolls native to the area are fleeing to avoid becoming enslaved by the giants. If the characters stay at the Calling Horns Inn for a night, they and Tamalin are awakened in the wee hours by a strange racket. Two {@creature Troll||trolls} are trying to claw their way into the inn's stable to feast on the horses inside. The trolls are hungry and fight to the death. Once the trolls are dealt with, Tamalin reveals to the characters that troll attacks are becoming more common, and she offers to give the adventurers a letter of recommendation (see the \"{@book Marks of Prestige|DMG|7|Marks of Prestige}\" section in {@book chapter 7|DMG|-1} of the {@book Dungeon Master's Guide|DMG}) if they find the root cause. Tamalin tells them that her letter can win them a powerful friend in Everlund if they show it to the half-orc innkeeper at Danivarr's House (see the \"{@area Everlund|1a1|x}\" section), or it can be given to a member of the Hand of Yartar (Yartar's thieves' guild) in exchange for a special favor.",
+										"As fire giants scour the Evermoors for fragments of the Vonindod, trolls native to the area are fleeing to avoid becoming enslaved by the giants. If the characters stay at the Calling Horns Inn for a night, they and Tamalin are awakened in the wee hours by a strange racket. Two {@creature Troll||trolls} are trying to claw their way into the inn's stable to feast on the horses inside. The trolls are hungry and fight to the death. Once the trolls are dealt with, Tamalin reveals to the characters that troll attacks are becoming more common, and she offers to give the adventurers a letter of recommendation (see the \"{@book Marks of Prestige|DMG|7|Marks of Prestige}\" section in {@book chapter 7|DMG|7} of the {@book Dungeon Master's Guide|DMG}) if they find the root cause. Tamalin tells them that her letter can win them a powerful friend in Everlund if they show it to the half-orc innkeeper at Danivarr's House (see the \"{@area Everlund|1a1|x}\" section), or it can be given to a member of the Hand of Yartar (Yartar's thieves' guild) in exchange for a special favor.",
 										"If the characters take up Tamalin's quest and they spend at least two nights in the Evermoors, they witness a female {@creature fire giant} slapping around a {@creature troll} shortly before highsun on the third day. The fire giant, Zaastrid, carries a {@item rod of the Vonindod|SKT} (see {@adventure appendix B|SKT|14}). Zaastrid is hungry and upset that her enslaved troll has found nothing to eat. The characters can choose to keep their distance and avoid conflict, or they can engage the ravenous fire giant and her troll in battle. Zaastrid and the troll fight to the death. If the characters return to Calling Horns and report their fire giant sighting to Tamalin, she is satisfied and gives them her letter."
 									]
 								}
@@ -18547,7 +18551,7 @@
 											]
 										},
 										"The king, curiously, seems reluctant to enter the fray. \"Harnoth\" calls for the treacherous knights to stand down, but they ignore his commands. As combat ensues, the elders withdraw from the audience chamber to summon reinforcements, which arrive after the battle ends. As the characters battle the knights, the king's bodyguards surround and protect their lord. They join the fray only if the characters are on the verge of defeat.",
-										"If the adventurers defeat the possessed dwarves, \"Harnoth\" urges them to stay in Citadel Adbar for a couple of days while he arranges for suitable rewards. He commissions jewelers to craft mithral medals (one per character) shaped like shields, and he also drafts a signed letter of recommendation and presents it to the party. The bearer of the letter gains advantage on Charisma checks made to influence shield dwarves throughout the North. For more information on medals and letters of recommendation, see the \"{@book Marks of Prestige|DMG|7|Marks of Prestige}\" section in {@book chapter 7|DMG|-1} of the {@book Dungeon Master's Guide|DMG}."
+										"If the adventurers defeat the possessed dwarves, \"Harnoth\" urges them to stay in Citadel Adbar for a couple of days while he arranges for suitable rewards. He commissions jewelers to craft mithral medals (one per character) shaped like shields, and he also drafts a signed letter of recommendation and presents it to the party. The bearer of the letter gains advantage on Charisma checks made to influence shield dwarves throughout the North. For more information on medals and letters of recommendation, see the \"{@book Marks of Prestige|DMG|7|Marks of Prestige}\" section in {@book chapter 7|DMG|7} of the {@book Dungeon Master's Guide|DMG}."
 									]
 								}
 							]
@@ -18814,7 +18818,7 @@
 									"page": 83,
 									"id": "1a2",
 									"entries": [
-										"If the characters received a letter of recommendation from Tamalin Zoar (see the \"{@area Calling Horns|18c|x}\" section) and they show it to Dral Thelev, the half-orc tells them that the Zoar family has power in the city and that the characters can give the letter of recommendation to Dral in exchange for one favor from the Zoars (see the \"{@book Marks of Prestige|DMG|7|Marks of Prestige}\" section in {@book chapter 7|DMG|-1} of the {@book Dungeon Master's Guide|DMG}). When the characters decide to call in the favor, Dral contacts his employers, and High Captain Horix Zoar does everything in his power to give the characters what they want, provided it's within his power and isn't likely to burden him or the Zoar family. Examples of what he might provide include a meeting with one or more members of the Council of Elders, an arranged meeting with a Lords' Alliance representative from another city, and a {@item spell scroll} of {@spell raise dead}."
+										"If the characters received a letter of recommendation from Tamalin Zoar (see the \"{@area Calling Horns|18c|x}\" section) and they show it to Dral Thelev, the half-orc tells them that the Zoar family has power in the city and that the characters can give the letter of recommendation to Dral in exchange for one favor from the Zoars (see the \"{@book Marks of Prestige|DMG|7|Marks of Prestige}\" section in {@book chapter 7|DMG|7} of the {@book Dungeon Master's Guide|DMG}). When the characters decide to call in the favor, Dral contacts his employers, and High Captain Horix Zoar does everything in his power to give the characters what they want, provided it's within his power and isn't likely to burden him or the Zoar family. Examples of what he might provide include a meeting with one or more members of the Council of Elders, an arranged meeting with a Lords' Alliance representative from another city, and a {@item spell scroll} of {@spell raise dead}."
 									]
 								}
 							]
@@ -18902,7 +18906,7 @@
 									"page": 84,
 									"id": "1ab",
 									"entries": [
-										"Each giant carries a sack containing {@dice 1d4} mundane items (roll on the Items in a Giant's Bag table in the introduction). Aboard the greatship is an unlocked wooden chest, its lid frozen shut. Dealing 5 damage or more to the lid forces it open. The chest contains 1,500 sp, 450 gp, and {@dice 1d3} magic items, determined by rolling on {@table Magic Item Table C} in {@book chapter 7|DMG|-1} of the {@book Dungeon Master's Guide|DMG}."
+										"Each giant carries a sack containing {@dice 1d4} mundane items (roll on the Items in a Giant's Bag table in the introduction). Aboard the greatship is an unlocked wooden chest, its lid frozen shut. Dealing 5 damage or more to the lid forces it open. The chest contains 1,500 sp, 450 gp, and {@dice 1d3} magic items, determined by rolling on {@table Magic Item Table C} in {@book chapter 7|DMG|7} of the {@book Dungeon Master's Guide|DMG}."
 									]
 								}
 							]
@@ -19161,7 +19165,7 @@
 										"The leader is chaotic neutral.",
 										"He or she has a Dexterity score of 15 (+2) and AC 14.",
 										"He or she speaks Bothii (the Uthgardt language), Common, and Elvish.",
-										"The leader carries an {@item oathbow} and has a +5 bonus to hit with the weapon, which deals 7 ({@dice 1d8 + 3}) piercing damage on a hit, plus an extra 10 ({@dice 3d6}) piercing damage against a sworn enemy. (See {@book chapter 7|DMG|-1} of the {@book Dungeon Master's Guide|DMG} for other properties of the {@item oathbow}.)"
+										"The leader carries an {@item oathbow} and has a +5 bonus to hit with the weapon, which deals 7 ({@dice 1d8 + 3}) piercing damage on a hit, plus an extra 10 ({@dice 3d6}) piercing damage against a sworn enemy. (See {@book chapter 7|DMG|7} of the {@book Dungeon Master's Guide|DMG} for other properties of the {@item oathbow}.)"
 									]
 								},
 								"Characters who travel by air have an easy time spotting the tree and can reach the perimeter of this area without encountering any ground patrols.",
@@ -19459,8 +19463,8 @@
 									"page": 89,
 									"id": "1ca",
 									"entries": [
-										"The remorhaz lair can be explored and plundered if the creatures are killed. The area is a 20-foot-diameter oval chamber with walls of glazed ice. Scattered on the floor are three 500 gp gemstones, fifteen 100 gp gemstones, and one magic item determined by rolling on {@table Magic Item Table C} in {@book chapter 7|DMG|-1} of the {@book Dungeon Master's Guide|DMG}.",
-										"If the characters slay Wormblod and bring proof of his demise, the couatl emerges from the altar and bestows on each of them a {@i charm of restoration} (see the \"{@book Supernatural Gifts|DMG|7|Supernatural Gifts}\" section in {@book chapter 7|DMG|-1} of the {@book Dungeon Master's Guide|DMG}). The couatl then returns to the altar and makes no further attempt to communicate with them."
+										"The remorhaz lair can be explored and plundered if the creatures are killed. The area is a 20-foot-diameter oval chamber with walls of glazed ice. Scattered on the floor are three 500 gp gemstones, fifteen 100 gp gemstones, and one magic item determined by rolling on {@table Magic Item Table C} in {@book chapter 7|DMG|7} of the {@book Dungeon Master's Guide|DMG}.",
+										"If the characters slay Wormblod and bring proof of his demise, the couatl emerges from the altar and bestows on each of them a {@i charm of restoration} (see the \"{@book Supernatural Gifts|DMG|7|Supernatural Gifts}\" section in {@book chapter 7|DMG|7} of the {@book Dungeon Master's Guide|DMG}). The couatl then returns to the altar and makes no further attempt to communicate with them."
 									]
 								}
 							]
@@ -19576,7 +19580,7 @@
 									"page": 91,
 									"id": "1d4",
 									"entries": [
-										"Characters who board the ship and defeat the giants find a ton of stolen foodstuffs, along with a dozen barrels of cheap ale of little value, twelve casks of expensive brandy (worth 300 gp each), 10,000 gp in mixed coinage, and {@dice 2d4} stolen art objects worth 750 gp each (roll on the appropriate table in {@book chapter 7|DMG|-1} of the {@book Dungeon Master's Guide|DMG} to determine each art object).",
+										"Characters who board the ship and defeat the giants find a ton of stolen foodstuffs, along with a dozen barrels of cheap ale of little value, twelve casks of expensive brandy (worth 300 gp each), 10,000 gp in mixed coinage, and {@dice 2d4} stolen art objects worth 750 gp each (roll on the appropriate table in {@book chapter 7|DMG|7} of the {@book Dungeon Master's Guide|DMG} to determine each art object).",
 										"Each returning giant carries a sack stuffed with pillaged supplies as well as one mundane item, determined by rolling on the Items in a Giant's Bag table in the introduction. There is also a 25 percent chance of a sack containing {@dice 1d10 × 100} gp in mixed coinage."
 									]
 								}
@@ -19868,7 +19872,7 @@
 							"page": 94,
 							"id": "1ed",
 							"entries": [
-								"The village of Jalanthar is a riverbank waystop for barges traveling up and down the Rauvin River. The hardy residents, who call themselves Jalantharren, live in stone cottages with mud-sealed timber roofs that are covered with turf to resist burning. The homes are half-buried in the ground and from a distance can be easily mistaken for small grassy knolls. The hills north of Jalanthar are riddled with caves, wherein the natives take refuge should the village come under attack. The caves are furnished and well-stocked with preserves.",
+								"The village of Jalanthar is a riverbank way-stop for barges traveling up and down the Rauvin River. The hardy residents, who call themselves Jalantharren, live in stone cottages with mud-sealed timber roofs that are covered with turf to resist burning. The homes are half-buried in the ground and from a distance can be easily mistaken for small grassy knolls. The hills north of Jalanthar are riddled with caves, wherein the natives take refuge should the village come under attack. The caves are furnished and well-stocked with preserves.",
 								"Jalanthar boasts just one amenity for travelers. The Crowing Cockatrice inn is a low-walled, poorly built oval stone keep in the heart of the village. It features a central yard covered by a rickety roof made of old shields and bits of rusted armor, pounded flat and held up with a profusion of props and cross-braced poles to form a stable. The innkeeper, Myles Heldruin (LG male Damaran human {@creature commoner}), is a friendly, talkative young man eager to please those with coin to spend.",
 								"Village law is whatever the local Council of Elders says it is. The current head of the council is a retired ranger and active member of the Emerald Enclave named Quinn Nardrosz (NG male Damaran human {@creature scout}). Many years ago, an Uthgardt barbarian of the Red Tiger tribe bit off Quinn's left ear, but Quinn prefers to talk about the part of the story where he cracked open the barbarian's skull with a rock."
 							]
@@ -20298,7 +20302,7 @@
 									"id": "212",
 									"entries": [
 										"Superstitious members of the Thunderbeast tribe buried many magic items in their spirit mound so that they could be watched over by the dead. Looters have unearthed nearly all of these items, leaving little else for intrepid adventurers to find. If the characters mount their own archaeological dig, they might turn up something if they're patient. They can either dig deeper at an existing excavation or start their own hole.",
-										"A party member who spends 8 hours excavating beneath Morgur's Mound can make a {@dc 20} Intelligence ({@skill Investigation}) check. On each successful check, roll once on {@table Magic Item Table B} in {@book chapter 7|DMG|-1} of the {@book Dungeon Master's Guide|DMG} to determine what is found. Only two such treasures can be unearthed. The next party member to succeed on the check finds a giant-sized tooth (see \"{@area Ancient Relic|1c8|x}\"). Once the party finds the relic, further excavations yield nothing of consequence or value."
+										"A party member who spends 8 hours excavating beneath Morgur's Mound can make a {@dc 20} Intelligence ({@skill Investigation}) check. On each successful check, roll once on {@table Magic Item Table B} in {@book chapter 7|DMG|7} of the {@book Dungeon Master's Guide|DMG} to determine what is found. Only two such treasures can be unearthed. The next party member to succeed on the check finds a giant-sized tooth (see \"{@area Ancient Relic|1c8|x}\"). Once the party finds the relic, further excavations yield nothing of consequence or value."
 									]
 								},
 								{
@@ -20452,7 +20456,7 @@
 									"page": 102,
 									"id": "220",
 									"entries": [
-										"At the back of the Hunt Lords' banquet hall is a locked treasure chest. Amrath wears the key to it around his neck, but a character can pick the lock using thieves' tools with a successful {@dc 20} Dexterity check. The chest contains 600 gp in a gray sack made of stitched orc skin, a leather pouch that holds six 50 gp gems, and {@dice 1d3} magic items, determined by rolling on {@table Magic Item Table B} in {@book chapter 7|DMG|-1} of the {@book Dungeon Master's Guide|DMG}."
+										"At the back of the Hunt Lords' banquet hall is a locked treasure chest. Amrath wears the key to it around his neck, but a character can pick the lock using thieves' tools with a successful {@dc 20} Dexterity check. The chest contains 600 gp in a gray sack made of stitched orc skin, a leather pouch that holds six 50 gp gems, and {@dice 1d3} magic items, determined by rolling on {@table Magic Item Table B} in {@book chapter 7|DMG|7} of the {@book Dungeon Master's Guide|DMG}."
 									]
 								}
 							]
@@ -20672,7 +20676,7 @@
 									"page": 104,
 									"id": "22e",
 									"entries": [
-										"Characters who defeat the winter wolves and search the greatship find six crates of plundered foodstuffs, fifteen empty ale barrels, a lidless wooden chest containing 3,000 sp, a sleigh laden with animal pelts (worth 300 gp for the lot), and twenty giant sacks, each containing {@dice 1d6 × 100} gp and one mundane item. You can roll on the Items in a Giant's Bag table in the introduction for each mundane item, or forgo the rolls and choose twenty items from the table. The fattest sack also contains one magic item, determined by rolling on {@table Magic Item Table F} in {@book chapter 7|DMG|-1} of the {@book Dungeon Master's Guide|DMG}."
+										"Characters who defeat the winter wolves and search the greatship find six crates of plundered foodstuffs, fifteen empty ale barrels, a lidless wooden chest containing 3,000 sp, a sleigh laden with animal pelts (worth 300 gp for the lot), and twenty giant sacks, each containing {@dice 1d6 × 100} gp and one mundane item. You can roll on the Items in a Giant's Bag table in the introduction for each mundane item, or forgo the rolls and choose twenty items from the table. The fattest sack also contains one magic item, determined by rolling on {@table Magic Item Table F} in {@book chapter 7|DMG|7} of the {@book Dungeon Master's Guide|DMG}."
 									]
 								}
 							]
@@ -21605,7 +21609,7 @@
 									"page": 113,
 									"id": "26b",
 									"entries": [
-										"If the characters defeat the giants, they can plunder the giants' possessions. Countess Mulara wears two bejeweled necklaces (each worth 7,500 gp and weighing 125 pounds). Both she and the count own a collection of twenty ornate masks made of painted gold (each worth 750 gp and weighing 50 pounds). Among the furnishings in their bedchamber is an alabaster chest containing 800 pp and {@dice 1d3} magic items, determined by rolling on {@table Magic Item Table F} in {@book chapter 7|DMG|-1} of the {@book Dungeon Master's Guide|DMG}. The chest weighs 500 pounds and has an {@spell arcane lock} spell cast on it.",
+										"If the characters defeat the giants, they can plunder the giants' possessions. Countess Mulara wears two bejeweled necklaces (each worth 7,500 gp and weighing 125 pounds). Both she and the count own a collection of twenty ornate masks made of painted gold (each worth 750 gp and weighing 50 pounds). Among the furnishings in their bedchamber is an alabaster chest containing 800 pp and {@dice 1d3} magic items, determined by rolling on {@table Magic Item Table F} in {@book chapter 7|DMG|7} of the {@book Dungeon Master's Guide|DMG}. The chest weighs 500 pounds and has an {@spell arcane lock} spell cast on it.",
 										{
 											"type": "image",
 											"href": {
@@ -21710,7 +21714,7 @@
 									"page": 115,
 									"id": "274",
 									"entries": [
-										"Kaltivar the frost giant carries a sack containing {@dice 2d6 × 100} gp, {@dice 1d4} mundane items (determined by rolling on the Items in a Giant's Bag table in the introduction), and one magic item, determined by rolling on {@table Magic Item Table C} in {@book chapter 7|DMG|-1} of the {@book Dungeon Master's Guide|DMG}. The goblinoids have no treasure."
+										"Kaltivar the frost giant carries a sack containing {@dice 2d6 × 100} gp, {@dice 1d4} mundane items (determined by rolling on the Items in a Giant's Bag table in the introduction), and one magic item, determined by rolling on {@table Magic Item Table C} in {@book chapter 7|DMG|7} of the {@book Dungeon Master's Guide|DMG}. The goblinoids have no treasure."
 									]
 								}
 							]
@@ -21773,7 +21777,7 @@
 							"id": "278",
 							"entries": [
 								"Perched atop a crag overlooking the Rauvin Road, with a clear view of the Evermoors to the south and the Moonwood to the north, is a keep of mortared stone with a high-pitched roof that has wooden statues of baying wolves rising from its peaks. A branch in the road winds up to the keep's gatehouse and bailey. From the keep, the Zymorven family of Silverymoon has watched over the surrounding lands for four generations.",
-								"Lord Harthos Zymorven (CG male Chondathan human {@creature knight}) commands Zymorven Hall, which appears to have no guards to defend it. Many of the hallways and rooms, however, have suits of armor standing in dark corners, swords mounted on oak-paneled walls, and dusty carpets spread across stone floors. These are actually suits of {@creature animated armor}, {@creature Flying Sword||flying swords}, and {@creature Rug of Smothering||rugs of smothering} that obey Lord Zymorven's commands. Lord Zymorven retains the services of a scribe, a stablehand, a cook, and a musician (all {@creature Commoner||commoners}), as well as an old witch (use the {@creature druid} statistics) who is skilled at making herbal remedies and poultices.",
+								"Lord Harthos Zymorven (CG male Chondathan human {@creature knight}) commands Zymorven Hall, which appears to have no guards to defend it. Many of the hallways and rooms, however, have suits of armor standing in dark corners, swords mounted on oak-paneled walls, and dusty carpets spread across stone floors. These are actually suits of {@creature animated armor}, {@creature Flying Sword||flying swords}, and {@creature Rug of Smothering||rugs of smothering} that obey Lord Zymorven's commands. Lord Zymorven retains the services of a scribe, a stable hand, a cook, and a musician (all {@creature Commoner||commoners}), as well as an old witch (use the {@creature druid} statistics) who is skilled at making herbal remedies and poultices.",
 								"Lord Zymorven's duty is to be vigilant and watch for trouble, which could come from any direction. Soldiers patrolling the Rauvin Road on horseback are welcome to use the keep as a place where they can rest as well as obtain food, drink, and lodging for their horses. Characters who take up {@creature Urgala Meltimer|SKT}'s quest (see {@area chapter 2|12c|x}) might have cause to pay a visit to Zymorven Hall."
 							]
 						}
@@ -21824,9 +21828,9 @@
 									"grid": {
 										"type": "square",
 										"size": 65,
-										"offsetX": 14,
-										"offsetY": 4,
-										"distance": 10
+										"offsetX": 28,
+										"offsetY": 8,
+										"scale": 2
 									},
 									"mapRegions": [
 										{
@@ -21870,7 +21874,7 @@
 											"page": 116,
 											"id": "27e",
 											"entries": [
-												"Any character who searches through the rubble finds a cracked floor tile with what appears to be a compartment underneath it. Years ago, a halfling adventurer named Keltar Dardragon buried a treasure chest under the floor here, and he never had a chance to reclaim it before he died. Moog hasn't noticed the chest, which is locked but in poor condition. A character can easily break or pick the lock (no ability check required). The chest holds 300 sp and two magic items, determined by rolling on {@table Magic Item Table B} in {@book chapter 7|DMG|-1} of the {@book Dungeon Master's Guide|DMG}."
+												"Any character who searches through the rubble finds a cracked floor tile with what appears to be a compartment underneath it. Years ago, a halfling adventurer named Keltar Dardragon buried a treasure chest under the floor here, and he never had a chance to reclaim it before he died. Moog hasn't noticed the chest, which is locked but in poor condition. A character can easily break or pick the lock (no ability check required). The chest holds 300 sp and two magic items, determined by rolling on {@table Magic Item Table B} in {@book chapter 7|DMG|7} of the {@book Dungeon Master's Guide|DMG}."
 											]
 										}
 									]
@@ -21941,7 +21945,7 @@
 									"page": 118,
 									"id": "283",
 									"entries": [
-										"The Mirabarran authorities would be angry to learn that the Harpers have compromised the city's security by constructing a permanent {@spell teleportation circle} within Mirabar's walls. The circle is inscribed in a stable house loft and can be quickly hidden under hay. The circle's attendant, Zazspar Bronzefire (LG male shield dwarf {@creature mage}), poses as a stablehand, complete with leather overalls and straw in his beard."
+										"The Mirabarran authorities would be angry to learn that the Harpers have compromised the city's security by constructing a permanent {@spell teleportation circle} within Mirabar's walls. The circle is inscribed in a stable house loft and can be quickly hidden under hay. The circle's attendant, Zazspar Bronzefire (LG male shield dwarf {@creature mage}), poses as a stable hand, complete with leather overalls and straw in his beard."
 									]
 								},
 								{
@@ -21950,7 +21954,7 @@
 									"page": 118,
 									"id": "284",
 									"entries": [
-										"The circle in Neverwinter is drawn on the floor of an attic, in a creaky old three-story row house that the Harpers use as a meeting place. Minding the circle is a confident but socially awkward young woman named Sandyse Thunderquill (NG female Tethyrian human {@creature mage}), whom the Harpers are training to infiltrate the Arcane Brotherhood. Stairs lead from the attic down to a study, where Sandyse surrounds herself with lit candles and piles of open books."
+										"The circle in Neverwinter is drawn on the floor of an attic, in a creaky old three-story rowhouse that the Harpers use as a meeting place. Minding the circle is a confident but socially awkward young woman named Sandyse Thunderquill (NG female Tethyrian human {@creature mage}), whom the Harpers are training to infiltrate the Arcane Brotherhood. Stairs lead from the attic down to a study, where Sandyse surrounds herself with lit candles and piles of open books."
 									]
 								},
 								{
@@ -22091,10 +22095,9 @@
 									"grid": {
 										"type": "square",
 										"size": 88,
-										"offsetX": -31,
-										"offsetY": -11,
-										"scale": 2,
-										"distance": 20
+										"offsetX": -124,
+										"offsetY": -44,
+										"scale": 8
 									},
 									"mapRegions": [
 										{
@@ -23758,10 +23761,9 @@
 									"grid": {
 										"type": "square",
 										"size": 88,
-										"offsetX": -31,
-										"offsetY": -10,
-										"scale": 2,
-										"distance": 20
+										"offsetX": -124,
+										"offsetY": -40,
+										"scale": 8
 									}
 								}
 							]
@@ -25549,8 +25551,7 @@
 											"grid": {
 												"type": "square",
 												"size": 67,
-												"scale": 3,
-												"distance": 10
+												"scale": 6
 											},
 											"mapRegions": [
 												{
@@ -26951,10 +26952,9 @@
 											"grid": {
 												"type": "square",
 												"size": 74,
-												"offsetX": -9,
-												"offsetY": -33,
-												"scale": 3,
-												"distance": 10
+												"offsetX": -18,
+												"offsetY": -66,
+												"scale": 6
 											}
 										}
 									]
@@ -26987,7 +26987,7 @@
 							"id": "2fb",
 							"entries": [
 								"{@creature Chief Guh|SKT} is found here, along with five male {@creature Hill Giant||hill giants}, four {@creature Ogre||ogres}, and six {@creature Goblin||goblins}. Oil lamps in iron sconces are mounted to thick wooden pillars that support rafters 30 feet from the floor and the roof, which peaks 65 feet overhead. Protruding from the north, west, and south walls is a 10-foot-wide, 20-foot-high wooden ledge that the goblins use to get around the room. (The ledge was added after several goblins were crushed underfoot by careless hill giants and ogres.) A wooden ladder climbs up to the ledge, and windows a couple of feet above the ledge let shafts of natural light into the hall.",
-								"Eight sturdy but battered wooden tables covered with globs of grease, gnawed bones, empty casks, and scraps of food stand near the north and south walls, while empty ale barrels lie around and underneath them. Refuse covers the dried mud floor, in the middle of which are two 20-foot-diameter circular holes topped with crisscrossing wooden beams held in place by mud cement. The beams are far enough apart that a Medium or smaller creature can slip between them without having to squeeze. A horrible stench rises from the holes, accompanied by the squealing of pigs (see{@area area 12|30c|x}).",
+								"Eight sturdy but battered wooden tables covered with globs of grease, gnawed bones, empty casks, and scraps of food stand near the north and south walls, while empty ale barrels lie around and underneath them. Refuse covers the dried mud floor, in the middle of which are two 20-foot-diameter circular holes topped with crisscrossing wooden beams held in place by mud cement. The beams are far enough apart that a Medium or smaller creature can slip between them without having to squeeze. A horrible stench rises from the holes, accompanied by the squealing of pigs (see {@area area 12|30c|x}).",
 								"{@creature Chief Guh|SKT} lies at the west end of the hall, slumped atop a four-wheeled, flatbed wagon that bends and creaks under her great bulk. The wagon's axles are cracked and bowed, its wheels canted inward. Piled around the wagon are bones and other refuse from Guh's recent meals, as well as the treasures she has amassed (see \"Treasure\"). Guh weighs more than 20,000 pounds. She can't move, so she keeps her greatclub close by so that she can bop creatures on the noggin. She is a {@creature hill giant} with the following changes:",
 								{
 									"type": "list",
@@ -27229,7 +27229,7 @@
 							"page": 144,
 							"id": "30f",
 							"entries": [
-								"Pigs are slaughtered here, as are unwanted trespassers. The river has punched a hole in the north wall, creating a stream that runs through the place. A crude log bridge spans the waterway, which flows out of a gash in the south wall and tumbles down a wall of logs outside. Flies buzz around three blood-spattered wooden tables spaced about the room. A 30-foot-long wooden ladder climbs to a 20-foot-wide hole in the ceiling (leading up to {@area area 6|303|x}). The rungs of the ladder are spaced 3 feet apart. For Medium and smaller creatures, every 3 feet climbed on it costs 1 extra foot of movement.",
+								"Pigs are slaughtered here, as are unwanted trespassers. The river has punched a hole in the north wall, creating a stream that runs through the place. A crude log bridge spans the waterway, which flows out of a gash in the south wall and tumbles down a wall of logs outside. Flies buzz around three blood-spattered wooden tables spaced about the room. A 30-foot-long wooden ladder climbs to a 20-foot-wide hole in the ceiling (leading up to {@area area 6|303|x}). The rungs of the ladder are spaced 3 feet apart. For Medium and smaller creatures, every 3 feet climbed on it costs 1 extra foot ofmovement.",
 								"Lying atop the easternmost table is the carcass of a slaughtered {@creature pig|SKT}, and looming behind it is Slub, a male {@creature hill giant} covered head to toe in {@creature pig|SKT}'s blood and clutching a handaxe. Before fighting, Slub embeds his axe in the tabletop and picks up his greatclub from the floor.",
 								"Slub has a pet {@creature otyugh} that follows him around like a faithful dog, eating bones and carrion. The otyugh fights to the death to protect the hill giant.",
 								"A tunnel in the north wall leads to {@area area 15|311|x}.",
@@ -27655,9 +27655,8 @@
 											"grid": {
 												"type": "square",
 												"size": 85,
-												"offsetX": 40,
-												"scale": 3,
-												"distance": 10
+												"offsetX": 80,
+												"scale": 6
 											},
 											"mapRegions": [
 												{
@@ -31640,10 +31639,9 @@
 											"grid": {
 												"type": "square",
 												"size": 57,
-												"offsetX": 15,
-												"offsetY": 22,
-												"scale": 2,
-												"distance": 10
+												"offsetX": 30,
+												"offsetY": 44,
+												"scale": 4
 											}
 										}
 									]
@@ -32088,7 +32086,7 @@
 					"height": 699
 				},
 				"From their icy fortress of Svardborg, {@creature Jarl Storvald|SKT} and his frost giants strike out in their ships in search of the {@item Ring of Winter|ToA}, an artifact they can use to bring about the Age of Everlasting Ice. Although they're far from reaching that goal, the frost giants pose a terrible threat to the North. In this part of their mission, the characters confront this threat head-on.",
-				"If the characters obtain Storvald's {@item conch of teleportation|SKT}, they can use it to travel to Maelstrom, {@creature King Hekaton|SKT}'s undersea citadel (see chapter 10, \"Hold of the Storm Giants\"). In the course of accomplishing that goal, the characters must elude or overcome the many ruthless denizens of thefortress.",
+				"If the characters obtain Storvald's {@item conch of teleportation|SKT}, they can use it to travel to Maelstrom, {@creature King Hekaton|SKT}'s undersea citadel (see chapter 10, \"Hold of the Storm Giants\"). In the course of accomplishing that goal, the characters must elude or overcome the many ruthless denizens of the fortress.",
 				"The good news is that things could be worse. The bad news is that they soon will be. When the adventurers first arrive at Svardborg, {@creature Jarl Storvald|SKT} isn't there. He's aboard the {@i Krigvind}, his flagship, hunting whales in the Sea of Moving Ice. As the characters search for his conch, the {@i Krigvind}and its giants are on their way back.",
 				{
 					"type": "section",
@@ -32415,10 +32413,9 @@
 													"grid": {
 														"type": "square",
 														"size": 79,
-														"offsetX": 61,
-														"offsetY": -29,
-														"scale": 3,
-														"distance": 20
+														"offsetX": 244,
+														"offsetY": -116,
+														"scale": 12
 													},
 													"mapRegions": [
 														{
@@ -33234,10 +33231,9 @@
 													"grid": {
 														"type": "square",
 														"size": 87,
-														"offsetX": -24,
-														"offsetY": -35,
-														"scale": 3,
-														"distance": 20
+														"offsetX": -96,
+														"offsetY": -140,
+														"scale": 12
 													}
 												},
 												{
@@ -33254,10 +33250,9 @@
 													"grid": {
 														"type": "square",
 														"size": 71,
-														"offsetX": 32,
-														"offsetY": 10,
-														"scale": 3,
-														"distance": 10
+														"offsetX": 64,
+														"offsetY": 20,
+														"scale": 6
 													},
 													"mapRegions": [
 														{
@@ -34378,10 +34373,9 @@
 													"grid": {
 														"type": "square",
 														"size": 79,
-														"offsetX": -39,
-														"offsetY": 10,
-														"scale": 3,
-														"distance": 10
+														"offsetX": -78,
+														"offsetY": 20,
+														"scale": 6
 													}
 												}
 											]
@@ -35450,10 +35444,9 @@
 											"grid": {
 												"type": "square",
 												"size": 81,
-												"offsetX": 50,
-												"offsetY": 21,
-												"scale": 3,
-												"distance": 10
+												"offsetX": 100,
+												"offsetY": 42,
+												"scale": 6
 											},
 											"mapRegions": [
 												{
@@ -37061,10 +37054,9 @@
 											"grid": {
 												"type": "square",
 												"size": 88,
-												"offsetX": 11,
-												"offsetY": 41,
-												"scale": 3,
-												"distance": 10
+												"offsetX": 22,
+												"offsetY": 82,
+												"scale": 6
 											}
 										}
 									]
@@ -37118,7 +37110,7 @@
 											"page": 171,
 											"id": "3ba",
 											"entries": [
-												"The upper level of Ironslag features iron walkways that are bolted to the walls and stabilized with taut chains bolted to the ceiling. Iron cranes, pulleys, and swingarms are attached to some of the gantries. The gantry floors are iron grills with holes large enough for a human fist to pass through. A gantry grants {@quickref Cover||3||three-quarters cover} against any ranged attack that must pass through it to hit its target."
+												"The upper level of Ironslag features iron walkways that are bolted to the walls and stabilized with taut chains bolted to the ceiling. Iron cranes, pulleys, and swing-arms are attached to some of the gantries. The gantry floors are iron grills with holes large enough for a human fist to pass through. A gantry grants {@quickref Cover||3||three-quarters cover} against any ranged attack that must pass through it to hit its target."
 											]
 										},
 										{
@@ -37808,10 +37800,9 @@
 													"grid": {
 														"type": "square",
 														"size": 73,
-														"offsetX": 71,
-														"offsetY": 57,
-														"scale": 3,
-														"distance": 10
+														"offsetX": 142,
+														"offsetY": 114,
+														"scale": 6
 													},
 													"mapRegions": [
 														{
@@ -38487,9 +38478,8 @@
 													"grid": {
 														"type": "square",
 														"size": 73,
-														"offsetY": 9,
-														"scale": 3,
-														"distance": 10
+														"offsetY": 18,
+														"scale": 6
 													}
 												}
 											]
@@ -39239,9 +39229,8 @@
 											"grid": {
 												"type": "square",
 												"size": 75,
-												"offsetX": -13,
-												"scale": 3,
-												"distance": 10
+												"offsetX": -26,
+												"scale": 6
 											},
 											"mapRegions": [
 												{
@@ -39772,10 +39761,9 @@
 											"grid": {
 												"type": "square",
 												"size": 82,
-												"offsetX": 80,
-												"offsetY": 44,
-												"scale": 3,
-												"distance": 10
+												"offsetX": 160,
+												"offsetY": 88,
+												"scale": 6
 											}
 										},
 										{
@@ -39792,10 +39780,9 @@
 											"grid": {
 												"type": "square",
 												"size": 75,
-												"offsetX": 49,
-												"offsetY": 27,
-												"scale": 3,
-												"distance": 10
+												"offsetX": 98,
+												"offsetY": 54,
+												"scale": 6
 											},
 											"mapRegions": [
 												{
@@ -41492,10 +41479,9 @@
 											"grid": {
 												"type": "square",
 												"size": 82,
-												"offsetX": -14,
-												"offsetY": -18,
-												"scale": 3,
-												"distance": 10
+												"offsetX": -28,
+												"offsetY": -36,
+												"scale": 6
 											}
 										}
 									]
@@ -42456,10 +42442,9 @@
 											"grid": {
 												"type": "square",
 												"size": 79,
-												"offsetX": 20,
-												"offsetY": 20,
-												"scale": 3,
-												"distance": 10
+												"offsetX": 40,
+												"offsetY": 40,
+												"scale": 6
 											},
 											"mapRegions": [
 												{
@@ -45671,10 +45656,9 @@
 											"grid": {
 												"type": "square",
 												"size": 87,
-												"offsetX": 12,
-												"offsetY": 21,
-												"scale": 3,
-												"distance": 10
+												"offsetX": 24,
+												"offsetY": 42,
+												"scale": 6
 											}
 										}
 									]
@@ -46403,10 +46387,9 @@
 													"grid": {
 														"type": "square",
 														"size": 59,
-														"offsetX": -9,
-														"offsetY": 3,
-														"scale": 2,
-														"distance": 10
+														"offsetX": -18,
+														"offsetY": 6,
+														"scale": 4
 													},
 													"mapRegions": [
 														{
@@ -47117,9 +47100,8 @@
 													"grid": {
 														"type": "square",
 														"size": 59,
-														"offsetX": -8,
-														"scale": 2,
-														"distance": 10
+														"offsetX": -16,
+														"scale": 4
 													}
 												}
 											]
@@ -47437,10 +47419,9 @@
 									"grid": {
 										"type": "square",
 										"size": 78,
-										"offsetX": 31,
-										"offsetY": 61,
-										"scale": 2,
-										"distance": 10
+										"offsetX": 62,
+										"offsetY": 122,
+										"scale": 4
 									},
 									"mapRegions": [
 										{
@@ -47907,9 +47888,9 @@
 									"grid": {
 										"type": "square",
 										"size": 92,
-										"offsetX": 52,
-										"offsetY": 26,
-										"distance": 10
+										"offsetX": 104,
+										"offsetY": 52,
+										"scale": 2
 									}
 								}
 							]
@@ -48904,10 +48885,9 @@
 									"grid": {
 										"type": "square",
 										"size": 53,
-										"offsetX": 7,
-										"offsetY": -4,
-										"scale": 2,
-										"distance": 10
+										"offsetX": 14,
+										"offsetY": -8,
+										"scale": 4
 									},
 									"mapRegions": [
 										{
@@ -49299,9 +49279,8 @@
 									"grid": {
 										"type": "square",
 										"size": 59,
-										"offsetX": -22,
-										"scale": 2,
-										"distance": 10
+										"offsetX": -44,
+										"scale": 4
 									}
 								}
 							]
@@ -49956,6 +49935,13 @@
 					"title": "On the Cover: Heir to the Wyrmskull Throne, and indeed all giant-kind, the storm giant Serissa stands amidst the clouds, in the shadow of her mighty father, King Hekaton. Her contentious elder siblings, Mirran and Nym, occupy the forefront of this tempestuous illustration by the esteemed Tyler Jacobson.",
 					"width": 1058,
 					"height": 704
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@note Disclaimer: Creatures and objects in this adventure are bigger than they appear. No giant beanstalks were damaged and no golden geese were harmed in the making of this book.}"
+					],
+					"id": "53a"
 				}
 			],
 			"id": "538"

@@ -24,25 +24,6 @@
 			]
 		},
 		{
-			"name": "Acolyte",
-			"source": "XPHB",
-			"entries": [
-				"You devoted yourself to service in a temple, either nestled in a town or secluded in a sacred grove. There you performed rites in honor of a god or pantheon. You served under a priest and studied religion. Thanks to your priest's instruction and your own devotion, you also learned how to channel a modicum of divine power in service to your place of worship and the people who prayed there."
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "backgrounds/XPHB/Acolyte.webp"
-					},
-					"credit": "Titus Lunter",
-					"width": 2513,
-					"height": 952
-				}
-			]
-		},
-		{
 			"name": "Anthropologist",
 			"source": "ToA",
 			"entries": [
@@ -73,25 +54,6 @@
 							]
 						}
 					]
-				}
-			]
-		},
-		{
-			"name": "Artisan",
-			"source": "XPHB",
-			"entries": [
-				"You began mopping floors and scrubbing counters in an artisan's workshop for a few coppers per day as soon as you were strong enough to carry a bucket. When you were old enough to apprentice, you learned to create basic crafts of your own, as well as how to sweet-talk the occasional demanding customer. Your trade has also given you a keen eye for detail."
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "backgrounds/XPHB/Artisan.webp"
-					},
-					"credit": "Luca Bancone",
-					"width": 2513,
-					"height": 914
 				}
 			]
 		},
@@ -538,25 +500,6 @@
 			]
 		},
 		{
-			"name": "Charlatan",
-			"source": "XPHB",
-			"entries": [
-				"Once you were old enough to order an ale, you soon had a favorite stool in every tavern within ten miles of where you were born. As you traveled the circuit from public house to watering hole, you learned to prey on unfortunates who were in the market for a comforting lie or two\u2014perhaps a sham potion or forged ancestry records."
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "backgrounds/XPHB/Charlatan.webp"
-					},
-					"credit": "Luca Bancone",
-					"width": 2513,
-					"height": 952
-				}
-			]
-		},
-		{
 			"name": "City Watch",
 			"source": "SCAG",
 			"entries": [
@@ -654,13 +597,6 @@
 			]
 		},
 		{
-			"name": "Continental Nobility",
-			"source": "DoDk",
-			"entries": [
-				"You are the scion of a noble household. Whether you hail from Caspia, Elyria, or Westemär, the fall of Drakkenheim has either adversely impacted your family's fortunes, or created a tantalizing opportunity to increase your political power and influence."
-			]
-		},
-		{
 			"name": "Cormanthor Refugee",
 			"source": "ALRageOfDemons",
 			"entries": [
@@ -670,7 +606,7 @@
 						{
 							"type": "entries",
 							"entries": [
-								"You are one of hundreds of refugees that were driven from Hillsfar or that fled the destruction of Myth Drannor and who now shelter in hidden camps under the northern eaves of the Cormanthor Forest. If you up grew in the camps, you have never been to a settlement other than the village of Elventree. As a guest of the elves, you have learned their ways and the ways of the forest. You are also a traumatized, as residual wild magic, energies released by the fall of Thultanar upon Myth Drannor, and the constant fear of raids hunting for nonhumans to fight in Hillsfar's Arena have taken their toll on you, as they have on everyone in the camps."
+								"You are one of hundreds of refugees that were driven from Hillsfar or that fled the destruction of Myth Drannor and who now shelter in hidden camps under the northern eaves of the Cormanthor Forest. If you up grew in the camps, you have never been to a settlement other than the village of Elventree. As a guest of the elves, you have learned their ways and the ways of the forest. You are also a traumatized, as residual wild magic, energies released by the fall of Thultanthar upon Myth Drannor, and the constant fear of raids hunting for nonhumans to fight in Hillsfar's Arena have taken their toll on you, as they have on everyone in the camps."
 							]
 						}
 					]
@@ -711,32 +647,6 @@
 						}
 					]
 				}
-			]
-		},
-		{
-			"name": "Criminal",
-			"source": "XPHB",
-			"entries": [
-				"You eked out a living in dark alleyways, cutting purses or burgling shops. Perhaps you were part of a small gang of like-minded wrongdoers who looked out for each other. Or maybe you were a lone wolf, fending for yourself against the local thieves' guild and more fearsome lawbreakers."
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "backgrounds/XPHB/Criminal.webp"
-					},
-					"credit": "Noor Rahman",
-					"width": 2513,
-					"height": 914
-				}
-			]
-		},
-		{
-			"name": "Devoted Missionary",
-			"source": "DoDk",
-			"entries": [
-				"You are a follower of one of the many religions of the world. Through either divine calling, visions, or prophecies, or because your church sent you as an envoy and representative, or maybe because you are seeking divine answers, you have made the journey to Drakkenheim. What sacred purpose lies in the ruins that you are quested with uncovering?"
 			]
 		},
 		{
@@ -806,25 +716,6 @@
 							]
 						}
 					]
-				}
-			]
-		},
-		{
-			"name": "Entertainer",
-			"source": "XPHB",
-			"entries": [
-				"You spent much of your youth following roving fairs and carnivals, performing odd jobs for musicians and acrobats in exchange for lessons. You may have learned how to walk a tightrope, how to play a {@item lute|XPHB} in a distinct style, or how to recite poetry with impeccable diction. To this day, you thrive on applause and long for the stage."
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "backgrounds/XPHB/Entertainer.webp"
-					},
-					"credit": "Kenny Vo",
-					"width": 2513,
-					"height": 952
 				}
 			]
 		},
@@ -1011,25 +902,6 @@
 							]
 						}
 					]
-				}
-			]
-		},
-		{
-			"name": "Farmer",
-			"source": "XPHB",
-			"entries": [
-				"You grew up close to the land. Years tending animals and cultivating the earth rewarded you with patience and good health. You have a keen appreciation for nature's bounty alongside a healthy respect for nature's wrath."
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "backgrounds/XPHB/Farmer.webp"
-					},
-					"credit": "Kenny Vo",
-					"width": 2513,
-					"height": 914
 				}
 			]
 		},
@@ -1270,44 +1142,6 @@
 			]
 		},
 		{
-			"name": "Guard",
-			"source": "XPHB",
-			"entries": [
-				"Your feet ache when you remember the countless hours you spent at your post in the tower. You were trained to keep one eye looking outside the wall, watching for marauders sweeping from the nearby forest, and your other eye looking inside the wall, searching for cutpurses and troublemakers."
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "backgrounds/XPHB/Guard.webp"
-					},
-					"credit": "Noor Rahman",
-					"width": 2513,
-					"height": 952
-				}
-			]
-		},
-		{
-			"name": "Guide",
-			"source": "XPHB",
-			"entries": [
-				"You came of age outdoors, far from settled lands. Your home was anywhere you chose to spread your bedroll. There are wonders in the wilderness\u2014strange monsters, pristine forests and streams, overgrown ruins of great halls once trod by giants\u2014and you learned to fend for yourself as you explored them. From time to time, you guided friendly nature priests who instructed you in the fundamentals of channeling the magic of the wild."
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "backgrounds/XPHB/Guide.webp"
-					},
-					"credit": "Erel Maatita",
-					"width": 2513,
-					"height": 914
-				}
-			]
-		},
-		{
 			"name": "Guild Artisan",
 			"source": "PHB",
 			"entries": [
@@ -1384,25 +1218,6 @@
 							]
 						}
 					]
-				}
-			]
-		},
-		{
-			"name": "Hermit",
-			"source": "XPHB",
-			"entries": [
-				"You spent your early years secluded in a hut or monastery located well beyond the outskirts of the nearest settlement. In those days, your only companions were the creatures of the forest and those who would occasionally visit to bring news of the outside world and supplies. The solitude allowed you to spend many hours pondering the mysteries of creation."
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "backgrounds/XPHB/Hermit.webp"
-					},
-					"credit": "Pedro Cardoso",
-					"width": 2513,
-					"height": 952
 				}
 			]
 		},
@@ -1787,13 +1602,6 @@
 			]
 		},
 		{
-			"name": "Mageborn",
-			"source": "DoDk",
-			"entries": [
-				"You manifested arcane magical abilities at a young age, and were taken into the guardianship of the Amethyst Academy. You learned to harness your magic at a secluded magical school. After you came of age and completed your apprenticeship, you became free to pursue your own interests, but you must respect the laws and customs that govern all those with spellcasting powers. Under the Edicts of Lumen, mages are disinherited of any noble titles, and cannot own land."
-			]
-		},
-		{
 			"name": "Marine",
 			"source": "GoS",
 			"entries": [
@@ -1826,7 +1634,7 @@
 									"type": "inset",
 									"name": "Mercenaries of the North",
 									"entries": [
-										"Countless mercenary companies operate up and down the Sword Coast and throughout the North. Most are smallscale operations that employ a dozen to a hundred folk who offer security services, hunt monsters and brigands, or go to war in exchange for gold. Some organizations, such as the Zhentarim, Flaming Fist, and the nation of Mintarn have hundreds or thousands of members and can provide private armies to those with enough funds. A few organizations operating in the North are described below.",
+										"Countless mercenary companies operate up and down the Sword Coast and throughout the North. Most are small-scale operations that employ a dozen to a hundred folk who offer security services, hunt monsters and brigands, or go to war in exchange for gold. Some organizations, such as the Zhentarim, Flaming Fist, and the nation of Mintarn have hundreds or thousands of members and can provide private armies to those with enough funds. A few organizations operating in the North are described below.",
 										{
 											"type": "entries",
 											"name": "The Chill",
@@ -1853,25 +1661,6 @@
 							]
 						}
 					]
-				}
-			]
-		},
-		{
-			"name": "Merchant",
-			"source": "XPHB",
-			"entries": [
-				"You were apprenticed to a trader, caravan master, or shopkeeper, learning the fundamentals of commerce. You traveled broadly, and you earned a living by buying and selling the raw materials artisans need to practice their craft or finished works from such crafters. You might have transported goods from one place to another (by ship, wagon, or caravan) or bought them from traveling traders and sold them in your own shop."
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "backgrounds/XPHB/Merchant.webp"
-					},
-					"credit": "Kamila Szutenberg",
-					"width": 2513,
-					"height": 914
 				}
 			]
 		},
@@ -1929,25 +1718,6 @@
 							]
 						}
 					]
-				}
-			]
-		},
-		{
-			"name": "Noble",
-			"source": "XPHB",
-			"entries": [
-				"You were raised in a castle, surrounded by wealth, power, and privilege. Your family of minor aristocrats ensured that you received a first-class education, some of which you appreciated and some of which you resented. Your time in the castle, especially the many hours you spent observing your family at court, also taught you a great deal about leadership."
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "backgrounds/XPHB/Noble.webp"
-					},
-					"credit": "Noor Rahman",
-					"width": 2513,
-					"height": 952
 				}
 			]
 		},
@@ -2261,25 +2031,6 @@
 			]
 		},
 		{
-			"name": "Sage",
-			"source": "XPHB",
-			"entries": [
-				"You spent your formative years traveling between manors and monasteries, performing various odd jobs and services in exchange for access to their libraries. You whiled away many a long evening studying books and scrolls, learning the lore of the multiverse\u2014even the rudiments of magic\u2014and your mind yearns for more."
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "backgrounds/XPHB/Sage.webp"
-					},
-					"credit": "Lixin Yin",
-					"width": 2513,
-					"height": 915
-				}
-			]
-		},
-		{
 			"name": "Sailor",
 			"source": "PHB",
 			"entries": [
@@ -2295,44 +2046,6 @@
 							]
 						}
 					]
-				}
-			]
-		},
-		{
-			"name": "Sailor",
-			"source": "XPHB",
-			"entries": [
-				"You lived as a seafarer, wind at your back and decks swaying beneath your feet. You've perched on barstools in more ports of call than you can remember, faced mighty storms, and swapped stories with folk who live beneath the waves."
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "backgrounds/XPHB/Sailor.webp"
-					},
-					"credit": "Noor Rahman",
-					"width": 2513,
-					"height": 952
-				}
-			]
-		},
-		{
-			"name": "Scribe",
-			"source": "XPHB",
-			"entries": [
-				"You spent formative years in a scriptorium, a monastery dedicated to the preservation of knowledge, or a government agency, where you learned to write with a clear hand and produce finely written texts. Perhaps you scribed government documents or copied tomes of literature. You might have some skill as a writer of poetry, narrative, or scholarly research. Above all, you have a careful attention to detail, helping you avoid introducing mistakes to the documents you copy and create."
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "backgrounds/XPHB/Scribe.webp"
-					},
-					"credit": "Kamila Szutenberg",
-					"width": 2513,
-					"height": 914
 				}
 			]
 		},
@@ -2464,25 +2177,6 @@
 			]
 		},
 		{
-			"name": "Soldier",
-			"source": "XPHB",
-			"entries": [
-				"You began training for war as soon as you reached adulthood and carry precious few memories of life before you took up arms. Battle is in your blood. Sometimes you catch yourself reflexively performing the basic fighting exercises you learned first. Eventually, you put that training to use on the battlefield, protecting the realm by waging war."
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "backgrounds/XPHB/Soldier.webp"
-					},
-					"credit": "Fabià Sans",
-					"width": 2513,
-					"height": 952
-				}
-			]
-		},
-		{
 			"name": "Stojanow Prisoner",
 			"source": "ALCurseOfStrahd",
 			"entries": [
@@ -2498,13 +2192,6 @@
 						}
 					]
 				}
-			]
-		},
-		{
-			"name": "Survivor",
-			"source": "DoDk",
-			"entries": [
-				"Not everyone left Drakkenheim after the meteor. Some stayed behind, searching the ruins for things they lost: friends and family, or just seeking out treasure and artefacts. You know what places in the city are the most dangerous, what paths are the best to take, and often have an idea of the fastest ways to travel. Despite the Haze, and dangers, you've managed to survive, but carry the weight of Drakkenheim's madness with you."
 			]
 		},
 		{
@@ -2540,13 +2227,6 @@
 						}
 					]
 				}
-			]
-		},
-		{
-			"name": "Treasure Seeker",
-			"source": "DoDk",
-			"entries": [
-				"Lost treasure and valuable relics brought you to Drakkenheim. Perhaps the prospect of earning more gold than you can spend in your lifetime is too tantalizing to pass up, or alternatively you may seek items for their historical or religious significance."
 			]
 		},
 		{
@@ -2632,13 +2312,6 @@
 			]
 		},
 		{
-			"name": "Variant Continental Nobility (Last of the Line)",
-			"source": "DoDk",
-			"entries": [
-				"In the years following the destruction of Drakkenheim, calamity and misfortune wracked your house leaving you the sole surviving heir. Penniless and without land, you have come to Drakkenheim to rebuild your family's legacy."
-			]
-		},
-		{
 			"name": "Variant Criminal (Spy)",
 			"source": "PHB",
 			"entries": [
@@ -2653,13 +2326,6 @@
 						}
 					]
 				}
-			]
-		},
-		{
-			"name": "Variant Devoted Missionary (Stargazer)",
-			"source": "DoDk",
-			"entries": [
-				"You witnessed the meteor 15 years ago. Whether you believe it to be destiny, a magical or divine calling, or just curiosity of the secrets that need to be unearthed, you are drawn to the crater. You believe that the crater holds some answers to the questions you seek, and that somewhere in Drakkenheim lies a truth beyond your comprehension. Your pilgrimage to Drakkenheim may have taken you weeks, months or even years but you had to come - something called you here and you must discover its origin."
 			]
 		},
 		{
@@ -2694,13 +2360,6 @@
 						}
 					]
 				}
-			]
-		},
-		{
-			"name": "Variant Mageborn (Malfeasant Mage)",
-			"source": "DoDk",
-			"entries": [
-				"You were expelled from the Amethyst Academy for some trespass, real or imagined, or perhaps you were never taken in by them and learned magic on your own. Common folk are often mistrustful of spellcasters who do not wear the Amethyst Academy colours, so you may need to hide your identity and abilities, especially from the Amethyst Academy and the Knights of the Silver Order."
 			]
 		},
 		{
@@ -2745,20 +2404,6 @@
 						}
 					]
 				}
-			]
-		},
-		{
-			"name": "Variant Survivor (Veteran of the Civil War)",
-			"source": "DoDk",
-			"entries": [
-				"You survived the civil war that ravaged Westemär, either as a soldier or fleeing refugee. The war took something from you and changed you. It may be that you had to do things that went against your morals, or perhaps you lost friends and family in the bloodshed. Regardless, you walked away with scars that will not easily heal."
-			]
-		},
-		{
-			"name": "Variant Treasure Seeker (Soldier of Fortune)",
-			"source": "DoDk",
-			"entries": [
-				"Rather than seeking your fortune from finding treasure, you seek yours by hunting down the brigands, outlaws, and monsters that now hide in Drakkenheim. You often take up dangerous bounties and follow wanted posters as long as the price is right. Danger is second nature to you and the horrors of the city are nothing compared to the thrill of the hunt, and the coin it can gain you."
 			]
 		},
 		{
@@ -2925,25 +2570,6 @@
 							]
 						}
 					]
-				}
-			]
-		},
-		{
-			"name": "Wayfarer",
-			"source": "XPHB",
-			"entries": [
-				"You grew up on the streets surrounded by similarly ill-fated castoffs, a few of them friends and a few of them rivals. You slept where you could and did odd jobs for food. At times, when the hunger became unbearable, you resorted to theft. Still, you never lost your pride and never abandoned hope. Fate is not yet finished with you."
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "backgrounds/XPHB/Wayfarer.webp"
-					},
-					"credit": "Jonas De Ro",
-					"width": 2513,
-					"height": 914
 				}
 			]
 		},

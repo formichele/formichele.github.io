@@ -471,7 +471,7 @@
 									"page": 10,
 									"id": "01e",
 									"entries": [
-										"This drow elite warrior has assumed the role of Ilvara's lieutenant and lover after the injuries suffered by his predecessor, Jorlan Duskryn. Shoor is relatively young and quite arrogant for a drow male, proud of his abilities and accomplishments. He is still flush with his success in winning the favor of Ilvara and advancing his position Twithin the outpost, which shows in his swagger and the way he lords it over every other male in Velkynvelve, particularly Jorlan. Still insecure in his position, Shoor feels the need to demonstrate his skill and effectiveness to his mistress and to find ways to please her.",
+										"This drow elite warrior has assumed the role of Ilvara's lieutenant and lover after the injuries suffered by his predecessor, Jorlan Duskryn. Shoor is relatively young and quite arrogant for a drow male, proud of his abilities and accomplishments. He is still flush with his success in winning the favor of Ilvara and advancing his position within the outpost, which shows in his swagger and the way he lords it over every other male in Velkynvelve, particularly Jorlan. Still insecure in his position, Shoor feels the need to demonstrate his skill and effectiveness to his mistress and to find ways to please her.",
 										"As Ilvara's lieutenant, Shoor carries a {@item wand of viscid globs|OotA} (see {@adventure appendix B|OotA|18}), which once belonged to Jorlan and is used to capture and restrain prisoners."
 									]
 								},
@@ -559,7 +559,7 @@
 									"page": 11,
 									"id": "027",
 									"entries": [
-										"Bridges of spider-silk rope connect the walkways to the guard tower and the entrance to the priestess's tower. The swaying bridges are {@quickref difficult terrain||3} for non-drow."
+										"Bridges of spider silk rope connect the walkways to the guard tower and the entrance to the priestess's tower. The swaying bridges are {@quickref difficult terrain||3} for non-drow."
 									]
 								},
 								{
@@ -1704,7 +1704,7 @@
 							"id": "03e",
 							"entries": [
 								"The fourth hanging tower, connected by rope bridges to the slave pen and the walkway alongside the priestess's tower, serves as a guard tower for observing the cavern, the western passage, and the slave pen.",
-								"The lower chamber of the tower is occupied by two {@creature drow} and one {@creature drow elite warrior} on guard duty. It contains a zurkhwood table and three chairs, a smaller side table, and spider-silk webbing set with hooks for hanging equipment.",
+								"The lower chamber of the tower is occupied by two {@creature drow} and one {@creature drow elite warrior} on guard duty. It contains a zurkhwood table and three chairs, a smaller side table, and spider silk webbing set with hooks for hanging equipment.",
 								"As at the watch posts, guard duty here is a dull affair, and the guards are usually distracted enough (talking or passing the time with dice games) that prisoners can move or act unnoticed with a successful Dexterity ({@skill Stealth}) check contested by the guards' passive Wisdom ({@skill Perception}) score.",
 								"The tower's upper chamber stores extra arms and armor for the outpost. Characters who gain entrance to the armory can easily loot it (see \"Treasure\").",
 								{
@@ -2612,7 +2612,7 @@
 							"id": "07e",
 							"entries": [
 								"The drow try to capture the escaped prisoners if at all possible, since Ilvara wants the pleasure of teaching them a lesson about disobedience. If the dark elves reduce any characters to 0 hit points, those characters are knocked out rather than dying (see \"{@book Knocking a Creature Out|PHB|9|Knocking a Creature Out}\" in chapter 9 of the {@i Player's Handbook}). Even if one or more of the characters are accidentally killed, Ilvara is obsessed enough to cast {@spell raise dead} to restore them to life (assuming the character's soul is willing to return).",
-								"Captured characters are disarmed, their hands bound with spider-silk rope, and gagged. The drow march them back to Velkynvelve unless Menzoberranzan is closer, in which case Ilvara takes them there instead. The characters will need to come up with a new plan of escape, ideally before Ilvara has the opportunity to torture them or sell them into slavery in the City of Spiders. If they escape her clutches again, the drow priestess continues her pursuit until she is dead or the party leaves the Underdark (see {@adventure chapter 7|OotA|6})."
+								"Captured characters are disarmed, their hands bound with spider silk rope, and gagged. The drow march them back to Velkynvelve unless Menzoberranzan is closer, in which case Ilvara takes them there instead. The characters will need to come up with a new plan of escape, ideally before Ilvara has the opportunity to torture them or sell them into slavery in the City of Spiders. If they escape her clutches again, the drow priestess continues her pursuit until she is dead or the party leaves the Underdark (see {@adventure chapter 7|OotA|6})."
 							]
 						}
 					]
@@ -3994,9 +3994,9 @@
 									"grid": {
 										"type": "square",
 										"size": 130,
-										"offsetX": 39,
-										"offsetY": 59,
-										"distance": 10
+										"offsetX": 78,
+										"offsetY": 118,
+										"scale": 2
 									},
 									"mapRegions": [
 										{
@@ -4553,9 +4553,9 @@
 									"grid": {
 										"type": "square",
 										"size": 108,
-										"offsetX": 38,
-										"offsetY": 53,
-										"distance": 10
+										"offsetX": 76,
+										"offsetY": 106,
+										"scale": 2
 									},
 									"title": "Player Version",
 									"mapParent": {
@@ -5581,9 +5581,9 @@
 									"grid": {
 										"type": "square",
 										"size": 223,
-										"offsetX": 11,
-										"offsetY": 140,
-										"distance": 10
+										"offsetX": 22,
+										"offsetY": 280,
+										"scale": 2
 									},
 									"mapRegions": [
 										{
@@ -5714,9 +5714,9 @@
 									"grid": {
 										"type": "square",
 										"size": 186,
-										"offsetX": 9,
-										"offsetY": 116,
-										"distance": 10
+										"offsetX": 18,
+										"offsetY": 232,
+										"scale": 2
 									}
 								}
 							]
@@ -6649,9 +6649,9 @@
 											"grid": {
 												"type": "square",
 												"size": 71,
-												"offsetX": -29,
-												"offsetY": -29,
-												"distance": 10
+												"offsetX": -58,
+												"offsetY": -58,
+												"scale": 2
 											},
 											"mapRegions": [
 												{
@@ -6828,9 +6828,9 @@
 											"grid": {
 												"type": "square",
 												"size": 59,
-												"offsetX": 35,
-												"offsetY": -19,
-												"distance": 10
+												"offsetX": 70,
+												"offsetY": -38,
+												"scale": 2
 											}
 										}
 									]
@@ -7863,7 +7863,7 @@
 									"id": "171",
 									"entries": [
 										"The ground at your feet has been getting smoother and flatter, a welcome respite from the uneven passages to which you have grown wearily accustomed. Eventually, stone tiles become more noticeable, turning the path into a proper road. You can see spots of light in the distance, blue-white and too regularly placed to be phosphorescent mushrooms.",
-										"The lights are proper lamps flanking two massive stone gates blocking the tunnel. Before you get a chance to examine the intricate carvings on the gates' surface, a harsh voice hisses from a slit on the cavern wall that was not therebefore.",
+										"The lights are proper lamps flanking two massive stone gates blocking the tunnel. Before you get a chance to examine the intricate carvings on the gates' surface, a harsh voice hisses from a slit on the cavern wall that was not there before.",
 										"\"State your names and business!\" the voice orders in Dwarvish. Other similar slits open, revealing the tips of a dozen crossbow bolts. Behind you, a metallic din announces a group of six heavily armored dwarves appearing out of thin air, their swords leveled at you from behind sturdy metal shields."
 									]
 								},
@@ -11860,7 +11860,7 @@
 							"page": 69,
 							"id": "1c2",
 							"entries": [
-								"The narrow corridor from the West Cleft opens into a long cavern lined with stalactites and stalagmites. Whater drips from the stalactites, forming small pools on the floor.",
+								"The narrow corridor from the West Cleft opens into a long cavern lined with stalactites and stalagmites. Water drips from the stalactites, forming small pools on the floor.",
 								{
 									"type": "insetReadaloud",
 									"id": "1c3",
@@ -13423,9 +13423,9 @@
 							"grid": {
 								"type": "square",
 								"size": 112,
-								"offsetX": -49,
-								"offsetY": -50,
-								"distance": 10
+								"offsetX": -98,
+								"offsetY": -100,
+								"scale": 2
 							},
 							"mapRegions": [
 								{
@@ -14284,9 +14284,9 @@
 							"grid": {
 								"type": "square",
 								"size": 94,
-								"offsetX": 41,
-								"offsetY": 41,
-								"distance": 10
+								"offsetX": 82,
+								"offsetY": 82,
+								"scale": 2
 							}
 						}
 					]
@@ -24269,7 +24269,7 @@
 							"page": 117,
 							"id": "312",
 							"entries": [
-								"Knowing that many of their NPC companions have homes in the Underdark can be an important part of the decision-making process that guides the characters through the early chapters of this adventure. The Underdark is a dangerous place, and characters might be reluctant to let their newfound friends fend for themselves. Helping some of them return home makes a good incentive to visit locations in the Underdark. Shuushar, {@creature Topsy|OotA}, {@creature Turvy|OotA}, {@creature Stool|OotA}, {@creature Rumpadump|OotA}, and {@creature Glabbagool|OotA} would rather remain in the Underdark than suffer sunlight."
+								"Knowing that many of their NPC companions have homes in the Underdark can be an important part of the decision-making process that guides the characters through the early chapters of this adventure. The Underdark is a dangerous place, and characters might be reluctant to let their newfound friends fend for themselves. Helping some of them return home makes a good incentive to visit locations in the Underdark. {@creature Shuushar the Awakened|OotA|Shuushar}, {@creature Topsy|OotA}, {@creature Turvy|OotA}, {@creature Stool|OotA}, {@creature Rumpadump|OotA}, and {@creature Glabbagool|OotA} would rather remain in the Underdark than suffer sunlight."
 							]
 						},
 						{
@@ -24278,7 +24278,7 @@
 							"page": 117,
 							"id": "313",
 							"entries": [
-								"Companions such as Eldeth and {@creature Ront|OotA}, who prefer to live on or near the surface, gladly follow the characters all the way out if they can. Eldeth wishes to return to Gauntlgrym, and her presence there can provide a connection for the characters when they visit the dwarven settlement in {@adventure chapter 8|OotA|7}. If Eldeth didn't survive, she might have charged the characters with returning her body or effects to Gauntlgrym. {@creature Ront|OotA} might wish to rejoin his tribe or seek a new home elsewhere, based on how the events in the earlier chapters of the adventure have influenced him. Depending on how he was treated, the orc most likely parts from the characters in peace\u2014out of respect for their battle prowess, if nothing else."
+								"Companions such as {@creature Eldeth Feldrun|OotA|Eldeth} and {@creature Ront|OotA}, who prefer to live on or near the surface, gladly follow the characters all the way out if they can. Eldeth wishes to return to Gauntlgrym, and her presence there can provide a connection for the characters when they visit the dwarven settlement in {@adventure chapter 8|OotA|7}. If Eldeth didn't survive, she might have charged the characters with returning her body or effects to Gauntlgrym. {@creature Ront|OotA} might wish to rejoin his tribe or seek a new home elsewhere, based on how the events in the earlier chapters of the adventure have influenced him. Depending on how he was treated, the orc most likely parts from the characters in peace\u2014out of respect for their battle prowess, if nothing else."
 							]
 						},
 						{
@@ -25366,9 +25366,9 @@
 											"grid": {
 												"type": "square",
 												"size": 91,
-												"offsetX": 59,
-												"offsetY": 70,
-												"distance": 20
+												"offsetX": 236,
+												"offsetY": 280,
+												"scale": 4
 											},
 											"mapRegions": [
 												{
@@ -28054,9 +28054,9 @@
 											"grid": {
 												"type": "square",
 												"size": 76,
-												"offsetX": -30,
-												"offsetY": -21,
-												"distance": 20
+												"offsetX": -120,
+												"offsetY": -84,
+												"scale": 4
 											}
 										}
 									]
@@ -30154,7 +30154,7 @@
 											"type": "insetReadaloud",
 											"id": "3fa",
 											"entries": [
-												"An imperious drow archwizard in spider-silk robes casts a mighty conjuration spell. As the ritual draws toward its conclusion, a web of {@i faerzress} energy expands outward. The wizard seems alarmed by this, his efforts to complete the spell growing more crazed as he realizes he's lost control.",
+												"An imperious drow archwizard in spider silk robes casts a mighty conjuration spell. As the ritual draws toward its conclusion, a web of {@i faerzress} energy expands outward. The wizard seems alarmed by this, his efforts to complete the spell growing more crazed as he realizes he's lost control.",
 												"And then, madness! Rifts open in the web of energy around him. These cracks stretch and widen, and through them come horrific fiends that scream, shriek, and howl as they are wrenched from the Abyss and cast into the Underdark.",
 												"A woman's deep, dark laugh echoes in your mind as the drow wizard shrinks away from the demonic hordes he has unwittingly unleashed."
 											]
@@ -31015,9 +31015,9 @@
 									"grid": {
 										"type": "square",
 										"size": 87,
-										"offsetX": -60,
-										"offsetY": -44,
-										"distance": 10
+										"offsetX": -120,
+										"offsetY": -88,
+										"scale": 2
 									},
 									"mapRegions": [
 										{
@@ -33682,9 +33682,9 @@
 									"grid": {
 										"type": "square",
 										"size": 73,
-										"offsetX": 12,
-										"offsetY": 26,
-										"distance": 10
+										"offsetX": 24,
+										"offsetY": 52,
+										"scale": 2
 									}
 								}
 							]
@@ -33795,7 +33795,7 @@
 									"page": 170,
 									"id": "44d",
 									"entries": [
-										"Within the cave, four zurkhwood boxes hold a 50-foot length of spider-silk rope, four flasks of oil, twenty pounds of rancid food, a pile of moldy blankets, six maces and sixteen javelins (all battered but usable), four casks of unspoiled wine worth 10 gp each, and a locked tribute chest. It takes a successful {@dc 15} Dexterity check using thieves' tools to open the chest, which contains 180 gp (minted in Menzoberranzan and Gracklstugh), three gems each worth 50 gp each, a {@item potion of gaseous form}, and a {@item +1 dagger} with silvery, weblike filigree worked into the hilt. The dagger is of drow manufacture (see the \"{@adventure Drowcraft Items|OotA|18}\" sidebar in appendix B). The crude litters that the troglodytes use to bear these goods are propped up against the cave wall."
+										"Within the cave, four zurkhwood boxes hold a 50-foot length of spider silk rope, four flasks of oil, twenty pounds of rancid food, a pile of moldy blankets, six maces and sixteen javelins (all battered but usable), four casks of unspoiled wine worth 10 gp each, and a locked tribute chest. It takes a successful {@dc 15} Dexterity check using thieves' tools to open the chest, which contains 180 gp (minted in Menzoberranzan and Gracklstugh), three gems each worth 50 gp each, a {@item potion of gaseous form}, and a {@item +1 dagger} with silvery, weblike filigree worked into the hilt. The dagger is of drow manufacture (see the \"{@adventure Drowcraft Items|OotA|18}\" sidebar in appendix B). The crude litters that the troglodytes use to bear these goods are propped up against the cave wall."
 									]
 								}
 							]
@@ -33825,7 +33825,7 @@
 							"page": 170,
 							"id": "450",
 							"entries": [
-								"H'slaat stationed four {@creature Troglodyte||troglodytes} here to watch for any of S'Slaar's forces that might try to make their way into attack position through the outer caverns. These guards are always on alert. One of them carries a horn that it sounds in the event of an attack. If the horn is blown, eight of the troglodytes in area 2 come through area 5 and into this cave to investigate and shore up the defenses."
+								"H'slaat stationed four {@creature Troglodyte||troglodytes} here to watch for any of S'slaar's forces that might try to make their way into attack position through the outer caverns. These guards are always on alert. One of them carries a horn that it sounds in the event of an attack. If the horn is blown, eight of the troglodytes in area 2 come through area 5 and into this cave to investigate and shore up the defenses."
 							]
 						},
 						{
@@ -34025,9 +34025,9 @@
 									"grid": {
 										"type": "square",
 										"size": 89,
-										"offsetX": -33,
-										"offsetY": 35,
-										"distance": 10
+										"offsetX": -66,
+										"offsetY": 70,
+										"scale": 2
 									},
 									"mapRegions": [
 										{
@@ -37554,9 +37554,9 @@
 									"grid": {
 										"type": "square",
 										"size": 74,
-										"offsetX": 50,
-										"offsetY": 32,
-										"distance": 10
+										"offsetX": 100,
+										"offsetY": 64,
+										"scale": 2
 									}
 								}
 							]
@@ -37804,7 +37804,7 @@
 							"page": 174,
 							"id": "477",
 							"entries": [
-								"Giant spiders enjoy a symbiotic relationship with purple worms and are frequently found lairing in purple worm nurseries. The multitude of predators that seek out the worms' eggs provide the spiders with easy prey, while the presence of the spiders provides additional protection for thehatchery.",
+								"Giant spiders enjoy a symbiotic relationship with purple worms and are frequently found lairing in purple worm nurseries. The multitude of predators that seek out the worms' eggs provide the spiders with easy prey, while the presence of the spiders provides additional protection for the hatchery.",
 								"The eastern half of this cavern floor is covered in webs stretching up to the ceiling. See \"{@book Dungeon Hazards|DMG|5|Dungeon Hazards}\" in chapter 5 of the {@i Dungeon Master's Guide} for rules about webs. Eight {@creature Giant Spider||giant spiders} lurk in the nest, minus any killed elsewhere in the nursery."
 							]
 						},
@@ -41722,7 +41722,7 @@
 									"page": 211,
 									"id": "58b",
 									"entries": [
-										"Warped by Demogorgon's presence in the Underdark, these trolls have each grown a second head. As part of its Multiattack routine, a two-headed troll can make a Bite attack as a bonus action on its turn. The party encounters {@dice 1d4 + 1} of these hungry creatures, which otherwise have the statistics of a normal troll."
+										"Warped by Demogorgon's presence in the Underdark, these trolls have each grown a second head. As part of its Multiattack routine, a {@creature two-headed troll|OotA} can make a Bite attack as a bonus action on its turn. The party encounters {@dice 1d4 + 1} of these hungry creatures, which otherwise have the statistics of a normal troll."
 									]
 								}
 							]
@@ -42367,7 +42367,7 @@
 							"page": 219,
 							"id": "5c3",
 							"entries": [
-								"When Orcus is defeated, he drops the {@item Wand of Orcus} (see {@book chapter 7|DMG|-1} of the {@i Dungeon Master's Guide}), which falls to the ground. A party member can try to grab the wand before Demogorgon seizes it as a trophy, but any such theft draws the attention and ire of the Prince of Demons. Angry at its master's defeat, the {@item Wand of Orcus} tries to attune itself to the first willing creature other than Demogorgon that touches it. The attunement is instantaneous, allowing the wand's properties to be used during the battle."
+								"When Orcus is defeated, he drops the {@item Wand of Orcus} (see {@book chapter 7|DMG|7} of the {@i Dungeon Master's Guide}), which falls to the ground. A party member can try to grab the wand before Demogorgon seizes it as a trophy, but any such theft draws the attention and ire of the Prince of Demons. Angry at its master's defeat, the {@item Wand of Orcus} tries to attune itself to the first willing creature other than Demogorgon that touches it. The attunement is instantaneous, allowing the wand's properties to be used during the battle."
 							]
 						},
 						{
@@ -43020,6 +43020,13 @@
 							]
 						}
 					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@note Disclaimer: Before you take on demon lords, consult a physician. Do not drink alcohol while taking on demon lords. Taking alcohol and demon lords may increase your risk of death. Other side effects of demon lords may include hallucinations, mindless rage, gluttony, greed, paranoia, self-delusion, bestial urges, nihilism, hedonism, megalomania, a messiah complex, cannibalism, multiple personalities, and homicidal psychosis.}"
+					],
+					"id": "5df"
 				}
 			],
 			"id": "5de"

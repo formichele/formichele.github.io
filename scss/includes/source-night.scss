@@ -43,14 +43,12 @@
 		$rgb-source-TDCSR: #a1557e;
 		$rgb-source-PAitM: #b8419c;
 		$rgb-source-BMT: #846481;
-		$rgb-source-DoDk: #9661ab;
 		$rgb-source-HAT: #2985ac;
 		$rgb-source-CoA: #be4e20;
 		$rgb-source-PSA: #eec276;
 		$rgb-source-PSI: #7b64b3;
 		$rgb-source-PSX: #cb3631;
 		$rgb-source-XMtS: #be3e8d;
-		$rgb-source-XPHB: #d98d2a;
 
 		// region Categories
 
@@ -232,14 +230,6 @@
 			&BMT,
 			&DMTCRG {
 				@include mix-source-color($rgb-source-BMT);
-			}
-
-			&DoDk {
-				@include mix-source-color($rgb-source-DoDk);
-			}
-
-			&XPHB {
-				@include mix-source-color($rgb-source-XPHB);
 			}
 		}
 	}

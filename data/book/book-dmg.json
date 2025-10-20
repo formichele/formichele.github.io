@@ -16108,7 +16108,7 @@
 										],
 										[
 											"72",
-											"{@item Boots of the winterlands}"
+											"{@item Boots of the Winterlands}"
 										],
 										[
 											"73",
@@ -17149,7 +17149,7 @@
 										],
 										[
 											"85",
-											"{@item Instrument of the bards, Ollamh harp}"
+											"{@item Instrument of the bards, ollamh harp}"
 										],
 										[
 											"86",
@@ -21026,7 +21026,7 @@
 										"This optional rule allows characters to heal up in the thick of combat and works well for parties that feature few or no characters with healing magic, or for campaigns in which magical healing is rare.",
 										"As an action, a character can use a healing surge and spend up to half his or her Hit Dice. For each Hit Die spent in this way, the player rolls the die and adds the character's Constitution modifier. The character regains hit points equal to the total. The player can decide to spend an additional Hit Die after each roll.",
 										"A character who uses a healing surge can't do so again until he or she finishes a short or long rest. Under this optional rule, a character regains all spent Hit Dice at the end of a long rest. With a short rest, a character regains Hit Dice equal to his or her level divided by four (minimum of one dice).",
-										"For a more superheroic feel, you can let a character use a healing surge as a bonus action, rather than as an action."
+										"For a more super-heroic feel, you can let a character use a healing surge as a bonus action, rather than as an action."
 									],
 									"id": "320"
 								},
@@ -28930,10 +28930,9 @@
 							"grid": {
 								"type": "square",
 								"size": 117,
-								"offsetX": 14,
-								"offsetY": -6,
-								"scale": 2,
-								"distance": 10
+								"offsetX": 28,
+								"offsetY": -12,
+								"scale": 4
 							},
 							"id": "235"
 						},
@@ -29194,10 +29193,17 @@
 						},
 						{
 							"type": "item",
-							"name": "Additional feedback provided by:",
+							"name": "Additional feedback provied by:",
 							"entry": "Teos Abadía, Robert Alaniz, Jason Baxter, Bill Benham, Darron Bowley, David Callander, Mik Calow, Christopher D'Andrea, Brian Danford, Krupal Desai, Josh Dillard, Sam E. Simpson Jr., Tim Eagon, David Ewalt, Rob Ford, Robert Ford, Jason Fuller, Pierce Gaithe, Richard Green, Christopher Hackler, Adam Hennebeck, Sterling Hershey, Paul Hughes, Gregory L. Harris, Yan Lacharité, Shane Leahy, Ryan Leary, Tom Lommel, Jonathan Longstaff, Rory Madden, Matt Maranda, Derek McIntosh, Paul Melamed, Shawn Merwin, Lou Michelli, Mike Mihalas, David Milman, Daren Mitchell, Matthew Mosher, David Muller, Kevin Neff, Adam Page, John Proudfoot, Max Reichlin, Karl Resch, Matthew Rolston, Jason Romein, Sam Sherry, Pieter Sleijpen, Robin Stacey, David \"Oak\" Stark, Adam Strong-Morse, Arthur Wright"
 						}
 					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@note Disclaimer: Wizards of the Coast does not officially endorse the following tactics, which are guaranteed to maximize your enjoyment as a Dungeon Master. First, always keep a straight face and say OK no matter how ludicrous or doomed the players' plan of action is. Second, no matter what happens, pretend that you intended all along for everything to unfold the way it did. Third, if you're not sure what to do next, feign illness, end the session early, and plot your next move. When all else fails, roll a bunch of dice behind your screen, study them for a moment with a look of deep concern mixed with regret, let loose a heavy sigh, and announce that Tiamat swoops from the sky and attacks.}"
+					],
+					"id": "3b2"
 				}
 			],
 			"id": "232"

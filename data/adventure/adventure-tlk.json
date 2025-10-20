@@ -207,7 +207,7 @@
 										"Celest refuses to speak with her father and spends most of her time in her room crying. She is desperate to escape and will bargain with the players if she is convinced they will help her.",
 										"Celeste is the step daughter of the Wizard Weirding. She wants to leave the the manor and the village to explore the world on her own. Her dream is to visit the great city of Waterdeep with her boyfriend, Dicky Whit. Three nights ago Dicky helped her escape through her window, but they were caught by her father. She hasn't seen Dicky since and worries that her father has scared him off. She can't escape on her own due to the {@creature kamadan|ToA}",
 										"roaming the grounds. Celest also sufferers from chronic headaches as a result of the experiments her father does on her. Celest is unaware of the experiments performed, but a perception {@dc 15} can see that Celest wears a wig. If the wig is removed scars in an arcane pattern can be seen etched all over her scalp.",
-										"Unlike the many of his other experiments, wizard weirding has been trying to alter his daughters brain to become a powerful psionicist.",
+										"Unlike the many of his other experiments, Wizard Weirding has been trying to alter his daughters brain to become a powerful psionicist.",
 										"Celest can cast Mind Blast once a day."
 									],
 									"id": "012"
@@ -300,7 +300,7 @@
 							"name": "Commercial District",
 							"page": 6,
 							"entries": [
-								"Local trade is done in the commercial District. The largest building in the commercial district is the tavern inn, Bucket's Bottom. Other areas are a sundrie shop, general store, and butcher's shop.",
+								"Local trade is done in the commercial District. The largest building in the commercial district is the tavern inn, Bucket's Bottom. Other areas are a sundries shop, general store, and butcher's shop.",
 								{
 									"type": "entries",
 									"name": "Further Exploration",
@@ -312,7 +312,7 @@
 											"items": [
 												{
 													"type": "item",
-													"name": "Sundrie Shop:",
+													"name": "Sundries Shop:",
 													"entry": "Ballick's Goods run by Ballick the Gnome. Ballick sells various sundries and general goods. If asked, Ballick will inform the party that a kenku came through five days ago and bought his entire stock of sunflower seeds. The party would know that Cawkrin Jones had a weakness for sunflower seeds."
 												},
 												{
@@ -398,7 +398,7 @@
 									"name": "The Yard",
 									"page": 6,
 									"entries": [
-										"A small yard consisting of dirt, grass, and the occasion flower seperates the main manor house from the sturrounding wall. Three trained Kamadan roam the yard, guarding against intruders. Use Kamadan stat block in Tomb of Annihilation."
+										"A small yard consisting of dirt, grass, and the occasion flower separates the main manor house from the surrounding wall. Three trained Kamadan roam the yard, guarding against intruders. Use Kamadan stat block in Tomb of Annihilation."
 									],
 									"id": "020"
 								}

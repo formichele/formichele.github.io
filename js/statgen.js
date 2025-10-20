@@ -1,7 +1,4 @@
 import {StatGenUi} from "./statgen/statgen-ui.js";
-import {VetoolsConfig} from "./utils-config/utils-config-config.js";
-import {UtilsEntityBackground} from "./utils/utils-entity-background.js";
-import {UtilsEntityRace} from "./utils/utils-entity-race.js";
 
 class StatGenPage {
 	constructor () {
@@ -40,7 +37,7 @@ class StatGenPage {
 			if (savedState != null) this._statGenUi.setStateFrom(savedState);
 		}
 
-		this._statGenUi.render($(`#statgen-main`));
+		this._statGenUi.render(es(`#statgen-main`));
 
 		window.dispatchEvent(new Event("toolsLoaded"));
 	}
@@ -71,7 +68,7 @@ class StatGenPage {
 							DataUtil.doHandleFileLoadErrorsGeneric(errors);
 
 							if (!jsons?.length) return;
-							this._statGenUi.setStateFrom(jsons[0]);
+							this._statGenUi.setStateFrom(jsons[0], true);
 						},
 					},
 				],
@@ -82,10 +79,10 @@ class StatGenPage {
 					{
 						html: `<span class="glyphicon glyphicon-magnet"></span>`,
 						title: "Copy Link",
-						pFnClick: async (evt, $btn) => {
+						pFnClick: async ({evt, btn}) => {
 							const encoded = `${window.location.href.split("#")[0]}#pointbuy${HASH_PART_SEP}${encodeURIComponent(JSON.stringify(this._statGenUi.getSaveableState()))}`;
 							await MiscUtil.pCopyTextToClipboard(encoded);
-							JqueryUtil.showCopiedEffect($btn);
+							JqueryUtil.showCopiedEffect(btn);
 						},
 					},
 				],
@@ -117,48 +114,34 @@ class StatGenPage {
 	}
 
 	async _pLoadRaces () {
-		const cpyRaces = MiscUtil.copyFast(
-			[
-				...(await DataLoader.pCacheAndGetAllSite(UrlUtil.PG_RACES)),
-				...(await DataLoader.pCacheAndGetAllPrerelease(UrlUtil.PG_RACES)),
-				...(await DataLoader.pCacheAndGetAllBrew(UrlUtil.PG_RACES)),
-			]
-				.filter(it => {
-					const hash = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_RACES](it);
-					return !ExcludeUtil.isExcluded(hash, "race", it.source);
-				}),
-		);
-
-		const styleHint = VetoolsConfig.get("styleSwitcher", "style");
-		cpyRaces.forEach(ent => UtilsEntityRace.mutMigrateForVersion(ent, {styleHint}));
-
-		return cpyRaces;
+		return [
+			...(await DataUtil.race.loadJSON()).race,
+			...((await DataUtil.race.loadPrerelease({isAddBaseRaces: false})).race || []),
+			...((await DataUtil.race.loadBrew({isAddBaseRaces: false})).race || []),
+		]
+			.filter(it => {
+				const hash = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_RACES](it);
+				return !ExcludeUtil.isExcluded(hash, "race", it.source);
+			});
 	}
 
 	async _pLoadBackgrounds () {
-		const cpyBackgrounds = MiscUtil.copyFast(
-			[
-				...(await DataLoader.pCacheAndGetAllSite(UrlUtil.PG_BACKGROUNDS)),
-				...(await DataLoader.pCacheAndGetAllPrerelease(UrlUtil.PG_BACKGROUNDS)),
-				...(await DataLoader.pCacheAndGetAllBrew(UrlUtil.PG_BACKGROUNDS)),
-			]
-				.filter(it => {
-					const hash = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_BACKGROUNDS](it);
-					return !ExcludeUtil.isExcluded(hash, "background", it.source);
-				}),
-		);
-
-		const styleHint = VetoolsConfig.get("styleSwitcher", "style");
-		cpyBackgrounds.forEach(ent => UtilsEntityBackground.mutMigrateForVersion(ent, {styleHint}));
-
-		return cpyBackgrounds;
+		return [
+			...(await DataUtil.loadJSON("data/backgrounds.json")).background,
+			...((await PrereleaseUtil.pGetBrewProcessed()).background || []),
+			...((await BrewUtil2.pGetBrewProcessed()).background || []),
+		]
+			.filter(it => {
+				const hash = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_BACKGROUNDS](it);
+				return !ExcludeUtil.isExcluded(hash, "background", it.source);
+			});
 	}
 
 	async _pLoadFeats () {
 		return [
-			...(await DataLoader.pCacheAndGetAllSite(UrlUtil.PG_FEATS)),
-			...(await DataLoader.pCacheAndGetAllPrerelease(UrlUtil.PG_FEATS)),
-			...(await DataLoader.pCacheAndGetAllBrew(UrlUtil.PG_FEATS)),
+			...(await DataUtil.loadJSON("data/feats.json")).feat,
+			...((await PrereleaseUtil.pGetBrewProcessed()).feat || []),
+			...((await BrewUtil2.pGetBrewProcessed()).feat || []),
 		]
 			.filter(it => {
 				const hash = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_FEATS](it);
@@ -182,8 +165,10 @@ class StatGenPage {
 	_handleHashChange () {
 		if (this._isIgnoreHashChanges) return false;
 
-		const hash = (window.location.hash.slice(1) || "").trim().toLowerCase();
-		const [mode, state] = (hash.split(HASH_PART_SEP) || [""]);
+		const hash = (window.location.hash.slice(1) || "").trim();
+		const [mode, state] = (hash.split(HASH_PART_SEP) || [""])
+			// State part is case-sensitive
+			.map((it, i) => i === 0 ? it.toLowerCase() : it);
 
 		if (!this._statGenUi.MODES.includes(mode)) {
 			this._doSilentHashChange(this._statGenUi.MODES[0]);
@@ -202,7 +187,7 @@ class StatGenPage {
 
 		try {
 			const saved = JSON.parse(decodeURIComponent(state));
-			this._statGenUi.setStateFrom(saved);
+			this._statGenUi.setStateFrom(saved, true);
 			return true;
 		} catch (e) {
 			JqueryUtil.doToast({type: "danger", content: `Failed to load state from URL!`});

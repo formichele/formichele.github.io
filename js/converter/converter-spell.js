@@ -256,7 +256,8 @@ export class ConverterSpell extends ConverterBase {
 			}).trim();
 
 			if (isRitual) {
-				MiscUtil.set(stats, "meta", "ritual", true);
+				stats.meta = stats.meta || {};
+				stats.meta.ritual = true;
 			}
 
 			stats.level = Number(mSpellLeve.groups.level);
@@ -318,17 +319,6 @@ export class ConverterSpell extends ConverterBase {
 							source: stats.source,
 						})),
 					);
-				break;
-			}
-
-			case "one": {
-				const tgt = MiscUtil.getOrSet(stats, "classes", "fromClassList", []);
-				tgt.push(
-					...classNames.map(name => ({
-						name,
-						source: Parser.SRC_XPHB,
-					})),
-				);
 				break;
 			}
 
@@ -424,11 +414,6 @@ export class ConverterSpell extends ConverterBase {
 			.map(it => it.trim())
 			.filter(Boolean)
 			.map(str => {
-				if (str.toLowerCase() === "ritual") {
-					MiscUtil.set(stats, "meta", "ritual", true);
-					return null;
-				}
-
 				const mNumber = /^(?<count>\d+)?(?<rest>.*?)$/.exec(str);
 
 				if (!mNumber) {
@@ -451,7 +436,7 @@ export class ConverterSpell extends ConverterBase {
 				if (!out.note) delete out.note;
 				return out;
 			})
-			.filter(Boolean);
+		;
 	}
 
 	static _getComponentCurrencyMult ({mCost}) {

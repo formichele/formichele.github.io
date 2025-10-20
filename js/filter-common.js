@@ -3,7 +3,7 @@
 class FilterCommon {
 	static getDamageVulnerableFilter () {
 		return this._getDamageResistVulnImmuneFilter({
-			header: "Vulnerability",
+			header: "Vulnerabilities",
 			headerShort: "Vuln.",
 		});
 	}
@@ -102,7 +102,7 @@ class FilterCommon {
 
 	/* -------------------------------------------- */
 
-	static PREREQ_FILTER_ITEMS = ["Ability", "Species", "Psionics", "Proficiency", "Special", "Spellcasting"];
+	static PREREQ_FILTER_ITEMS = ["Ability", "Race", "Psionics", "Proficiency", "Special", "Spellcasting"];
 
 	static _PREREQ_KEY_TO_FULL = {
 		"other": "Special",
@@ -134,7 +134,6 @@ class FilterCommon {
 	static _LANG_TO_DISPLAY = {
 		"anyStandard": "Any Standard",
 		"anyExotic": "Any Exotic",
-		"anyRare": "Any Rare",
 		"anyLanguage": "Any",
 	};
 

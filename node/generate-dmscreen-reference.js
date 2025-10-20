@@ -5,7 +5,7 @@ import * as utB from "./util-book-reference.js";
 
 const index = utB.UtilBookReference.getIndex(
 	{
-		name: "Quick Reference (2014)",
+		name: "Quick Reference",
 		id: "bookref-quick",
 		tag: "quickref",
 	},

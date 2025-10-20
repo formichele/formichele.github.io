@@ -152,30 +152,6 @@
 				border: 1px solid vars.$rgb-border-grey--trans;
 			}
 
-			&disp-as-score {
-				&--label {
-					font-family: Convergence, Arial, sans-serif;
-				}
-
-				&--physical {
-					background: #22220015;
-				}
-
-				&--mental {
-					background: #003bc01c;
-				}
-			}
-
-			&disp-as-bonus {
-				&--physical {
-					background: #22220023;
-				}
-
-				&--mental {
-					background: #003bc023;
-				}
-			}
-
 			&sect-header-inner {
 				display: block;
 				margin-top: 3px;
@@ -200,22 +176,6 @@
 				> *:last-of-type {
 					margin-bottom: (vars.$spacer * 0.5);
 				}
-			}
-		}
-
-		&-tbl-ability-scores__ {
-			&lbl-abv {
-				padding: 0;
-				width: 12.33333333%;
-			}
-
-			&lbl-score {
-				padding: 0;
-				width: 7%;
-			}
-
-			&lbl-spacer {
-				padding: 0 vars.$spacer * 0.25;
 			}
 		}
 	}
@@ -250,29 +210,6 @@
 			&token-footer {
 				color: #ddd;
 				background: vars-night.$rgb-bg--night;
-			}
-
-			$rgb-stripe-physical: #6663;
-			$rgb-stripe-mental: #9993;
-
-			&disp-as-score {
-				&--physical {
-					background: $rgb-stripe-physical;
-				}
-
-				&--mental {
-					background: $rgb-stripe-mental;
-				}
-			}
-
-			&disp-as-bonus {
-				&--physical {
-					background: color.adjust($rgb-stripe-physical, $lightness: + 10%);
-				}
-
-				&--mental {
-					background: color.adjust($rgb-stripe-mental, $lightness: + 10%);
-				}
 			}
 
 			&sect-header-inner {

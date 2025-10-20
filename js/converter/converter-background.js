@@ -3,7 +3,6 @@ import {ConverterFeatureBase} from "./converter-feature.js";
 import {ItemTag, TagJsons} from "./converterutils-entries.js";
 import {BackgroundSkillTollLanguageEquipmentCoalesce, BackgroundSkillToolLanguageTag, ConverterBackgroundUtil, EquipmentBreakdown} from "./converterutils-background.js";
 import {EntryCoalesceEntryLists, EntryCoalesceRawLines} from "./converterutils-entrycoalesce.js";
-import {SITE_STYLE__ONE} from "../consts.js";
 import {PropOrder} from "../utils-proporder.js";
 
 class _ConversionStateTextBackground extends ConversionStateTextBase {}
@@ -68,7 +67,6 @@ export class ConverterBackground extends ConverterFeatureBase {
 
 	// SHARED UTILITY FUNCTIONS ////////////////////////////////////////////////////////////////////////////////////////
 	static _getFinalEntity (state, options) {
-		if (options.styleHint === SITE_STYLE__ONE) state.entity.edition = SITE_STYLE__ONE;
 		this._doBackgroundPostProcess(state, options);
 		return PropOrder.getOrdered(state.entity, state.entity.__prop || "background");
 	}
@@ -118,7 +116,7 @@ export class ConverterBackground extends ConverterFeatureBase {
 		const entryEquipment = ConverterBackgroundUtil.getEquipmentEntry(background);
 		if (!entryEquipment) return;
 
-		entryEquipment.entry = ItemTag.tryRunBasicEquipment(entryEquipment.entry, {styleHint: options.styleHint});
+		entryEquipment.entry = ItemTag.tryRunBasicEquipment(entryEquipment.entry);
 	}
 
 	static _doBackgroundPostProcess_tables (background, options) {

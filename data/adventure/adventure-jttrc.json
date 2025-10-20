@@ -1431,7 +1431,7 @@
 								{
 									"type": "item",
 									"name": "Spicy Brothers",
-									"entry": "This stall sells spices, peppers, and spicy dishes like cucumber fire smoothies and {@recipe Spicy Brothers Honey-Glazed Hot Chips|HFDoMM|honey-glazed hot chips} for 5 sp each."
+									"entry": "This stall sells spices, peppers, and spicy dishes like cucumber fire smoothies and honey-glazed hot chips for 5 sp each."
 								},
 								{
 									"type": "item",
@@ -15787,7 +15787,7 @@
 												{
 													"type": "item",
 													"name": "Feminine",
-													"entry": "Tzalanti, Xochitl, Yeyetzi, Yul"
+													"entry": "Tzalanti, Xóchitl, Yeyetzi, Yul"
 												},
 												{
 													"type": "item",
@@ -16980,7 +16980,7 @@
 									"page": 130,
 									"id": "2d9",
 									"entries": [
-										"The folk of Shankhabhumi favor clothing composed of lengths of cotton or silk cloth called bastras, which are wrapped around the body in various styles. These include the loose, voluminous drapes of a sedentary noble, the tight, rope-like wrap of a Shankha Trials contestant, and the practical, gathered garments of a laborer or river navigator.",
+										"The folk of Shankhabhumi favor clothing composed of lengths of cotton or silk cloth called bastras, which are wrapped around the body in various styles. These include the loose, voluminous drapes of a sedentary noble, the tight, ropelike wrap of a Shankha Trials contestant, and the practical, gathered garments of a laborer or river navigator.",
 										"Wavy or curly hair is common in the region; people rub it to a shine with coconut oil and wear it long or in thick plaits. Ornaments include conch-shell bangles and hairpieces, as well as designs of white clay painted directly onto the skin. Gold and gemstone jewelry, a specialty of the ruined city of Manivarsha, is popular among wealthy citizens and often crafted by the descendants of artisans from the Manivarshi diaspora."
 									]
 								},
@@ -18838,10 +18838,9 @@
 											"grid": {
 												"type": "square",
 												"size": 108,
-												"offsetX": 67,
-												"offsetY": 60,
-												"scale": 2,
-												"distance": 10
+												"offsetX": 134,
+												"offsetY": 120,
+												"scale": 4
 											},
 											"title": "Map 11.1: Three Sun Square",
 											"width": 1043,
@@ -18886,10 +18885,9 @@
 											"grid": {
 												"type": "square",
 												"size": 108,
-												"offsetX": 67,
-												"offsetY": 60,
-												"scale": 2,
-												"distance": 10
+												"offsetX": 134,
+												"offsetY": 120,
+												"scale": 4
 											},
 											"title": "Player Version",
 											"width": 1043,
@@ -32308,6 +32306,13 @@
 							"height": 825
 						}
 					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@note Disclaimer: There is no guarantee that the light of the Radiant Citadel will be visible to the naked eye on your plane of existence, but know that it is there, whether seen or not.}"
+					],
+					"id": "55f"
 				}
 			],
 			"id": "558"

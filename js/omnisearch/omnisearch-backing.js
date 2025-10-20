@@ -311,12 +311,6 @@ export class OmnisearchBacking {
 
 	/* -------------------------------------------- */
 
-	static _SOURCES_CORE_MODERN = new Set([
-		Parser.SRC_XPHB,
-		Parser.SRC_XDMG,
-		Parser.SRC_XMM,
-	]);
-
 	static _SOURCES_CORE_LEGACY = new Set([
 		Parser.SRC_PHB,
 		Parser.SRC_DMG,
@@ -329,17 +323,12 @@ export class OmnisearchBacking {
 		Parser.CAT_ID_CARD,
 	]);
 
-	static _CATEGORIES_DEPRIORITIZED_MODERN = new Set([
-		Parser.CAT_ID_QUICKREF,
-	]);
-
 	static _mutResultScores ({result, styleHint}) {
-		if ((styleHint !== SITE_STYLE__CLASSIC ? this._SOURCES_CORE_MODERN : this._SOURCES_CORE_LEGACY).has(result.doc.s)) result.score *= 1.1;
+		if (this._SOURCES_CORE_LEGACY.has(result.doc.s)) result.score *= 1.1;
 		if (SourceUtil.isNonstandardSource(result.doc.s)) result.score *= 0.66;
-		if (styleHint !== SITE_STYLE__CLASSIC && SourceUtil.isLegacySourceWotc(result.doc.s)) result.score *= 0.75;
+		if (SourceUtil.isLegacySourceWotc(result.doc.s)) result.score *= 0.75;
 
 		if (this._CATEGORIES_DEPRIORITIZED.has(result.doc.c)) result.score *= 0.5;
-		if (styleHint !== SITE_STYLE__CLASSIC && this._CATEGORIES_DEPRIORITIZED_MODERN.has(result.doc.c)) result.score *= 0.5;
 	}
 
 	/* -------------------------------------------- */

@@ -1024,7 +1024,7 @@
 					"page": 31,
 					"id": "09c",
 					"entries": [
-						"The following background features explore origins suited to characters in horror adventures. Optional features and characteristics for characters of any background suggest how portentous forces might influence anyone's life. Additionally, the {@background haunted one|vrgr} and {@background investigator|vrgr} backgrounds provide options for characters shaped by or determined to reveal the mysteries surrounding them. Finally, a selection of horror trinkets provide characters options to carry their own personal terrors.",
+						"The following background features explore origins suited to characters in horror adventures. Optional features and characteristics for characters of any background suggest how portentous forces might influence anyone's life. Additionally, the {@background haunted one|VRGR} and {@background investigator|VRGR} backgrounds provide options for characters shaped by or determined to reveal the mysteries surrounding them. Finally, a selection of horror trinkets provide characters options to carry their own personal terrors.",
 						{
 							"type": "section",
 							"name": "General Background Features",
@@ -5446,7 +5446,7 @@
 												],
 												[
 													"10",
-													"The incarnation has drawn an enemy of Strahd's to Barovia, such as {@book Firan Zal'honen|VRGR|3|Firan Zal'honan}* or {@book Jander Sunstar|VRGR|3|Jander Sunstar},* hoping the rivals will slay one another."
+													"The incarnation has drawn an enemy of Strahd's to Barovia, such as {@book Firan Zal'honan|VRGR|3|Firan Zal'honan}* or {@book Jander Sunstar|VRGR|3|Jander Sunstar},* hoping the rivals will slay one another."
 												]
 											]
 										}
@@ -7271,7 +7271,7 @@
 									"entries": [
 										"In the minds of Darkon's people, Castle Avernus was the sanctuary of their aloof king and the citadel from which he watched over his people. In truth, Avernus was a perilously haunted fortress, home to Azalin's deadliest servants and magical depravities. During the Hour of Ascension, that changed.",
 										"Castle Avernus was destroyed in a torrent of otherworldly flame, an explosion that froze partway through its blast. The castle now hangs in midair, its chambers, laboratories, and crypts suspended in disjointed sections. Magic woven into the fortress's stones attempts to heal the shattered castle, causing new halls and rambling stairs to form between fractured floors. These surreal ruins can't conceal the magical radiance hanging at the castle's core\u2014a vestige of the magical force that destroyed the castle and precipitated the Hour of Ascension. This mysterious force now calls to spirits across Darkon, drawing them in to feed an ongoing magical reaction.",
-										"Despite the devastation, Castle Avernus isn't empty. Azalin's treasures and former servants survived, including Ebbasheyth, the Darklord's black shadow dragon advisor; a vast library that records the memories of all who die in Darkon; and the tomb haunted by Irik Zal'honen, Azalin's son."
+										"Despite the devastation, Castle Avernus isn't empty. Azalin's treasures and former servants survived, including Ebbasheyth, the Darklord's black shadow dragon advisor; a vast library that records the memories of all who die in Darkon; and the tomb haunted by Irik Zal'honan, Azalin's son."
 									]
 								},
 								{
@@ -7673,7 +7673,7 @@
 											"rows": [
 												[
 													"1",
-													"Irik Zal'honen, the mournful spirit of Azalin's son"
+													"Irik Zal'honan, the mournful spirit of Azalin's son"
 												],
 												[
 													"2",
@@ -16327,7 +16327,7 @@
 									"page": 182,
 									"id": "420",
 									"entries": [
-										"Captain Larissa Snowmane pilots the paddle boat {@i River Dancer} along the rivers and coasts of Ravenloft's domains, righting wrongs and ferrying those in need to new homes. Larissa is a legend, known for her icy-white hair, dancing skill, and mezzo-soprano signing voice. As she approaches her seventieth year, she remains one of the domains' most widely traveled explorers. When danger threatens her vessel and crew, Captain Snowmane reluctantly uses a magical performance known as the Dance of the Dead, a forbidden song and dance that keeps Undead creatures at bay but slays living beings who witness it, then reanimates them as zombies. Larissa avoids rival riverboat captain Nathan Timothy and his ship, {@i Virago}, as well as the swampy domain of Souragne, where she learned her deadly magic from grim forces that consider her debt unpaid.",
+										"Captain Larissa Snowmane pilots the paddleboat {@i River Dancer} along the rivers and coasts of Ravenloft's domains, righting wrongs and ferrying those in need to new homes. Larissa is a legend, known for her icy-white hair, dancing skill, and mezzo-soprano signing voice. As she approaches her seventieth year, she remains one of the domains' most widely traveled explorers. When danger threatens her vessel and crew, Captain Snowmane reluctantly uses a magical performance known as the Dance of the Dead, a forbidden song and dance that keeps Undead creatures at bay but slays living beings who witness it, then reanimates them as zombies. Larissa avoids rival riverboat captain Nathan Timothy and his ship, {@i Virago}, as well as the swampy domain of Souragne, where she learned her deadly magic from grim forces that consider her debt unpaid.",
 										{
 											"type": "entries",
 											"name": "Larissa Snowmane's Traits",
@@ -16363,7 +16363,7 @@
 											"page": 182,
 											"id": "422",
 											"entries": [
-												"Larissa Snowmane is a human {@creature druid} with exceptional insight into navigating the waterways of the Mists. Her handsome, multilevel paddle boat {@i River Dancer} provides an exciting base of operations for wayfaring adventurers. Consider the following plots when featuring Larissa Snowmane in an adventure:",
+												"Larissa Snowmane is a human {@creature druid} with exceptional insight into navigating the waterways of the Mists. Her handsome, multilevel paddleboat {@i River Dancer} provides an exciting base of operations for wayfaring adventurers. Consider the following plots when featuring Larissa Snowmane in an adventure:",
 												{
 													"type": "list",
 													"items": [
@@ -18168,6 +18168,13 @@
 							"height": 607
 						}
 					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@note Disclaimer: By the sole act of opening this book, you acknowledge your complicity in the domains-spanning conspiracy that denied me, Azalin Rex, Wizard-King of Darkon, my rightful place as both author of and cover model for what could have been so much more than this doubtful collection of lies and slanders. Fortunately, as I've recently found my immortality unburdened by the trivialities of rule, I have endless opportunity to pursue thorough vengeances for even the pettiest affronts. Please prepare for my coming. I expect to be quartered in the utmost comfort while we personalize your redefinition of the word \"horror.\"}"
+					],
+					"id": "04f"
 				}
 			],
 			"id": "04c"

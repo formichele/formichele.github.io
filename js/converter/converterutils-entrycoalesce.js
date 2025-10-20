@@ -8,7 +8,7 @@ export class EntryCoalesceEntryLists {
 	/**
 	 * @param stats
 	 * @param prop
-	 * @param {"classic" | "one" | null} styleHint
+	 * @param {"classic" | null} styleHint
 	 */
 	static mutCoalesce (stats, prop, {styleHint = null} = {}) {
 		if (!stats[prop]) return;
@@ -18,10 +18,6 @@ export class EntryCoalesceEntryLists {
 		this._WALKER ||= MiscUtil.getWalker({keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST});
 
 		this._mutCoalesce_listsBasic({stats, prop, styleHint});
-		this._mutCoalesce_listsHanging({stats, prop, styleHint});
-		this._mutCoalesce_listsHangingAttributes({stats, prop, styleHint});
-
-		this._mutCoalesce_separateUsageNote({stats, prop, styleHint});
 	}
 
 	static _mutCoalesce_listsBasic ({stats, prop}) {
@@ -64,118 +60,6 @@ export class EntryCoalesceEntryLists {
 					checkFinalizeList();
 
 					return out;
-				},
-			},
-			"entries",
-		);
-	}
-
-	static _mutCoalesce_listsHanging ({stats, prop, styleHint}) {
-		if (styleHint === SITE_STYLE__CLASSIC) return;
-
-		stats[prop] = this._WALKER.walk(
-			stats[prop],
-			{
-				array: (arr, objProp) => {
-					if (objProp !== "entries") return arr;
-
-					const out = [];
-					let tmpList = null;
-
-					const getNewList = () => ({type: "list", style: "list-hang-notitle", items: []});
-					const checkFinalizeList = () => {
-						if (!tmpList?.items?.length) return;
-						out.push(tmpList);
-						tmpList = null;
-					};
-
-					for (let i = 0; i < arr.length; ++i) {
-						const ent = arr[i];
-						const entNxt = arr[i + 1];
-
-						if (typeof ent === "string") {
-							checkFinalizeList();
-							out.push(ent);
-
-							if (
-								ent.trim().endsWith(":")
-								&& /\b(choose|choice|one of the following|following benefits)\b/i.exec(ent)
-								&& entNxt?.type === "entries"
-							) {
-								tmpList = getNewList();
-							}
-
-							continue;
-						}
-
-						if (!tmpList) {
-							out.push(ent);
-							continue;
-						}
-
-						tmpList.items.push(
-							ConverterUtils.mutSetEntryTypePretty({obj: ent, type: "item"}),
-						);
-					}
-
-					checkFinalizeList();
-
-					return out;
-				},
-			},
-			"entries",
-		);
-	}
-
-	static _mutCoalesce_listsHangingAttributes ({stats, prop, styleHint}) {
-		if (styleHint === SITE_STYLE__CLASSIC) return;
-
-		let ixEnd = -1;
-
-		for (let i = 0; i < stats[prop].length; ++i) {
-			const ent = stats[prop][i];
-			if (ent.type !== "entries" || ent.entries?.length !== 1 || !ent.name?.endsWith(":")) break;
-			ixEnd = i;
-		}
-
-		if (ixEnd < 1) return;
-
-		const lst = {
-			type: "list",
-			style: "list-hang-notitle",
-			items: stats[prop].slice(0, ixEnd + 1)
-				.map(it => ({type: "item", ...it})),
-		};
-		stats[prop].splice(0, ixEnd + 1, lst);
-	}
-
-	/** Attempt to pull out "usage" notes which have been mistakenly included in lists etc. */
-	static _mutCoalesce_separateUsageNote ({stats, prop, styleHint}) {
-		if (styleHint === SITE_STYLE__CLASSIC) return;
-
-		stats[prop] = this._WALKER.walk(
-			stats[prop],
-			{
-				array: (arr, objProp) => {
-					if (objProp !== "entries") return arr;
-
-					const entLast = arr.at(-1);
-					if (entLast?.type !== "list" || entLast?.style !== "list-hang-notitle" || !entLast?.items?.length) return arr;
-
-					const itmLast = entLast.items.at(-1);
-					if (
-						itmLast?.type !== "item"
-						|| !itmLast?.entries?.length
-						|| itmLast.entries.length < 2
-						|| typeof itmLast.entries.at(-1) !== "string"
-					) return arr;
-
-					if (!/^(When|Once)/i.test(itmLast.entries.at(-1))) return arr;
-
-					const txtLast = itmLast.entries.pop();
-					arr.push(txtLast);
-
-					return arr;
 				},
 			},
 			"entries",

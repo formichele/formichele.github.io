@@ -11,7 +11,8 @@
 				"TftYP": "GoS",
 				"PotA": "GoS",
 				"ToA": "GoS",
-				"MTF": "GoS"
+				"MTF": "GoS",
+				"MM": "GoS"
 			}
 		}
 	},
@@ -3732,9 +3733,6 @@
 			"name": "Pirate Captain",
 			"source": "GoS",
 			"page": 247,
-			"reprintedAs": [
-				"Pirate Captain|XMM"
-			],
 			"size": [
 				"M"
 			],

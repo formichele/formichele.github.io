@@ -42,7 +42,6 @@ class Omnidexer {
 		 *   s: "PHB", // source
 		 *   [sA: "PHB"], // source abbreviation
 		 *   [sF: "Player's Handbook"], // source full
-		 *   [sC: "ff00ff"], // source color
 		 *   u: "spell name_phb, // hash
 		 *   uh: "spell name_phb, // Optional; hash for href if the link should be different from the hover lookup hash.
 		 *   p: 110, // page number
@@ -225,9 +224,6 @@ class Omnidexer {
 				indexDoc.sA = this.getMetaId("sA", Parser.sourceJsonToAbv(src));
 
 				indexDoc.sF = this.getMetaId("sF", Parser.sourceJsonToFull(src));
-
-				const color = Parser.sourceJsonToColor(src);
-				if (color) indexDoc.sC = this.getMetaId("sC", color);
 			}
 
 			if (options.isIncludeFoundryExtras) {
@@ -1301,18 +1297,6 @@ class IndexableFileDecks extends IndexableFile {
 	}
 }
 
-class IndexableFileFacilities extends IndexableFile {
-	constructor () {
-		super({
-			category: Parser.CAT_ID_FACILITY,
-			file: "bastions.json",
-			listProp: "facility",
-			baseUrl: UrlUtil.PG_BASTIONS,
-			isHover: true,
-		});
-	}
-}
-
 class IndexableLegendaryGroups extends IndexableFile {
 	constructor () {
 		super({
@@ -1373,7 +1357,6 @@ Omnidexer.TO_INDEX = [
 	new IndexableFileTableGroups(),
 	new IndexableFileCards(),
 	new IndexableFileDecks(),
-	new IndexableFileFacilities(),
 	new IndexableLegendaryGroups(),
 
 	new IndexableFileVehicles(),

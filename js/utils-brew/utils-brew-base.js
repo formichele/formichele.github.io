@@ -1,6 +1,7 @@
 import {BrewUtilShared} from "./utils-brew-helpers.js";
 import {BrewDoc} from "./utils-brew-models.js";
 import {SITE_STYLE__CLASSIC, SITE_STYLE__ONE} from "../consts.js";
+import {FontManager} from "../utils-font.js";
 
 export class BrewUtil2Base {
 	_STORAGE_KEY_LEGACY;
@@ -34,6 +35,7 @@ export class BrewUtil2Base {
 	_cache_iteration = 0;
 	_cache_brewsProc = null;
 	_cache_metas = null;
+	_cache_sourceStyles = null;
 	_cache_brews = null;
 	_cache_brewsLocal = null;
 
@@ -43,6 +45,8 @@ export class BrewUtil2Base {
 	_addLazy_brewsTemp = [];
 
 	_storage = StorageUtil;
+
+	_eleStyle = null;
 
 	_parent = null;
 
@@ -138,29 +142,23 @@ export class BrewUtil2Base {
 	}
 
 	async _pInit_pDoLoadFonts () {
-		const fontFaces = Object.entries(
+		const fontMetas = Object.entries(
 			(this._getBrewMetas() || [])
 				.map(({_meta}) => _meta?.fonts || {})
 				.mergeMap(it => it),
 		)
-			.map(([family, fontUrl]) => new FontFace(family, `url("${fontUrl}")`));
+			.map(([fontId, fontUrl]) => ({fontId, fontUrl}));
+		if (!fontMetas.length) return;
 
-		const results = await Promise.allSettled(
-			fontFaces.map(async fontFace => {
-				await fontFace.load();
-				return document.fonts.add(fontFace);
-			}),
-		);
+		fontMetas
+			.forEach(({fontId, fontUrl}) => FontManager.addFontLazy({fontId, fontUrl}));
 
-		const errors = results
-			.filter(({status}) => status === "rejected")
-			.map(({reason}, i) => ({message: `Font "${fontFaces[i].family}" failed to load!`, reason}));
-		if (errors.length) {
-			errors.forEach(({message}) => JqueryUtil.doToast({type: "danger", content: message}));
-			setTimeout(() => { throw new Error(errors.map(({message, reason}) => [message, reason].join("\n")).join("\n\n")); });
-		}
+		const {errors} = await FontManager.pFinalizeLazy();
 
-		return document.fonts.ready;
+		if (!errors.length) return;
+
+		errors.forEach(({message}) => JqueryUtil.doToast({type: "danger", content: message}));
+		setTimeout(() => { throw new Error(errors.map(({message, reason}) => [message, reason].join("\n")).join("\n\n")); });
 	}
 
 	/* -------------------------------------------- */
@@ -197,6 +195,7 @@ export class BrewUtil2Base {
 
 	_setBrewMetas (val) {
 		this._cache_metas = null;
+		this._cache_sourceStyles = null;
 		return this._storage.syncSet(this._STORAGE_KEY_META, val);
 	}
 
@@ -225,15 +224,14 @@ export class BrewUtil2Base {
 
 		await this._pGetBrewProcessed_pDoBlocklistExtension({cpyBrews});
 
-		// Add per-file diagnostics
-		cpyBrews.forEach(({head, body}) => this._pGetBrewProcessed_mutDiagnostics({head, body}));
+		// Avoid caching the meta merge, as we have our own cache. We might edit the brew, so we don't want a stale copy.
+		const cpyBrewsLoaded = await cpyBrews.pSerialAwaitMap(async ({head, body}) => {
+			const cpyBrew = await DataUtil.pDoMetaMerge(head.url || head.docIdLocal, body, {isSkipMetaMergeCache: true});
+			this._pGetBrewProcessed_mutDiagnostics({head, cpyBrew});
+			return cpyBrew;
+		});
 
-		// Merge into single object; apply data migrations
-		const cpyBrewsMerged = this._pGetBrewProcessed_getMergedOutput({cpyBrews});
-
-		// Apply "_copy" etc.
-		this._cache_brewsProc = await DataUtil.pDoMetaMerge(CryptUtil.uid(), cpyBrewsMerged, {isSkipMetaMergeCache: true});
-
+		this._cache_brewsProc = this._pGetBrewProcessed_getMergedOutput({cpyBrewsLoaded});
 		return this._cache_brewsProc;
 	}
 
@@ -245,10 +243,10 @@ export class BrewUtil2Base {
 		}
 	}
 
-	_pGetBrewProcessed_mutDiagnostics ({head, body}) {
+	_pGetBrewProcessed_mutDiagnostics ({head, cpyBrew}) {
 		if (!head.filename) return;
 
-		for (const arr of Object.values(body)) {
+		for (const arr of Object.values(cpyBrew)) {
 			if (!(arr instanceof Array)) continue;
 			for (const ent of arr) {
 				if (!("__prop" in ent)) break;
@@ -257,8 +255,8 @@ export class BrewUtil2Base {
 		}
 	}
 
-	_pGetBrewProcessed_getMergedOutput ({cpyBrews}) {
-		return BrewDoc.mergeObjects(undefined, ...cpyBrews.map(({body}) => body));
+	_pGetBrewProcessed_getMergedOutput ({cpyBrewsLoaded}) {
+		return BrewDoc.mergeObjects(undefined, ...cpyBrewsLoaded);
 	}
 
 	/**
@@ -822,7 +820,7 @@ export class BrewUtil2Base {
 	}
 
 	async _pPullAllBrews_ ({lockToken, brews}) {
-		let cntPulls = 0;
+		const brewDocsUpdated = [];
 
 		brews = brews || MiscUtil.copyFast(await this._pGetBrewRaw({lockToken}));
 		const brewsNxt = await brews.pMap(async brew => {
@@ -835,14 +833,15 @@ export class BrewUtil2Base {
 
 			if (sourceLastModified <= localLastModified) return brew;
 
-			cntPulls++;
-			return BrewDoc.fromObject(brew).mutUpdate({json}).toObject();
+			const brewDoc = BrewDoc.fromObject(brew).mutUpdate({json});
+			brewDocsUpdated.push(brewDoc);
+			return brewDoc.toObject();
 		});
 
-		if (!cntPulls) return cntPulls;
+		if (!brewDocsUpdated.length) return brewDocsUpdated;
 
 		await this.pSetBrew(brewsNxt, {lockToken});
-		return cntPulls;
+		return brewDocsUpdated;
 	}
 
 	isPullable (brew) { return !brew.head.isEditable && !!brew.head.url; }
@@ -882,14 +881,14 @@ export class BrewUtil2Base {
 	}
 
 	async pAddBrewFromLoaderTag (ele) {
-		const $ele = $(ele);
-		if (!$ele.hasClass("rd__wrp-loadbrew--ready")) return; // an existing click is being handled
+		ele = e_(ele);
+		if (!ele.hasClass("rd__wrp-loadbrew--ready")) return; // an existing click is being handled
 		let jsonPath = ele.dataset.rdLoaderPath;
 		const name = ele.dataset.rdLoaderName;
-		const cached = $ele.html();
-		const cachedTitle = $ele.title();
-		$ele.title("");
-		$ele.removeClass("rd__wrp-loadbrew--ready").html(`${name.qq()}<span class="glyphicon glyphicon-refresh rd__loadbrew-icon rd__loadbrew-icon--active"></span>`);
+		const cached = ele.html();
+		const cachedTitle = ele.tooltip();
+		ele.tooltip("");
+		ele.removeClass("rd__wrp-loadbrew--ready").html(`${name.qq()}<span class="glyphicon glyphicon-refresh rd__loadbrew-icon rd__loadbrew-icon--active"></span>`);
 
 		jsonPath = jsonPath.unescapeQuotes();
 		if (!UrlUtil.isFullUrl(jsonPath)) {
@@ -898,12 +897,12 @@ export class BrewUtil2Base {
 		}
 
 		await this.pAddBrewFromUrl(jsonPath);
-		$ele.html(`${name.qq()}<span class="glyphicon glyphicon-saved rd__loadbrew-icon"></span>`);
-		setTimeout(() => $ele.html(cached).addClass("rd__wrp-loadbrew--ready").title(cachedTitle), 500);
+		ele.html(`${name.qq()}<span class="glyphicon glyphicon-saved rd__loadbrew-icon"></span>`);
+		setTimeout(() => ele.html(cached).addClass("rd__wrp-loadbrew--ready").tooltip(cachedTitle), 500);
 	}
 
 	_isMatchingCombinedIndexInfo (info) {
-		return info._brewIsPartnered;
+		return info._brewIsPartnered && info._brewEdition === SITE_STYLE__CLASSIC;
 	}
 
 	async pGetCntBrewsPartnered () {
@@ -1073,7 +1072,6 @@ export class BrewUtil2Base {
 		[UrlUtil.PG_RECIPES]: ["recipe"],
 		[UrlUtil.PG_CLASS_SUBCLASS_FEATURES]: ["classFeature", "subclassFeature"],
 		[UrlUtil.PG_DECKS]: ["card", "deck"],
-		[UrlUtil.PG_BASTIONS]: ["facility", "facilityFluff"],
 	};
 
 	getPageProps ({page, isStrict = false, fallback = null} = {}) {
@@ -1117,6 +1115,11 @@ export class BrewUtil2Base {
 	// endregion
 
 	// region Sources
+	_initSync () {
+		this._doCacheMetas();
+		this._doPopulateStyles();
+	}
+
 	_doCacheMetas () {
 		if (this._cache_metas) return;
 
@@ -1145,6 +1148,64 @@ export class BrewUtil2Base {
 				return (_meta?.sources || [])
 					.mergeMap(src => ({[(src.json || "").toLowerCase()]: MiscUtil.copyFast(src)}));
 			});
+	}
+
+	_doPopulateStyles () {
+		if (this._cache_sourceStyles) return;
+
+		this._cache_sourceStyles = true;
+
+		if (typeof window === "undefined") return;
+
+		if (!this._eleStyle) {
+			this._eleStyle = document.createElement("style");
+			this._eleStyle.setAttribute("name", `styles-vet-${this._PATH_LOCAL_DIR}`);
+			document.head.appendChild(this._eleStyle);
+		}
+
+		const stack = [""];
+
+		Object.entries(this._cache_metas["_sources"])
+			.forEach(([source, meta]) => {
+				const color = this._sourceJsonToColor({source});
+				const colorNight = this._sourceJsonToColor({source, isNight: true});
+
+				if (!color && !colorNight) return;
+				const sourceClassname = Parser.sourceJsonToSourceClassname(source, {sourceJson: meta.json});
+
+				if (color) {
+					stack[0] += `.${sourceClassname} {
+	color: #${color} !important;
+	border-color: #${color} !important;
+	text-decoration-color: #${color} !important
+}
+`;
+				}
+
+				if (colorNight) {
+					stack[0] += `.ve-night-mode .${sourceClassname} {
+	color: #${colorNight} !important;
+	border-color: #${colorNight} !important;
+	text-decoration-color: #${colorNight} !important
+}
+`;
+				}
+			});
+
+		this._eleStyle.innerHTML = stack[0];
+	}
+
+	_sourceJsonToColor ({source, isNight = false} = {}) {
+		if (!source) return "";
+		source = source.toLowerCase();
+		const prop = isNight ? "colorNight" : "color";
+		if (!this._cache_metas["_sources"][source]?.[prop]) return "";
+		return BrewUtilShared.getValidColor(this._cache_metas["_sources"][source][prop]);
+	}
+
+	getPopoutStyleElementHtml () {
+		if (!this._eleStyle) return "";
+		return this._eleStyle.outerHTML;
 	}
 
 	hasSourceJson (source) {
@@ -1177,46 +1238,8 @@ export class BrewUtil2Base {
 		return this.getMetaLookup("_sources")[source];
 	}
 
-	sourceJsonToStyle (source) {
-		const stylePart = this.sourceJsonToStylePart(source);
-		if (!stylePart) return stylePart;
-		return `style="${stylePart}"`;
-	}
-
-	sourceToStyle (source) {
-		const stylePart = this.sourceToStylePart(source);
-		if (!stylePart) return stylePart;
-		return `style="${stylePart}"`;
-	}
-
-	sourceJsonToStylePart (source) {
-		if (!source) return "";
-		const color = this.sourceJsonToColor(source);
-		if (color) return MiscUtil.getColorStylePart(color);
-		return "";
-	}
-
-	sourceToStylePart (source) {
-		if (!source) return "";
-		const color = this.sourceToColor(source);
-		if (color) return MiscUtil.getColorStylePart(color);
-		return "";
-	}
-
-	sourceJsonToColor (source) {
-		if (!source) return "";
-		source = source.toLowerCase();
-		if (!this.getMetaLookup("_sources")[source]?.color) return "";
-		return BrewUtilShared.getValidColor(this.getMetaLookup("_sources")[source].color);
-	}
-
-	sourceToColor (source) {
-		if (!source?.color) return "";
-		return BrewUtilShared.getValidColor(source.color);
-	}
-
 	getSources () {
-		this._doCacheMetas();
+		this._initSync();
 		return Object.values(this._cache_metas["_sources"]);
 	}
 	// endregion
@@ -1224,7 +1247,7 @@ export class BrewUtil2Base {
 	// region Other meta
 	getMetaLookup (type) {
 		if (!type) return null;
-		this._doCacheMetas();
+		this._initSync();
 		return this._cache_metas[type];
 	}
 	// endregion

@@ -211,7 +211,7 @@
 								],
 								[
 									"3",
-									"Suldanesellar",
+									"Suldanessellar",
 									"Horror",
 									"Order of Icarus, Raven Circle"
 								],
@@ -910,7 +910,7 @@
 											"rows": [
 												[
 													"1-10",
-													"{@item +1 Ammunition||Ammunition, +1}\u2014{@item +1 Arrow||arrows} (10), {@item +1 Crossbow Bolt||bolts} (10) or {@item +1 sling bullet||sling bullets} (20)",
+													"{@item +1 Ammunition||Ammunition, +1}\u2014{@item +1 Arrow||arrows} (10), {@item +1 crossbow bolt||bolts} (10) or {@item +1 sling bullet||sling bullets} (20)",
 													"100 gp"
 												],
 												[
@@ -1898,7 +1898,7 @@
 								}
 							]
 						},
-						"The Suldanessellar of the real world is an elven city in the Forest of Tethir ruled by Queen Ellesime. It houses the Tree of Life and serves as a meeting place for all of the elvish tribes within the Forest of Tethir, including the Elmanesse elven tribe to the north and the Suldusk elven tribe to the south.",
+						" The Suldanessellar of the real world is an elven city in the Forest of Tethir ruled by Queen Ellesime. It houses the Tree of Life and serves as a meeting place for all of the elvish tribes within the Forest of Tethir, including the Elmanesse elven tribe to the north and the Suldusk elven tribe to the south.",
 						"Suldanessellar is all that remains of the ancient elven kingdom of Keltormir. The elves of that ancient kingdom were saved from complete annihilation by the great elven hero Tethir\u2014the inspiration for the name of the forest. A seed given to the elves by their god, Rillifane Rallathil, was planted in the spot of Tethir's death to honor him. This seed quickly grew into the Tree of Life; becoming so massive its branches were able to support the treetop city that would eventually become Suldanessellar.",
 						"In current times, Suldanessellar is still recovering from a tragedy that nearly destroyed it a century ago. {@creature Jon Irenicus|MaBJoV}, a great elven wizard exiled from the city, tried to use the Tree of Life to complete a ritual that would transform him into a god. With the help of his sister, Bodhi, he captured Queen Ellesime and {@condition poisoned} the Tree of Life. Jon's plan was thwarted when he was killed by the Bhaalspawn, Abdel Adrian.",
 						"But Jon's death didn't bring peace to the elves of Suldanessellar. Due to a pact with the Dark Powers of the Shadowfell, his spirit was drawn into a dark reflection of the treetop city. Trapped in this Domain of Dread, Irenicus\u2014with the help of his sister\u2014is still able to inflict misery on the elves of Suldanessellar from his prison.",
@@ -1907,7 +1907,7 @@
 							"name": "The Shadowfell",
 							"entries": [
 								"This dismal echo of Suldanessellar exists in the Shadowfell. This realm is lorded over by the siblings Jon and {@creature Bodhi Irenicus|MaBJoV}. In their version of the elven city it is always night. The city is as beautiful as its counterpart, except for a few places that have been twisted to reflect the inhabitants, such as the palace where Jon rules and the tower where Bodhi roosts. The former House of the Horn has become a lair for the Shadar-Kai, a twisted race of elves associated with the Raven Queen\u2014the dark ruler of the entire Shadowfell. Finally, the branches on the borders of the city are black and malformed, becoming the domain of bloodthirsty {@creature wolfwere|MaBJoV|wolfweres}. The branches grow thicker the further one travels, and only with the permission of either Jon or Bodhi will a path open up for someone to escape back into the real world.",
-								"Jon and Bodhi lure travelers from across the Forest of Tethir into their cursed domain. They do this by opening pathways in the forest when the moon of Selune is at its fullest. These pathways seem to lead into supernaturally beautiful groves or echo with beautiful fey song. While most of those tricked into the shadow realm are younger elves from the city of Suldanessellar, there are members of almost every race trapped in the elven city's dark reflection.",
+								"Jon and Bodhi lure travelers from across the Forest of Tethir into their cursed domain. They do this by opening pathways in the forest when the moon of Selûne is at its fullest. These pathways seem to lead into supernaturally beautiful groves or echo with beautiful fey song. While most of those tricked into the shadow realm are younger elves from the city of Suldanessellar, there are members of almost every race trapped in the elven city's dark reflection.",
 								"Those who first arrive find themselves in a place reminiscent to its real-world counterpart. Most of those trapped in the shadow city try to recreate a semblance of a normal life. The majority of the elven population distract themselves with music, dancing under the stars and praying to the Seldarine. For some elves, the despair of the place becomes too much and they either join the Shadar-Kai or wander out into the Black Branches ({@area S15|081}) to be torn apart by the {@creature wolfwere|MaBJoV|wolfweres}.",
 								"Jon and Bodhi are always looking for those who can help free them from their prison. They have founded an organization called the Order of Icarus. Members of the Order are the only ones that the siblings allow to leave their realm. Members of the Order seek out magical secrets or capture learned sages or spell casters to bring back to their masters. Bodhi is the one who identifies those who might have the talents required to join the Order, selecting candidates from newly trapped travelers or children who have grown up in the Shadowfell and have just come of age.",
 								"The inhabitants of the real world Suldanessellar have been tormented by its dark reflection for the entire century of its existence. When an elf in Suldanessellar goes into their daily trance, they can communicate with the elves trapped in Jon and Bodhi's realm. Those who have loved ones trapped in the shadow realm can become obsessed, spending all of their time conversing with them."
@@ -1992,7 +1992,7 @@
 									"grid": {
 										"type": "none"
 									},
-									"title": "Map 1.3: Suldanesselar",
+									"title": "Map 1.3: Suldanessellar",
 									"imageType": "map",
 									"id": "067"
 								},
@@ -2152,7 +2152,7 @@
 									"type": "entries",
 									"name": "House of the Horn (Area S4)",
 									"entries": [
-										"The Shadar-Kai sell magical items obtained from across the Shadowfell in the House of the Horn. The Shadar Kai will reveal a random magic item for each 50 gp donated. There is always a 25% chance that the Shadar Kai will sell an item that has a curse associated with it. A successful Charisma ({@skill Intimidation}) check ensures that they do not.",
+										"The Shadar-kai sell magical items obtained from across the Shadowfell in the House of the Horn. The Shadar-kai will reveal a random magic item for each 50 gp donated. There is always a 25% chance that the Shadar-kai will sell an item that has a curse associated with it. A successful Charisma ({@skill Intimidation}) check ensures that they do not.",
 										{
 											"type": "table",
 											"caption": "Random Magic Items at the House of the Horn",
@@ -2585,7 +2585,7 @@
 													"40 gp"
 												],
 												[
-													"{@item +1 Ammunition||Ammunition, +1}\u2014{@item +1 Arrow||arrows} (10), {@item +1 Crossbow Bolt||bolts} (10) or {@item +1 sling bullet||sling bullets} (20)",
+													"{@item +1 Ammunition||Ammunition, +1}\u2014{@item +1 Arrow||arrows} (10), {@item +1 crossbow bolt||bolts} (10) or {@item +1 sling bullet||sling bullets} (20)",
 													"100 gp"
 												],
 												[
@@ -4233,7 +4233,7 @@
 														],
 														[
 															"Tree roots to Ysgard",
-															"The Gates of the Moon\u2014home to the goddesses Selune and Sune",
+															"The Gates of the Moon\u2014home to the goddesses Selûne and Sune",
 															"7",
 															"Lone {@creature green hag} or a coven"
 														],
@@ -4514,7 +4514,7 @@
 											"name": "Missions",
 											"page": 52,
 											"entries": [
-												"Once per month the Flaming Fist gives your group a mission to perform. This mission takes precedence over all other activities. If completed, the group rolls on the Treasure Hoard: Challenge 0-4 table in the {@book Dungeon Master's Guide|DMG} for their reward."
+												"Once per month the Flaming Fist gives your group a mission to perform. This mission takes precedence over all other activities. If completed, the group rolls on the {@table Treasure Hoard: Challenge 0\u20144|DMG} table in the {@book Dungeon Master's Guide|DMG} for their reward."
 											],
 											"id": "0d8"
 										},
@@ -4902,7 +4902,7 @@
 							"width": 733,
 							"height": 452
 						},
-						"The Knights of Bahamut are an ancient order founded with the assistance of the elder draconic entity called Bahamut. They were famed for bonding with some of the most powerful and beautiful creatures in the multiverse\u2014metallic dragons. Legends tell of how a single knight was capable of turning the tide of an entire battle or breaking the siege of a city. But the Knights of Bahamut were short lived, lasting only a few decades before being exterminated by their enemies. That was a thousand years ago.",
+						"The Knights of Bahamut are an ancient order founded with the assistance of the elder draconic entity called Bahamut. They were famed for bonding with some of the most powerful and beautiful creatures in the multiverse\u2014metallic dragons. Legends tell of how a single knight was capable of turning the tide of an entire battle or breaking the siege of a city. But the Knights of Bahamut were short-lived, lasting only a few decades before being exterminated by their enemies. That was a thousand years ago.",
 						"The last surviving knight, a half-elf named Suldil, wishes to bring back the ancient Order. The Oath of Bahamut is the sacred rite that bonds a mortal and a dragon together. In order for the sacred rite to work, it must be blessed by Bahamut. Thus, the first task of the fledgling knight is to gain Bahamut's favor. After that, metallic dragon eggs must be found. They cannot be stolen from their parents. Only eggs that have not been stolen and whose parents are dead are considered viable.",
 						{
 							"type": "inset",
@@ -6288,6 +6288,13 @@
 							]
 						}
 					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@note Disclaimer: The editor of this journal takes no responsibility for the veracity Of the author's claims. The editor will point out that the author believes that his hamster can talk (I've only ever heard it squeak), comes from space and has a hamster sister the size ofa horse...}"
+					],
+					"id": "11e"
 				}
 			],
 			"id": "11b"

@@ -1,6 +1,7 @@
 import {ConfigSettingsGroup} from "./util-config-settings-group.js";
 import {ConfigSettingBoolean, ConfigSettingEnum, ConfigSettingExternal} from "./utils-config-setting-base.js";
-import {SITE_STYLE__CLASSIC, SITE_STYLE__ONE, SITE_STYLE_DISPLAY} from "../consts.js";
+import {SITE_STYLE__CLASSIC, SITE_STYLE_DISPLAY} from "../consts.js";
+import {StyleSwitcher} from "../styleswitch.js";
 
 const settingsGroupStyleSwitcher = new ConfigSettingsGroup({
 	groupId: "styleSwitcher",
@@ -18,17 +19,26 @@ const settingsGroupStyleSwitcher = new ConfigSettingsGroup({
 		)(),
 		new ConfigSettingEnum({
 			configId: "style",
-			name: `<span>Style <span class="ve-small">(see also: <a href="https://2014.5e.tools" rel="noopener noreferrer" target="_blank">2014.5e.tools</a>)</span></span>`,
-			help: `The styling to be applied when rendering specific information (stat blocks, etc.). Does not affect what content is available, only how it is displayed. See also: https://2014.5e.tools.`,
+			name: "Style",
+			help: `The styling to be applied when rendering specific information (stat blocks, etc.).`,
 			isRowLabel: true,
 			isReloadRequired: true,
-			default: SITE_STYLE__ONE,
+			default: SITE_STYLE__CLASSIC,
 			values: [
 				SITE_STYLE__CLASSIC,
-				SITE_STYLE__ONE,
 			],
 			fnDisplay: it => SITE_STYLE_DISPLAY[it] || it,
 		}),
+		new (
+			class extends ConfigSettingExternal {
+				_configId = "styleRollbox";
+				_name = "Dice Roller Position";
+				_help = "The position of the dice roller.";
+				_isRowLabel = true;
+
+				_getEleExternal () { return StyleSwitcher.getSelRollboxPosition(); }
+			}
+		)(),
 		new (
 			class extends ConfigSettingExternal {
 				_configId = "isWideMode";

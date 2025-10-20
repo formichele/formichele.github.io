@@ -3287,10 +3287,9 @@
 									"grid": {
 										"type": "square",
 										"size": 56,
-										"offsetX": -18,
-										"offsetY": 28,
-										"scale": 4,
-										"distance": 10
+										"offsetX": -36,
+										"offsetY": 56,
+										"scale": 8
 									},
 									"href": {
 										"type": "internal",
@@ -3564,10 +3563,9 @@
 									"grid": {
 										"type": "square",
 										"size": 56,
-										"offsetX": -18,
-										"offsetY": 28,
-										"scale": 4,
-										"distance": 10
+										"offsetX": -36,
+										"offsetY": 56,
+										"scale": 8
 									},
 									"href": {
 										"type": "internal",
@@ -4214,7 +4212,7 @@
 									"id": "0b6",
 									"entries": [
 										"If the party includes one or more likely recruits, Savra Belabranta (NG female Tethyrian human {@creature knight}) visits the characters' residence and invites them to the Halls of Justice, the temple of Tyr (located west of the Market in the Castle Ward), where they can be sworn into the order. The swearing-in ceremony involves the recitation of an oath to find and destroy evil in all its forms. The oath is spoken while every candidate wears a silver gauntlet (a symbol of the order). After the ceremony, Savra gives new recruits their first mission.",
-										"The Belabrantas are a Waterdavian noble family that raises griffons for the Griffon Cavalry. Savra is trying to regain her honor by serving Tyr, thus atoning for the evil acts she committed as a member of an evil elemental cult called the Howling Hatred. Savra's sins are irrelevant to this adventure, but you can learn more about her past in {@adventure Princes of the Apocalypse|PotA}. Whenever she has a mission for the characters, she communicates the missive to them herself.",
+										"The Belabrantas are a Waterdavian noble family that raises griffons for the Griffon Cavalry. Savra is trying to regain her honor by serving Tyr, thus atoning for the evil acts she committed as a member of an evil elemental cult called the Howling Hatred. Savra's sins are irrelevant to this adventure, but you can learn more about her past in {@adventure Princes of the Apocalypse|pota}. Whenever she has a mission for the characters, she communicates the missive to them herself.",
 										{
 											"type": "table",
 											"colLabels": [
@@ -5068,7 +5066,7 @@
 					"page": 50,
 					"id": "0ef",
 					"entries": [
-						"After fleeing Trollskull Alley with the {@item Stone of Golorr|WDH} in his clutches, the Zhent assassin {@creature Urstul Floxin|WDH} returned to Gralhund Villa to confront {@creature Yalah Gralhund|wdh} about sending the {@creature nimblewright|wdh} to meddle in his mission. Lady Gralhund decides she no longer likes Urstul and, taking advantage of his injuries, wrests the {@item Stone of Golorr|WDH} from him at swordpoint and orders her guards to lock him up until she decides what to do with him.",
+						"After fleeing Trollskull Alley with the {@item Stone of Golorr|WDH} in his clutches, the Zhent assassin {@creature Urstul Floxin|WDH} returned to Gralhund Villa to confront {@creature Yalah Gralhund|wdh} about sending the {@creature nimblewright|wdh} to meddle in his mission. Lady Gralhund decides she no longer likes Urstul and, taking advantage of his injuries, wrests the {@item Stone of Golorr|WDH} from him at sword-point and orders her guards to lock him up until she decides what to do with him.",
 						"Your choice of main villain determines Lady Gralhund's motivation, which is a secret held by her and {@creature Hrabbaz|WDH}, her loyal half-orc bodyguard:",
 						{
 							"type": "list",
@@ -18376,7 +18374,7 @@
 										"",
 										"A small crowd of onlookers is gathered around a ten-foot-tall wicker effigy of a troll, stamping their feet as two young men struggle to set the likeness ablaze with sputtering torches.",
 										"",
-										"Suddenly a whitehaired man bolts toward the crowd, his face a mask of terror. Behind him lurches a massive, green-skinned giant dragging a ball and chain across the cobbled street. A blind helm covers the troll's eyes, but its mouth is a veritable cavern of sharp teeth. It flails its arms, slashing at the fog around it, and lets out a horrible wail of frustration. The crowd panics at the sight of it and flees into the mist and rain. Meanwhile, two members of the City Watch sneak up behind the blind troll, hoping to strike a mortal blow."
+										"Suddenly a white-haired man bolts toward the crowd, his face a mask of terror. Behind him lurches a massive, green-skinned giant dragging a ball and chain across the cobbled street. A blind helm covers the troll's eyes, but its mouth is a veritable cavern of sharp teeth. It flails its arms, slashing at the fog around it, and lets out a horrible wail of frustration. The crowd panics at the sight of it and flees into the mist and rain. Meanwhile, two members of the City Watch sneak up behind the blind troll, hoping to strike a mortal blow."
 									]
 								},
 								"The white-haired man is a Waterdavian noble of no real accomplishments named Bromas Sultlue. When he sees the characters, he shouts, \"It's a troll! Do something!\" If the characters intervene, the two City Watch {@creature veteran||veterans} fight alongside them. These constables act on the same initiative count. On their initiative count each round, there's a noncumulative {@chance 20|20 percent chance} that another {@creature veteran} arrives and joins the fray.",
@@ -20042,7 +20040,53 @@
 									"page": 118,
 									"id": "2ec",
 									"entries": [
-										"The Cassalanters host guests in this stately guest house. {@b CG1. Mud Room}. Guests can remove and store dirty cloaks and boots here. {@b CG2. Storage}. Guests can store their traveling gear here. {@b CG3. Dining Room}. This room is furnished with two dining tables, each surrounded by six chairs. {@b CG4. Kitchen}. Guests are expected to dine with the Cassalanters in the manor but can prepare their own breakfast here. {@b CG5. Parlor}. This room is furnished with a billiard table, a card table, and four luxurious armchairs. {@b CG6. Sitting Room}. This room features an upright piano and four luxurious armchairs. {@b CG7. Bedrooms}. Each room contains a bed for two, a pair of wardrobes, a small vanity with matching stool, and a storage trunk for valuables. {@b CG8. Master Bedroom}. This room has a balcony and contains a large canopied bed, a standing mirror in a gilded frame, a writing desk and matching chair, a dresser, a tall wardrobe, and an owlbear throw rug draped over a padded chair with matching ottoman.",
+										"The Cassalanters host guests in this stately guest house.",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "CG1. Mud Room",
+													"entry": "Guests can remove and store dirty cloaks and boots here."
+												},
+												{
+													"type": "item",
+													"name": "CG2. Storage",
+													"entry": "Guests can store their traveling gear here."
+												},
+												{
+													"type": "item",
+													"name": "CG3. Dining Room",
+													"entry": "This room is furnished with two dining tables, each surrounded by six chairs."
+												},
+												{
+													"type": "item",
+													"name": "CG4. Kitchen",
+													"entry": "Guests are expected to dine with the Cassalanters in the manor but can prepare their own breakfast here."
+												},
+												{
+													"type": "item",
+													"name": "CG5. Parlor",
+													"entry": "This room is furnished with a billiard table, a card table, and four luxurious armchairs."
+												},
+												{
+													"type": "item",
+													"name": "CG6. Sitting Room",
+													"entry": "This room features an upright piano and four luxurious armchairs."
+												},
+												{
+													"type": "item",
+													"name": "CG7. Bedrooms",
+													"entry": "Each room contains a bed for two, a pair of wardrobes, a small vanity with matching stool, and a storage trunk for valuables."
+												},
+												{
+													"type": "item",
+													"name": "CG8. Master Bedroom",
+													"entry": "This room has a balcony and contains a large canopied bed, a standing mirror in a gilded frame, a writing desk and matching chair, a dresser, a tall wardrobe, and an owlbear throw rug draped over a padded chair with matching ottoman."
+												}
+											]
+										},
 										{
 											"type": "gallery",
 											"images": [
@@ -31819,7 +31863,7 @@
 								},
 								{
 									"type": "entries",
-									"name": "Ches 21-30: Fleetswake",
+									"name": "Ches 21\u201330: Fleetswake",
 									"page": 185,
 									"id": "47e",
 									"entries": [
@@ -31830,7 +31874,7 @@
 								},
 								{
 									"type": "entries",
-									"name": "Tarsahk 1-10: Waukeentide",
+									"name": "Tarsahk 1\u201310: Waukeentide",
 									"page": 185,
 									"id": "47f",
 									"entries": [
@@ -31839,7 +31883,7 @@
 								},
 								{
 									"type": "entries",
-									"name": "Mirtul 6-9: The Plowing and Running",
+									"name": "Mirtul 6\u20139: The Plowing and Running",
 									"page": 185,
 									"id": "480",
 									"entries": [
@@ -31886,7 +31930,7 @@
 								},
 								{
 									"type": "entries",
-									"name": "Flamerule 3-5: Sornyn",
+									"name": "Flamerule 3\u20135: Sornyn",
 									"page": 186,
 									"id": "485",
 									"entries": [
@@ -33627,6 +33671,13 @@
 						"Gratitude to Elliott Zastrow for his extensive research.",
 						"Special thanks to the hundreds of playtesters whose feedback made this adventure more fun at every turn."
 					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@note Disclaimer: The Lords of Waterdeep cannot be held responsible for the flogging, banishment, incarceration, or execution of adventurers who violate the Code Legal, nor are the Lords responsible for the actions of beholder crime lords, unscrupulous nobles, drow swashbucklers, and evil clones. Also, don't be alarmed by the colossal statues scattered throughout the city. They're quite safe and haven't gone berserk in years.}"
+					],
+					"id": "545"
 				}
 			],
 			"id": "53a"

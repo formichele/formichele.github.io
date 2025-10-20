@@ -16,6 +16,7 @@ import {
 	DamageTypeTag,
 	DetectNamedCreature,
 	DragonAgeTag,
+	FamiliarTag,
 	LanguageTag,
 	MiscTag,
 	RechargeConvert,
@@ -30,11 +31,9 @@ import {
 	TagImmResVulnConditional,
 	TraitActionTag,
 } from "./converterutils-creature.js";
-import {CoreRuleTag, HazardTag, SpellTag} from "./converterutils-entries.js";
+import {SpellTag} from "./converterutils-entries.js";
 import {PropOrder} from "../utils-proporder.js";
 import {ConverterStringBlocklist} from "./converterutils-utils-blocklist.js";
-import {VetoolsConfig} from "../utils-config/utils-config-config.js";
-import {SITE_STYLE__CLASSIC} from "../consts.js";
 
 class _ConversionStateTextCreature extends ConversionStateTextBase {
 	constructor (
@@ -77,7 +76,6 @@ export class ConverterCreature extends ConverterBase {
 		"LANGUAGES",
 		"CHALLENGE",
 		"PROFICIENCY BONUS",
-		"GEAR",
 	];
 
 	static _NO_ABSORB_TITLES = [
@@ -91,10 +89,6 @@ export class ConverterCreature extends ConverterBase {
 		"UTILITY SPELL", // homebrew
 	];
 
-	static _RE_START_ARMOR_CLASS = "(?:Armor Class|AC)";
-	static _RE_START_INITIATIVE = "(?:Initiative)";
-	static _RE_START_HIT_POINTS = "(?:Hit Points|HP)";
-	static _RE_START_SPEED = "(?:Speed)";
 	static _RE_START_SAVING_THROWS = "(?:Saving Throw|Save)s?";
 	static _RE_START_SKILLS = "Skills?";
 	static _RE_START_DAMAGE_VULN = "(?:Damage )?Vulnerabilit(?:y|ies)";
@@ -106,7 +100,6 @@ export class ConverterCreature extends ConverterBase {
 	static _RE_START_LANGUAGES = "Languages?";
 	static _RE_START_CHALLENGE = "Challenge";
 	static _RE_START_PROF_BONUS = "Proficiency Bonus(?: \\(PB\\))?";
-	static _RE_START_GEAR = "Gear";
 
 	static _LINE_MODES = {
 		UNKNOWN: "unknown",
@@ -235,35 +228,19 @@ export class ConverterCreature extends ConverterBase {
 			}
 
 			// armor class
-			if (
-				ConverterUtils.isStatblockLineHeaderStart({reStartStr: this._RE_START_ARMOR_CLASS, line: meta.curLine})
-			) {
-				const [ptAc, ptInit] = meta.curLine.split(/\s+Initiative\s*/).map(it => it.trim()).filter(Boolean);
-				stats.ac = ConverterUtils.getStatblockLineHeaderText({reStartStr: "(?:Armor Class|AC)", line: ptAc});
-				if (ptInit) stats.initiative = ptInit;
-				continue;
-			}
-
-			// Initiative
-			if (
-				ConverterUtils.isStatblockLineHeaderStart({reStartStr: this._RE_START_INITIATIVE, line: meta.curLine})
-			) {
-				this._setCleanInitiative(stats, meta.curLine);
+			if (meta.ixToConvert === 2) {
+				stats.ac = ConverterUtils.getStatblockLineHeaderText({reStartStr: "(?:Armor Class|AC)", line: meta.curLine});
 				continue;
 			}
 
 			// hit points
-			if (
-				ConverterUtils.isStatblockLineHeaderStart({reStartStr: this._RE_START_HIT_POINTS, line: meta.curLine})
-			) {
+			if (meta.ixToConvert === 3) {
 				this._setCleanHp(stats, meta.curLine);
 				continue;
 			}
 
 			// speed
-			if (
-				ConverterUtils.isStatblockLineHeaderStart({reStartStr: this._RE_START_SPEED, line: meta.curLine})
-			) {
+			if (meta.ixToConvert === 4) {
 				this._setCleanSpeed(stats, meta.curLine, options);
 				continue;
 			}
@@ -373,19 +350,11 @@ export class ConverterCreature extends ConverterBase {
 				continue;
 			}
 
-			// gear (optional)
-			if (ConverterUtils.isStatblockLineHeaderStart({reStartStr: this._RE_START_GEAR, line: meta.curLine})) {
-				// noinspection StatementWithEmptyBodyJS
-				while (this._absorbBrokenLine({meta}));
-				this._setCleanGear({stats, line: meta.curLine, options});
-				continue;
-			}
-
 			// senses
 			if (ConverterUtils.isStatblockLineHeaderStart({reStartStr: this._RE_START_SENSES, line: meta.curLine})) {
 				// noinspection StatementWithEmptyBodyJS
 				while (this._absorbBrokenLine({meta}));
-				this._setCleanSenses({stats, line: meta.curLine, cbWarning: options.cbWarning, styleHint: options.styleHint});
+				this._setCleanSenses({stats, line: meta.curLine, cbWarning: options.cbWarning});
 				continue;
 			}
 
@@ -581,19 +550,6 @@ export class ConverterCreature extends ConverterBase {
 					meta.curLine = meta.toConvert[meta.ixToConvert];
 				}
 
-				if (
-					!stats.gear
-					&& curTrait.name === "Gear"
-					&& curTrait.entries.length === 1
-					&& typeof curTrait.entries[0] === "string"
-					// Ignore attacks named "Gear"
-					&& !/(?:[A-Z][a-z]+ Weapon Attack|[A-Z][a-z]+ Attack Roll|Hit):/.test(curTrait.entries[0])
-				) {
-					this._setCleanGear({stats, line: `Gear ${curTrait.entries[0]}`, options});
-					curTrait = {};
-					continue;
-				}
-
 				if (curTrait.name || curTrait.entries) {
 					// convert dice tags
 					DiceConvert.convertTraitActionDice(curTrait);
@@ -635,7 +591,6 @@ export class ConverterCreature extends ConverterBase {
 		}
 		meta.doPostLoop();
 
-		this._doCleanInitiative(stats, options);
 		this._doCleanLegendaryActionHeader(stats);
 
 		this._addExtraTypeTags(stats, meta);
@@ -719,14 +674,6 @@ export class ConverterCreature extends ConverterBase {
 			.replace(/([-+] +)\n +(\d+|PB)/g, (...m) => `${m[1]}${m[2]}`)
 		;
 
-		// Handle 2024 ability scores split across lines
-		clean = clean
-			.replace(/\n(?<abil>str|dex|con|int|wis|cha)\s+(?<score>\d+)\s+(?<mod>[-+]\d+)\s+(?<save>[-+]\d+)(?= *\n)/gi, (...m) => {
-				const {abil, score, mod, save} = m.at(-1);
-				return `\n${abil} ${score} ${mod} ${save}`;
-			})
-		;
-
 		// Handle CR XP on separate line
 		clean = clean
 			.replace(/\n(\([\d,]+ XP\)\n)/g, (...m) => m[1])
@@ -789,7 +736,7 @@ export class ConverterCreature extends ConverterBase {
 	}
 
 	static _handleAbilityScores_modSaveTable ({stats, meta, options}) {
-		if (!/^Mod\s+Save(\s+Mod\s+Save\s+Mod\s+Save)?$/i.test(meta.curLine)) return false;
+		if (!/^Mod\s+Save$/.test(meta.curLine)) return false;
 		++meta.ixToConvert;
 		meta.initCurLine();
 
@@ -797,7 +744,7 @@ export class ConverterCreature extends ConverterBase {
 
 		while (true) {
 			if (
-				/^Mod\s+Save/i.test(meta.curLine)
+				/^Mod\s+Save$/.test(meta.curLine)
 				|| meta.isSkippableCurLine()
 			) {
 				++meta.ixToConvert;
@@ -814,41 +761,13 @@ export class ConverterCreature extends ConverterBase {
 		--meta.ixToConvert;
 		meta.initCurLine();
 
-		// Convert scores of the form:
-		// ```
-		// ["Str 10 +0 +0 Dex 16 +3 +5 Con12 +1 +1",
-		//  "Int 13 +1 +1 Wis 17 +3 +5 Cha 12 +1 +1"]
-		// ```
-		if (abilLines.length === 2) {
-			const zipped = abilLines
-				.flatMap(pt => {
-					return pt
-						.split(/(str|dex|con|int|wis|cha)/i)
-						.filter(Boolean)
-						.reduce((accum, val) => {
-							const tgt = accum.at(-1);
-
-							if (!tgt || tgt.length === 2) {
-								accum.push([val]);
-								return accum;
-							}
-
-							tgt.push(val);
-
-							return accum;
-						}, []);
-				})
-				.map(tuple => tuple.join(" ").trim().replace(/\s+/g, " "));
-			abilLines.splice(0, abilLines.length, ...zipped);
-		}
-
 		if (abilLines.length !== 6) {
 			options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}Ability scores require manual conversion`);
 			return false;
 		}
 
 		for (const l of abilLines) {
-			const mAbil = /^(?<abil>str|dex|con|int|wis|cha)\s*(?<score>\d+)\s+(?<bonus>[-+]\d+)\s+(?<save>[-+]\d+)$/i.exec(l);
+			const mAbil = /^(?<abil>str|dex|con|int|wis|cha)\s+(?<score>\d+)\s+(?<bonus>[-+]\d+)\s+(?<save>[-+]\d+)$/i.exec(l);
 			if (!mAbil) {
 				options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}Ability scores require manual conversion`);
 				return false;
@@ -860,7 +779,7 @@ export class ConverterCreature extends ConverterBase {
 			stats[abilProp] = Number(score);
 
 			const saveNum = Number(save);
-			if (Parser.getAbilityModNumber(stats[abilProp]) !== saveNum) (stats.save ||= {})[abilProp] = save;
+			if (Parser.getAbilityModNumber(stats[abilProp]) !== saveNum) (state.save ||= {})[abilProp] = save;
 		}
 
 		return true;
@@ -905,67 +824,6 @@ export class ConverterCreature extends ConverterBase {
 		if (/\b\d+(?:st|nd|rd|th)[-\u2012-\u2014\u2212]Order Power\b/.test(entry.name)) return "action";
 
 		return "trait";
-	}
-
-	/* -------------------------------------------- */
-
-	static _doCleanInitiative (stats, options) {
-		if (!stats.initiative) return delete stats.initiative;
-
-		const mInit = /^(?<bonus>[-+]\d+) \((?<score>\d+)\)$/.exec(stats.initiative);
-		if (!mInit) {
-			return options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}Initiative requires manual conversion`);
-		}
-
-		const bonusNum = Number(mInit.groups.bonus);
-		const scoreNum = Number(mInit.groups.score);
-
-		const dexMod = Parser.getAbilityModNumber(stats.dex);
-
-		// Basic initiative; delete
-		if (dexMod === bonusNum && scoreNum === 10 + dexMod) {
-			return delete stats.initiative;
-		}
-
-		const pb = Parser.crToPb(stats.cr);
-		if (!pb) return options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}Initiative requires manual conversion`);
-
-		const bonusNumPassive = bonusNum + 10;
-		if (bonusNumPassive === scoreNum) {
-			// Basic initiative with additional proficiency bonus
-			if ((dexMod + pb) === bonusNum) {
-				stats.initiative = {proficiency: 1};
-				return;
-			}
-
-			// Basic initiative with additional expertise
-			if ((dexMod + (2 * pb)) === bonusNum) {
-				stats.initiative = {proficiency: 2};
-				return;
-			}
-		}
-
-		// d20 Advantage is approx +5
-		if ((bonusNumPassive + 5) === scoreNum) {
-			if (dexMod === bonusNum) {
-				stats.initiative = {advantageMode: "adv"};
-				return;
-			}
-
-			// Basic initiative with additional proficiency bonus
-			if ((dexMod + pb) === bonusNum) {
-				stats.initiative = {proficiency: 1, advantageMode: "adv"};
-				return;
-			}
-
-			// Basic initiative with additional expertise
-			if ((dexMod + (2 * pb)) === bonusNum) {
-				stats.initiative = {proficiency: 2, advantageMode: "adv"};
-				return;
-			}
-		}
-
-		options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}Initiative requires manual conversion`);
 	}
 
 	/* -------------------------------------------- */
@@ -1597,7 +1455,7 @@ export class ConverterCreature extends ConverterBase {
 
 				// senses
 				if (~meta.curLine.indexOf("Senses")) {
-					this._setCleanSenses({stats, line: ConverterUtilsMarkdown.getNoDashStarStar(meta.curLine), cbWarning: options.cbWarning, styleHint: options.styleHint});
+					this._setCleanSenses({stats, line: ConverterUtilsMarkdown.getNoDashStarStar(meta.curLine), cbWarning: options.cbWarning});
 					continue;
 				}
 
@@ -1814,7 +1672,6 @@ export class ConverterCreature extends ConverterBase {
 		this._doFilterAddSpellcasting(stats, "trait", isMarkdown, options);
 		this._doFilterAddSpellcasting(stats, "action", isMarkdown, options);
 		const {subEntryNameBlocklist} = this._doStatblockPostProcess_getSubEntryNameInfo({stats});
-		SpellTag.tryRunPropsStrictCapsWords(stats, ConverterCreature._PROPS_ENTRIES, {styleHint: options.styleHint, blocklistNames: subEntryNameBlocklist});
 		SpellTag.tryRunProps(stats, ConverterCreature._PROPS_ENTRIES, {styleHint: options.styleHint, blocklistNames: subEntryNameBlocklist});
 		SpellcastingTraitHiddenConvert.mutStatblock({stats, props: Renderer.monster.CHILD_PROPS, styleHint: options.styleHint});
 		AcConvert.tryPostProcessAc({
@@ -1841,7 +1698,7 @@ export class ConverterCreature extends ConverterBase {
 				isTagInflicted: true,
 			},
 		);
-		CreatureSpecialEquipmentTagger.tryRun(stats, {styleHint: options.styleHint});
+		CreatureSpecialEquipmentTagger.tryRun(stats);
 		TraitActionTag.tryRun(stats);
 		LanguageTag.tryRun(stats);
 		SenseFilterTag.tryRun(stats);
@@ -1857,9 +1714,8 @@ export class ConverterCreature extends ConverterBase {
 		DetectNamedCreature.tryRun(stats);
 		TagImmResVulnConditional.tryRun(stats);
 		DragonAgeTag.tryRun(stats);
-		if (!stats.gear) AttachedItemTag.tryRun(stats);
-		HazardTag.tryRunPropsStrictCapsWords(stats, Renderer.monster.CHILD_PROPS_EXTENDED, {styleHint: options.styleHint});
-		CoreRuleTag.tryRunProps(stats, Renderer.monster.CHILD_PROPS_EXTENDED, {styleHint: options.styleHint});
+		FamiliarTag.tryRun(stats, {styleHint: options.styleHint});
+		AttachedItemTag.tryRun(stats);
 		this._doStatblockPostProcess_doCleanup(stats, options);
 		this._doStatblockPostProcess_doVerify(stats, options);
 	}
@@ -1879,7 +1735,6 @@ export class ConverterCreature extends ConverterBase {
 					displayAs: prop,
 					actions: stats.action,
 					reactions: stats.reaction,
-					styleHint: options.styleHint,
 				},
 			);
 			if (!parsed) return ent;
@@ -2117,21 +1972,34 @@ export class ConverterCreature extends ConverterBase {
 
 	static _setCleanSizeTypeAlignment_postProcess (stats, meta, options) {
 		const validTypes = new Set(Parser.MON_TYPES);
-		if (!stats.type.type?.choose && (!validTypes.has(stats.type.type || stats.type))) {
-			// check if the last word is a creature type
-			const curType = stats.type.type || stats.type;
-			let parts = curType.split(/(\W+)/g);
-			parts = parts.filter(Boolean);
-			if (validTypes.has(parts.last())) {
-				const note = parts.slice(0, -1);
-				if (stats.type.type) {
-					stats.type.type = parts.last();
-				} else {
-					stats.type = parts.last();
-				}
-				stats.sizeNote = note.join("").trim();
-			}
+
+		if (stats.type.type?.choose) {
+			stats.type.type.choose = stats.type.type
+				.choose.map(typ => typ.toLowerCase());
+			return;
 		}
+
+		const curType = stats.type.type || stats.type;
+		if (validTypes.has(curType)) return;
+
+		if (validTypes.has(curType.toLowerCase())) {
+			if (stats.type.type) stats.type.type = curType.toLowerCase();
+			else stats.type = curType.toLowerCase();
+			return;
+		}
+
+		// check if the last word is a creature type
+		let parts = curType.split(/(\W+)/g);
+		parts = parts.filter(Boolean);
+		if (!validTypes.has(parts.last())) return;
+
+		const note = parts.slice(0, -1);
+		if (stats.type.type) {
+			stats.type.type = parts.last();
+		} else {
+			stats.type = parts.last();
+		}
+		stats.sizeNote = note.join("").trim();
 	}
 
 	static _addExtraTypeTags (stats, meta) {
@@ -2143,12 +2011,8 @@ export class ConverterCreature extends ConverterBase {
 		stats.type.tags.push(...meta.additionalTypeTags);
 	}
 
-	static _setCleanInitiative (stats, line) {
-		stats.initiative = ConverterUtils.getStatblockLineHeaderText({reStartStr: this._RE_START_INITIATIVE, line});
-	}
-
 	static _setCleanHp (stats, line) {
-		const rawHp = ConverterUtils.getStatblockLineHeaderText({reStartStr: this._RE_START_HIT_POINTS, line});
+		const rawHp = ConverterUtils.getStatblockLineHeaderText({reStartStr: "(?:Hit Points|HP)", line});
 		// split HP into average and formula
 		const m = /^(\d+)\s*\((.*?)\)$/.exec(rawHp.trim());
 		if (!m) stats.hp = {special: rawHp}; // for e.g. Avatar of Death
@@ -2274,53 +2138,7 @@ export class ConverterCreature extends ConverterBase {
 		}
 	}
 
-	static _setCleanGear ({stats, line, options}) {
-		const lineGear = ConverterUtils.getStatblockLineHeaderText({reStartStr: this._RE_START_GEAR, line});
-
-		const out = [];
-
-		lineGear
-			.split(StrUtil.COMMA_SPACE_NOT_IN_PARENTHESES_REGEX)
-			.forEach(pt => {
-				pt = pt.trim();
-				if (!pt) return;
-
-				let quantity = 1;
-				pt = pt
-					// "Two Javelins"
-					.replace(/^(?<quantityText>one|two|three|four|five|six|seven|eight|nine|ten)\s*/, (...m) => {
-						const {quantityText} = m.at(-1);
-						quantity = Parser.textToNumber(quantityText);
-						return "";
-					})
-					// "3 Javelins"
-					.replace(/^(?<quantityNumber>\d+)\s*/, (...m) => {
-						const {quantityNumber} = m.at(-1);
-						quantity = Number(quantityNumber);
-						return "";
-					})
-					// "Javelins (3)"
-					.replace(/\s+\((?<quantityNumber>\d+)\)$/, (...m) => {
-						const {quantityNumber} = m.at(-1);
-						quantity = Number(quantityNumber);
-						return "";
-					})
-				;
-
-				if (quantity > 1) pt = pt.toSingle();
-
-				const uid = `${pt}|${Parser.SRC_XPHB}`.toLowerCase();
-				if (quantity === 1) out.push(uid);
-				else out.push({item: uid, quantity});
-			});
-
-		if (!out.length) return;
-		stats.gear = out;
-	}
-
-	static _setCleanSenses ({stats, line, cbWarning, styleHint}) {
-		styleHint ||= VetoolsConfig.get("styleSwitcher", "style");
-
+	static _setCleanSenses ({stats, line, cbWarning}) {
 		const senses = ConverterUtils.getStatblockLineHeaderText({reStartStr: this._RE_START_SENSES, line});
 		const tempSenses = [];
 
@@ -2334,14 +2152,7 @@ export class ConverterCreature extends ConverterBase {
 						pt = pt.trim();
 						if (!pt) return;
 
-						if (!pt.toLowerCase().includes("passive perception")) {
-							if (styleHint === SITE_STYLE__CLASSIC) return tempSenses.push(pt.toLowerCase());
-
-							return tempSenses.push(
-								pt
-									.replace(/magical Darkness/g, `magical {@variantrule Darkness|XPHB}`),
-							);
-						}
+						if (!pt.toLowerCase().includes("passive perception")) return tempSenses.push(pt.toLowerCase());
 
 						let ptPassive = pt.replace(/^passive perception/i, "").trim();
 						if (!isNaN(ptPassive)) return stats.passive = this._tryConvertNumber(ptPassive);
@@ -2401,7 +2212,7 @@ export class ConverterCreature extends ConverterBase {
 
 	static _setCleanCr (stats, meta, {cbWarning, header = "Challenge"} = {}) {
 		let line = ConverterUtils.getStatblockLineHeaderText({reStartStr: header, line: meta.curLine});
-		let xp = null; let xpLair = null;
+		let xp = null;
 
 		line = line
 			.replace(/(?<=\()(?<amount>[0-9,]+)\s*XP(?=\))/i, (...m) => {
@@ -2415,35 +2226,17 @@ export class ConverterCreature extends ConverterBase {
 			.replace(/\(\s*\)/g, "")
 			.trim();
 
-		const rePtOneXpIntro = /(?<=\()\s*/.source;
-		const rePtOneXpAmount = /(?<amount>[0-9,]+)/.source;
-		const rePtOneXpAmountLair = /( or (?<amountLair>[0-9,]+) in lair)?/.source;
-		const rePtOneXpOutro = /(?:;\s*)?/.source;
+		line = line
+			.replace(/(?<=\()\s*XP (?<amount>[0-9,]+)(?:;\s*)?/i, (...m) => {
+				const amountRaw = m.last().amount.replace(/,/, "");
+				if (isNaN(amountRaw)) return m[0];
 
-		const reXpOnePre = new RegExp(`${rePtOneXpIntro}XP ${rePtOneXpAmount}${rePtOneXpAmountLair}${rePtOneXpOutro}`, "i");
-		const reXpOnePost = new RegExp(`${rePtOneXpIntro}${rePtOneXpAmount} XP${rePtOneXpAmountLair}${rePtOneXpOutro}`, "i");
+				xp = Number(amountRaw);
 
-		[
-			reXpOnePre,
-			reXpOnePost,
-		]
-			.forEach(re => {
-				line = line
-					.replace(re, (...m) => {
-						const {amount, amountLair} = m.at(-1);
-						const amountRaw = amount.replace(/,/g, "");
-						const amountLairRaw = amountLair ? amountLair.replace(/,/g, "") : null;
-
-						if (isNaN(amountRaw) || (amountLairRaw && isNaN(amountLairRaw))) return m[0];
-
-						xp = Number(amountRaw);
-						if (amountLairRaw) xpLair = Number(amountLairRaw);
-
-						return "";
-					})
-					.replace(/\(\s*\)/g, "")
-					.trim();
-			});
+				return "";
+			})
+			.replace(/\(\s*\)/g, "")
+			.trim();
 
 		line = line
 			.replace(/(?<=\()PB (?<pb>\+\d+)(?=\))/i, (...m) => {
@@ -2488,13 +2281,11 @@ export class ConverterCreature extends ConverterBase {
 
 		const cr = line;
 
-		const isXpMismatch = xp != null && Parser.crToXpNumber(cr) !== xp;
-		if (isXpMismatch || xpLair != null) {
-			const outCr = {cr};
-			if (isXpMismatch) outCr.xp = xp;
-			if (xpLair) outCr.xpLair = xpLair;
-
-			stats.cr = outCr;
+		if (xp != null && Parser.crToXpNumber(cr) !== xp) {
+			stats.cr = {
+				cr,
+				xp,
+			};
 			return;
 		}
 

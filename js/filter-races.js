@@ -9,7 +9,7 @@ class PageFilterRaces extends PageFilterBase {
 		lProfs.forEach(lProfGroup => {
 			Object.keys(lProfGroup)
 				.forEach(k => {
-					if (!["choose", "any", "anyStandard", "anyExotic", "anyRare"].includes(k)) outSet.add(k.toTitleCase());
+					if (!["choose", "any", "anyStandard", "anyExotic"].includes(k)) outSet.add(k.toTitleCase());
 					else outSet.add("Choose");
 				});
 		});
@@ -35,20 +35,12 @@ class PageFilterRaces extends PageFilterBase {
 	}
 	// endregion
 
-	static _TRAIT_DISPLAY_VALUES = {
-		"Monstrous Race": "Monstrous Species",
-		"NPC Race": "NPC Species",
-		"Uncommon Race": "Uncommon Species",
-
-		"Armor Proficiency": "Armor Training",
-	};
-
 	constructor () {
 		super();
 
 		this._sizeFilter = new Filter({header: "Size", displayFn: Parser.sizeAbvToFull, itemSortFn: PageFilterRaces.filterAscSortSize});
-		this._asiFilter = new AbilityScoreFilter({header: "Ability Scores (Including Subspecies)"});
-		this._baseRaceFilter = new Filter({header: "Base Species"});
+		this._asiFilter = new AbilityScoreFilter({header: "Ability Scores (Including Subrace)"});
+		this._baseRaceFilter = new Filter({header: "Base Race"});
 		this._speedFilter = new Filter({header: "Speed", items: ["Climb", "Fly", "Swim", "Walk (Fast)", "Walk", "Walk (Slow)"]});
 		this._traitFilter = new Filter({
 			header: "Traits",
@@ -56,8 +48,7 @@ class PageFilterRaces extends PageFilterBase {
 				"Amphibious",
 				"Armor Proficiency",
 				"Blindsight",
-				"Darkvision",
-				"Superior Darkvision",
+				"Darkvision", "Superior Darkvision",
 				"Dragonmark",
 				"Feat",
 				"Improved Resting",
@@ -73,7 +64,6 @@ class PageFilterRaces extends PageFilterBase {
 				"Uncommon Race",
 				"Weapon Proficiency",
 			],
-			displayFn: val => this.constructor._TRAIT_DISPLAY_VALUES[val] || val,
 			deselFn: (it) => {
 				return it === "NPC Race";
 			},
@@ -122,9 +112,9 @@ class PageFilterRaces extends PageFilterBase {
 		});
 		this._miscFilter = new Filter({
 			header: "Miscellaneous",
-			items: ["Base Species", "Key Species", "Lineage", "Modified Copy", "Reprinted", "Legacy", "Has Images", "Has Info"],
+			items: ["Base Race", "Key Race", "Lineage", "Modified Copy", "Reprinted", "Legacy", "Has Images", "Has Info"],
 			isMiscFilter: true,
-			deselFn: PageFilterBase.defaultMiscellaneousDeselFn.bind(PageFilterBase),
+			// N.b. "Reprinted" is not red by default, as we assume tastes vary w.r.t. ability score style
 		});
 	}
 
@@ -148,13 +138,12 @@ class PageFilterRaces extends PageFilterBase {
 		r._fLangs = PageFilterRaces.getLanguageProficiencyTags(r.languageProficiencies);
 		r._fCreatureTypes = r.creatureTypes ? r.creatureTypes.map(it => it.choose || it).flat() : ["humanoid"];
 		this._mutateForFilters_commonMisc(r);
-		if (r._isBaseRace) r._fMisc.push("Base Species");
-		if (r._isBaseRace || !r._isSubRace) r._fMisc.push("Key Species");
-		if (r._isCopy) r._fMisc.push("Modified Copy");
+		if (r._isBaseRace) r._fMisc.push("Base Race");
+		if (r._isBaseRace || !r._isSubRace) r._fMisc.push("Key Race");
 		if (r.lineage) r._fMisc.push("Lineage");
 
 		const ability = r.ability ? Renderer.getAbilityData(r.ability, {isOnlyShort: true, isCurrentLineage: r.lineage === "VRGR"}) : {asTextShort: "None"};
-		r._slAbility = ability.asTextShort || VeCt.STR_NONE;
+		r._slAbility = ability.asTextShort;
 
 		if (r.age?.mature != null && r.age?.max != null) r._fAge = [r.age.mature, r.age.max];
 		else if (r.age?.mature != null) r._fAge = r.age.mature;
@@ -251,7 +240,7 @@ class ModalFilterRaces extends ModalFilterBase {
 		opts = opts || {};
 		super({
 			...opts,
-			modalTitle: `Species`,
+			modalTitle: `Race${opts.isRadio ? "" : "s"}`,
 			pageFilter: new PageFilterRaces(),
 		});
 	}
@@ -268,7 +257,7 @@ class ModalFilterRaces extends ModalFilterBase {
 
 	async _pLoadAllData () {
 		return [
-			...((await DataUtil.race.loadJSON()).race || []),
+			...(await DataLoader.pCacheAndGetAllSite(UrlUtil.PG_RACES)),
 			...((await DataUtil.race.loadPrerelease({isAddBaseRaces: false})).race || []),
 			...((await DataUtil.race.loadBrew({isAddBaseRaces: false})).race || []),
 		];
@@ -293,7 +282,7 @@ class ModalFilterRaces extends ModalFilterBase {
 			<div class="ve-col-4 px-1 ${race._versionBase_isVersion ? "italic" : ""} ${this._getNameStyle()}">${race._versionBase_isVersion ? `<span class="px-3"></span>` : ""}${race.name}</div>
 			<div class="ve-col-4 px-1">${ability.asTextShort}</div>
 			<div class="ve-col-2 px-1 ve-text-center">${size}</div>
-			<div class="ve-col-1 pl-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToSourceClassname(race.source)}" title="${Parser.sourceJsonToFull(race.source)}" ${Parser.sourceJsonToStyle(race.source)}>${source}${Parser.sourceJsonToMarkerHtml(race.source)}</div>
+			<div class="ve-col-1 pl-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToSourceClassname(race.source)}" title="${Parser.sourceJsonToFull(race.source)}">${source}${Parser.sourceJsonToMarkerHtml(race.source, {isList: true})}</div>
 		</div>`;
 
 		const btnShowHidePreview = eleRow.firstElementChild.children[1].firstElementChild;

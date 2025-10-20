@@ -4,7 +4,7 @@ import "../js/render.js";
 import "../js/render-dice.js";
 import * as ut from "./util.js";
 import {TagJsons} from "../js/converter/converterutils-entries.js";
-import {SITE_STYLE__ONE} from "../js/consts.js";
+import {SITE_STYLE__CLASSIC} from "../js/consts.js";
 
 function run (args) {
 	TagJsons._BLOCKLIST_FILE_PREFIXES = [
@@ -28,7 +28,7 @@ function run (args) {
 		}
 	}
 
-	const styleHint = args.styleHint || SITE_STYLE__ONE;
+	const styleHint = args.styleHint || SITE_STYLE__CLASSIC;
 
 	const creatureList = getTaggableCreatureList(args.bestiaryFile);
 
@@ -38,8 +38,7 @@ function run (args) {
 
 		if (json instanceof Array) return;
 
-		const keySet = null; // new Set(["classFeature", "subclassFeature"]); // TODO(Future)
-		if (args.strict) TagJsons.mutTagObjectStrictCapsWords(json, {styleHint, keySet});
+		if (args.strict) TagJsons.mutTagObjectStrictCapsWords(json, {styleHint});
 		else TagJsons.mutTagObject(json, {creaturesToTag: creatureList, styleHint});
 
 		const outPath = args.inplace ? file : file.replace("./data/", "./trash/");

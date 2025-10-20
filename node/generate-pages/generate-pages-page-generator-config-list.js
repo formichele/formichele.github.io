@@ -28,16 +28,14 @@ class _PageGeneratorListBackgrounds extends PageGeneratorListBase {
 	_isModule = true;
 
 	_btnsList = [
-		HtmlGeneratorListButtons.getBtn({width: "2-5", sortIdent: "name", text: "Name"}),
-		HtmlGeneratorListButtons.getBtn({width: "3-5", sortIdent: "ability", text: "Ability"}),
-		HtmlGeneratorListButtons.getBtn({width: "4", sortIdent: "skills", text: "Skill Proficiencies"}),
+		HtmlGeneratorListButtons.getBtn({width: "4", sortIdent: "name", text: "Name"}),
+		HtmlGeneratorListButtons.getBtn({width: "6", sortIdent: "skills", text: "Skill Proficiencies"}),
 		HtmlGeneratorListButtons.getBtnSource(),
 	];
 
 	_btnsSublist = [
-		HtmlGeneratorListButtons.getBtn({width: "3", sortIdent: "name", text: "Name"}),
-		HtmlGeneratorListButtons.getBtn({width: "5", sortIdent: "ability", text: "Ability"}),
-		HtmlGeneratorListButtons.getBtn({width: "4", sortIdent: "skills", text: "Skills"}),
+		HtmlGeneratorListButtons.getBtn({width: "4", sortIdent: "name", text: "Name"}),
+		HtmlGeneratorListButtons.getBtn({width: "8", sortIdent: "skills", text: "Skills"}),
 	];
 
 	_isPrinterView = true;
@@ -102,6 +100,7 @@ class _PageGeneratorListBestiary extends PageGeneratorListBase {
 	}
 
 	_isPrinterView = true;
+	_isTableView = true;
 }
 
 class _PageGeneratorListCharCreationOptions extends PageGeneratorListBase {
@@ -224,17 +223,15 @@ class _PageGeneratorListFeats extends PageGeneratorListBase {
 
 	_btnsList = [
 		HtmlGeneratorListButtons.getBtnPreviewToggle(),
-		HtmlGeneratorListButtons.getBtn({width: "3-2", sortIdent: "name", text: "Name"}),
-		HtmlGeneratorListButtons.getBtn({width: "1-3", sortIdent: "category", text: "Category"}),
-		HtmlGeneratorListButtons.getBtn({width: "2-5", sortIdent: "ability", text: "Ability"}),
+		HtmlGeneratorListButtons.getBtn({width: "3-5", sortIdent: "name", text: "Name"}),
+		HtmlGeneratorListButtons.getBtn({width: "3-5", sortIdent: "ability", text: "Ability"}),
 		HtmlGeneratorListButtons.getBtn({width: "3", sortIdent: "prerequisite", text: "Prerequisite"}),
 		HtmlGeneratorListButtons.getBtnSource(),
 	];
 
 	_btnsSublist = [
 		HtmlGeneratorListButtons.getBtn({width: "4", sortIdent: "name", text: "Name"}),
-		HtmlGeneratorListButtons.getBtn({width: "2", sortIdent: "ability", text: "Category"}),
-		HtmlGeneratorListButtons.getBtn({width: "2", sortIdent: "ability", text: "Ability"}),
+		HtmlGeneratorListButtons.getBtn({width: "4", sortIdent: "ability", text: "Ability"}),
 		HtmlGeneratorListButtons.getBtn({width: "4", sortIdent: "prerequisite", text: "Prerequisite"}),
 	];
 
@@ -277,11 +274,6 @@ class _PageGeneratorListItems extends PageGeneratorListBase {
 		});
 
 		this._registerPartial({
-			ident: "listContentwrapperItems",
-			filename: "list/template-list-contentwrapper--items.hbs",
-		});
-
-		this._registerPartial({
 			ident: "listSublistContainerItems",
 			filename: "list/template-list-sublist-container--items.hbs",
 		});
@@ -291,11 +283,12 @@ class _PageGeneratorListItems extends PageGeneratorListBase {
 		return {
 			...super._getData(),
 			identPartialListListcontainer: "listListcontainerItems",
-			identPartialListContentwrapper: "listContentwrapperItems",
+			identPartialListSublistContainer: "listSublistContainerItems",
 		};
 	}
 
 	_isPrinterView = true;
+	_isTableView = true;
 }
 
 class _PageGeneratorListTrapsHazards extends PageGeneratorListBase {
@@ -431,26 +424,13 @@ class _PageGeneratorListPsionics extends PageGeneratorListBase {
 		HtmlGeneratorListButtons.getBtn({width: "3", sortIdent: "order", text: "Order"}),
 	];
 
-	_registerPartials () {
-		super._registerPartials();
-
-		this._registerPartial({
-			ident: "listContentwrapperPsionics",
-			filename: "list/template-list-contentwrapper--psionics.hbs",
-		});
-	}
-
-	_getData () {
-		return {
-			...super._getData(),
-			identPartialListContentwrapper: "listContentwrapperPsionics",
-		};
-	}
+	_isPrinterView = true;
+	_isTableView = true;
 }
 
 class _PageGeneratorListRaces extends PageGeneratorListBase {
 	_page = UrlUtil.PG_RACES;
-	_pageTitle = "Species";
+	_pageTitle = "Races";
 	_scriptIdentList = "races";
 	_isHasRenderer = false;
 
@@ -554,6 +534,9 @@ class _PageGeneratorListSpells extends PageGeneratorListBase {
 		HtmlGeneratorListButtons.getBtn({width: "3-2", sortIdent: "range", text: "Range"}),
 	];
 
+	_isPrinterView = true;
+	_isTableView = true;
+
 	_registerPartials () {
 		super._registerPartials();
 
@@ -591,8 +574,8 @@ class _PageGeneratorListTables extends PageGeneratorListBase {
 
 class _PageGeneratorListVariantRules extends PageGeneratorListBase {
 	_page = UrlUtil.PG_VARIANTRULES;
-	_pageTitle = "Rules Glossary";
-	_navbarTitle = "Rules Glossary";
+	_pageTitle = "Optional, Variant, and Expanded Rules";
+	_navbarTitle = "Optional/etc. Rules";
 	_scriptIdentList = "variantrules";
 
 	_btnsList = [
@@ -624,32 +607,6 @@ class _PageGeneratorListVehicles extends PageGeneratorListBase {
 	];
 
 	_isWrpToken = true;
-}
-
-class _PageGeneratorListBastions extends PageGeneratorListBase {
-	_page = UrlUtil.PG_BASTIONS;
-	_pageTitle = "Bastions";
-	_scriptIdentList = "bastions";
-	_isHasRenderer = false;
-
-	_isModule = true;
-
-	_btnsList = [
-		HtmlGeneratorListButtons.getBtn({width: "2", sortIdent: "facilityType", text: "Type"}),
-		HtmlGeneratorListButtons.getBtn({width: "3", sortIdent: "name", text: "Name"}),
-		HtmlGeneratorListButtons.getBtn({width: "1", sortIdent: "level", text: "Level"}),
-		HtmlGeneratorListButtons.getBtn({width: "4", sortIdent: "prerequisite", text: "Prerequisite"}),
-		HtmlGeneratorListButtons.getBtnSource(),
-	];
-
-	_btnsSublist = [
-		HtmlGeneratorListButtons.getBtn({width: "2", sortIdent: "facilityType", text: "Type"}),
-		HtmlGeneratorListButtons.getBtn({width: "3", sortIdent: "name", text: "Name"}),
-		HtmlGeneratorListButtons.getBtn({width: "2", sortIdent: "level", text: "Level"}),
-		HtmlGeneratorListButtons.getBtn({width: "5", sortIdent: "prerequisite", text: "Prerequisite"}),
-	];
-
-	_isPrinterView = true;
 }
 
 class _PageGeneratorListClasses extends PageGeneratorListBase {
@@ -690,7 +647,6 @@ export const PAGE_GENERATORS_LISTPAGE = [
 	new _PageGeneratorListTables(),
 	new _PageGeneratorListVariantRules(),
 	new _PageGeneratorListVehicles(),
-	new _PageGeneratorListBastions(),
 
 	new _PageGeneratorListClasses(),
 ];

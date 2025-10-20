@@ -10,10 +10,6 @@ class PageFilterBackgrounds extends PageFilterBase {
 		return tool.toTitleCase();
 	}
 
-	static _TRAIT_DISPLAY_VALUES = {
-		"Armor Proficiency": "Armor Training",
-	};
-
 	constructor () {
 		super();
 
@@ -27,7 +23,6 @@ class PageFilterBackgrounds extends PageFilterBase {
 		this._languageFilter = FilterCommon.getLanguageProficienciesFilter();
 		this._otherBenefitsFilter = new Filter({
 			header: "Other Benefits",
-			displayFn: val => this.constructor._TRAIT_DISPLAY_VALUES[val] || val,
 		});
 		this._miscFilter = new Filter({
 			header: "Miscellaneous",
@@ -112,11 +107,11 @@ class PageFilterBackgrounds extends PageFilterBase {
 	async _pPopulateBoxOptions (opts) {
 		opts.filters = [
 			this._sourceFilter,
-			this._asiFilter,
 			this._prereqFilter,
 			this._skillFilter,
 			this._toolFilter,
 			this._languageFilter,
+			this._asiFilter,
 			this._otherBenefitsFilter,
 			this._miscFilter,
 			this._featsFilter,
@@ -127,11 +122,11 @@ class PageFilterBackgrounds extends PageFilterBase {
 		return this._filterBox.toDisplay(
 			values,
 			bg._fSources,
-			bg.ability,
 			bg._fPrereq,
 			bg._fSkills,
 			bg._fTools,
 			bg._fLangs,
+			bg.ability,
 			bg._fOtherBenefits,
 			bg._fMisc,
 			bg._fFeats,
@@ -159,9 +154,8 @@ class ModalFilterBackgrounds extends ModalFilterBase {
 
 	_$getColumnHeaders () {
 		const btnMeta = [
-			{sort: "name", text: "Name", width: "3"},
-			{sort: "ability", text: "Ability", width: "4"},
-			{sort: "skills", text: "Skills", width: "4"},
+			{sort: "name", text: "Name", width: "4"},
+			{sort: "skills", text: "Skills", width: "6"},
 			{sort: "source", text: "Source", width: "1"},
 		];
 		return ModalFilterBase._$getFilterColumnHeaders(btnMeta);
@@ -169,7 +163,7 @@ class ModalFilterBackgrounds extends ModalFilterBase {
 
 	async _pLoadAllData () {
 		return [
-			...(await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/backgrounds.json`)).background,
+			...(await DataLoader.pCacheAndGetAllSite(UrlUtil.PG_BACKGROUNDS)),
 			...((await PrereleaseUtil.pGetBrewProcessed()).background || []),
 			...((await BrewUtil2.pGetBrewProcessed()).background || []),
 		];
@@ -189,10 +183,9 @@ class ModalFilterBackgrounds extends ModalFilterBase {
 				<div class="ui-list__btn-inline px-2 no-select" title="Toggle Preview (SHIFT to Toggle Info Preview)">[+]</div>
 			</div>
 
-			<div class="ve-col-3 px-1 ${bg._versionBase_isVersion ? "italic" : ""} ${this._getNameStyle()}">${bg._versionBase_isVersion ? `<span class="px-3"></span>` : ""}${bg.name}</div>
-			<span class="ve-col-4 px-1 ${bg._slAbility === VeCt.STR_NONE ? "italic" : ""}">${bg._slAbility}</span>
-			<div class="ve-col-4 px-1">${bg._skillDisplay}</div>
-			<div class="ve-col-1 pl-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToSourceClassname(bg.source)}" title="${Parser.sourceJsonToFull(bg.source)}" ${Parser.sourceJsonToStyle(bg.source)}>${source}${Parser.sourceJsonToMarkerHtml(bg.source)}</div>
+			<div class="ve-col-4 px-1 ${bg._versionBase_isVersion ? "italic" : ""} ${this._getNameStyle()}">${bg._versionBase_isVersion ? `<span class="px-3"></span>` : ""}${bg.name}</div>
+			<div class="ve-col-6 px-1">${bg._skillDisplay}</div>
+			<div class="ve-col-1 pl-1 pr-0 ve-flex-h-center ${Parser.sourceJsonToSourceClassname(bg.source)}" title="${Parser.sourceJsonToFull(bg.source)}">${source}${Parser.sourceJsonToMarkerHtml(bg.source, {isList: true})}</div>
 		</div>`;
 
 		const btnShowHidePreview = eleRow.firstElementChild.children[1].firstElementChild;
@@ -206,7 +199,6 @@ class ModalFilterBackgrounds extends ModalFilterBase {
 				source,
 				sourceJson: bg.source,
 				...ListItem.getCommonValues(bg),
-				ability: bg._slAbility,
 				skills: bg._skillDisplay,
 			},
 			{
