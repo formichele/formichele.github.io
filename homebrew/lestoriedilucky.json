@@ -1,0 +1,213 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "lestoriedilucky",
+				"abbreviation": "LCK",
+				"full": "Le Storie Di Lucky",
+				"version": "1",
+				"authors": [
+					"Lucky"
+				],
+				"convertedBy": [
+					"GG"
+				]
+			}
+		]
+	},
+	"monster": [
+		{
+	"name": "Luthor Enkron",
+	"size": [
+		"L"
+	],
+	"type": {
+		"type": {
+			"choose": [
+				"undead",
+				"aberration"
+			]
+		}
+	},
+	"source": "lestoriedilucky",
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		16
+	],
+	"hp": {
+		"formula": "40d10",
+		"average": 220
+	},
+	"speed": {
+		"walk": 30,
+		"swim": 40
+	},
+	"str": 20,
+	"dex": 10,
+	"con": 18,
+	"int": 14,
+	"wis": 15,
+	"cha": 18,
+	"passive": 10,
+	"cr": "11",
+	"shortName": true,
+	"page": 1,
+	"pbNote": "2",
+	"senses": [
+		"darkvision 60 ft."
+	],
+	"senseTags": [
+		"D"
+	],
+	"languages": [
+		"Common",
+		"Abyssal",
+		"Aquan"
+	],
+	"languageTags": [
+		"C",
+		"AB",
+		"AQ"
+	],
+	"save": {
+		"str": "+9",
+		"con": "+7",
+		"cha": "+7"
+	},
+	"skill": {
+		"athletics": "+9",
+		"perception": "+5",
+		"intimidation": "+7"
+	},
+	"resist": [
+		{
+			"resist": [
+				"cold",
+				"necrotic"
+			]
+		},
+		{
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"note": "da attacchi non magici"
+		}
+	],
+	"immune": [
+		"poison"
+	],
+	"conditionImmune": [
+		"charmed",
+		"exhaustion",
+		"frightened",
+		"poisoned"
+	],
+	"vulnerable": [
+		{
+			"vulnerable": [
+				"fire",
+				"lightning",
+				"radiant"
+			]
+		},
+		{
+			"vulnerable": []
+		}
+	],
+	"trait": [
+		{
+			"name": "Legame delle Figlie (Filatterio Vivente).",
+			"entries": [
+				"Finché almeno uno dei suoi occhi è custodito dalle figlie selkölle, Luthor non può essere distrutto definitivamente: se ridotto a 0 PF, il suo corpo si dissolve in acqua salmastra e si riforma dopo {@dice 1d10} giorni accanto a un occhio. Se un occhio viene distrutto, Luthor subisce 30 danni necrotici e perde la capacità Voce del Capitano Affogato per 24 ore. Se entrambi gli occhi vengono distrutti, perde permanentemente metà dei PF massimi."
+			]
+		},
+		{
+			"name": "Amphibious",
+			"entries": [
+				"Luthor Enkron can breathe air and water."
+			]
+		},
+		{
+			"name": "Undead Fortitude",
+			"entries": [
+				"If damage reduces Luhor Enkron to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the Luthor Enkron drops to 1 hit point instead."
+			]
+		}
+	],
+	"traitTags": [
+		"Amphibious",
+		"Undead Fortitude"
+	],
+	"actionHeader": [
+		"Multiattacco. Luthor effettua due attacchi con il suo Barnacle‑Encrusted Anchor."
+	],
+	"action": [
+		{
+			"name": "Barnacle‑Encrusted Anchor",
+			"entries": [
+				"Attacco corpo a corpo con arma: +9 per colpire, portata 10 ft., un bersaglio.",
+				"Colpo: 19 ({@dice 2d10 + 5}) danni contundenti + 9 ({@dice 2d8}) danni necrotici. Se una creatura muore per questo attacco, il suo corpo si gonfia d'acqua e rinasce dopo 1 turno come Drowned Spawn (zombie acquatico) sotto il controllo di Luthor."
+			]
+		},
+		{
+			"name": "Drowned Pull (Ricarica 4–6)",
+			"entries": [
+				" Luthor manovra le acque per trascinare un bersaglio entro 30 ft. La creatura deve superare un TS su Forza CD 16 o essere trascinata fino a 15 ft. verso Luthor e subire 14 ({@dice 3d8}) danni contundenti."
+			]
+		},
+		{
+			"name": "Voce del Capitano Affogato (Aura di Comando).",
+			"entries": [
+				"Aura passiva di 30 ft: tutti i Drowned e i non morti acquatici entro l'aura ottengono vantaggio ai tiri per colpire e +5 ft alla velocità, e sono immuni a effetti di paura e a Turn Undead. Se Luthor scende sotto la metà dei PF massimi, l'aura si interrompe per 1 turno; nel turno successivo all'interruzione, tutti i Drowned entro 60 ft. possono usare la loro reazione per muoversi fino a 10 ft. verso Luthor o effettuare un attacco."
+			]
+		}
+	],
+	"legendary": [
+		{
+			"name": "Marea Empia (Ricarica 5–6).",
+			"entries": [
+				"Luthor scaglia un'ondata oscura in un raggio di 20 ft centrato su di sé. Le creature viventi nell'area devono superare un TS su Forza CD 16, subendo 18 ({@dice 4d8}) danni contundenti e venendo spinte di 10 ft. e knock {@condition prone} in caso di fallimento. I Drowned nell'area invece recuperano 10 PF e possono effettuare un attacco come reazione."
+			]
+		},
+		{
+			"name": "Aura dell'Abisso (Ricarica 5–6)",
+			"entries": [
+				"Le acque intorno a Luthor diventano oscure in un raggio di 30 ft. Le creature viventi che iniziano il loro turno nell'aura devono superare un TS su Costituzione CD 16 o subire 14 ({@dice 4d6}) danni necrotici e una riduzione di 10 ft. alla velocità fino alla fine del turno. Se il fallimento è di 5 o più, la creatura è anche {@condition restrained} per 1 turno. I Drowned nell'aura ottengono vantaggio ai tiri per colpire fino all'inizio del turno successivo di Luthor."
+			]
+		},
+		{
+			"name": "Chiamata della Ciurma Perduta (Ricarica 5–6)",
+			"entries": [
+				"statistiche di Drowned Blade o Drowned Ascetic). Gli evocati compaiono entro 60 ft. in spazi d'acqua e agiscono dopo Luthor in iniziativa; svaniscono dopo 10 minuti o se ridotti a 0 PF. Ogni volta che uno di loro muore, Luthor guarisce 10 PF."
+			]
+		}
+	],
+	"fluff": {
+		"entries": [
+			"In combattimento Luthor apre con Voce del Capitano Affogato e usa Chiamata della Ciurma Perduta per saturare il campo. Alterna Marea Empia e Aura dell'Abisso per controllare la posizione degli avversari mentre i Drowned fungono da scudo e fonte di guarigione. È particolarmente pericoloso in presenza d'acqua.",
+			"Roleplay: parla con tono paterno e glaciale; chiama i suoi Drowned \"figli\" e tratta gli avversari come anime perdute da riaccogliere nella sua famiglia abissale."
+		],
+		"images": [
+			{
+				"type": "image",
+				"href": {
+					"type": "external",
+					"url": "https://drive.google.com/file/d/1SXWi8SqTr7EZkXk3VjVjcDq_h8sdkBmk/view?usp=sharing"
+				}
+			}
+		]
+	},
+	"environment": [
+		"arctic",
+		"coastal",
+		"underwater",
+		"urban"
+	]
+}
+	]
+}
